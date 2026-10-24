@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文军长征 — 浙江大学西迁文旅路线</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+
+  <!-- ========== 页面加载动画 ========== -->
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-seal">求是</div>
+      <p class="loading-text">文军长征 · 浙江大学西迁文旅路线</p>
+      <div class="loading-bar"><div class="loading-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== 头部导航 ========== -->
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="logo-area">
+        <div class="logo-seal">求是</div>
+        <div class="logo-text">
+          <h1>文军长征</h1>
+          <span class="subtitle">浙江大学西迁文旅路线</span>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <button class="nav-btn" onclick="openIntroModal()">故事背景</button>
+        <button class="nav-btn" onclick="scrollToMap()">探索路线</button>
+        <button class="nav-btn" onclick="openTimeline()">时间轴</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== 主横幅 ========== -->
+  <section id="hero-banner">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <h2 class="hero-title">文军的长征</h2>
+      <p class="hero-subtitle">1937 — 1946 · 跨越六省 · 行程两千六百公里</p>
+      <p class="hero-desc">烽火之中，浙大师生在校长竺可桢带领下四度西迁，<br>以文化救亡之信念，铸就"东方剑桥"之传奇。</p>
+      <button class="hero-cta" onclick="scrollToMap()">
+        <span>开始探索</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+      </button>
+    </div>
+    <div class="hero-decoration">
+      <svg viewBox="0 0 1440 120" class="wave-svg">
+        <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,120 L0,120 Z" fill="#FDF6E3"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== 核心区域：互动路线地图 ========== -->
+  <section id="map-section">
+    <div class="map-header">
+      <h2 class="section-title">
+        <span class="title-decoration">✦</span>
+        西迁路线图
+        <span class="title-decoration">✦</span>
+      </h2>
+      <p class="section-desc">点击地图上的标记，探索浙大师生在每一站的峥嵘岁月</p>
+    </div>
+
+    <div class="map-container" id="map-container">
+      <!-- SVG 路线地图 -->
+      <svg id="route-map" viewBox="0 0 1100 750" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="map-bg" cx="50%" cy="50%" r="70%">
+            <stop offset="0%" style="stop-color:#FDF6E3"/>
+            <stop offset="100%" style="stop-color:#F0E4C8"/>
+          </radialGradient>
+          <linearGradient id="route-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#1A3A6B"/>
+            <stop offset="100%" style="stop-color:#C41E3A"/>
+          </linearGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="shadow">
+            <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.3"/>
+          </filter>
+          <pattern id="mountain-pattern" width="60" height="40" patternUnits="userSpaceOnUse">
+            <path d="M0,40 L15,10 L30,40" fill="none" stroke="#C8D6A0" stroke-width="1" opacity="0.3"/>
+            <path d="M20,40 L35,15 L50,40" fill="none" stroke="#C8D6A0" stroke-width="1" opacity="0.2"/>
+          </pattern>
+        </defs>
+
+        <!-- 背景 -->
+        <rect width="1100" height="750" fill="url(#map-bg)" rx="12"/>
+        <rect x="8" y="8" width="1084" height="734" fill="none" stroke="#C4A265" stroke-width="2" rx="10" opacity="0.5"/>
+        <rect x="14" y="14" width="1072" height="722" fill="none" stroke="#C4A265" stroke-width="0.5" rx="8" opacity="0.3"/>
+
+        <!-- 省份区域 -->
+        <path class="province" d="M850,80 Q920,100 940,160 Q950,230 910,280 Q870,310 830,290 Q790,260 780,200 Q790,130 820,90 Z"
+              fill="#E8F0D8" stroke="#A8C080" stroke-width="1.5" opacity="0.6"/>
+        <text x="870" y="195" class="province-label" font-size="16">浙江</text>
+
+        <path class="province" d="M660,200 Q720,180 760,220 Q790,280 770,350 Q740,400 690,410 Q640,390 620,340 Q610,280 630,230 Z"
+              fill="#E0ECD0" stroke="#A8C080" stroke-width="1.5" opacity="0.6"/>
+        <text x="685" y="310" class="province-label" font-size="16">江西</text>
+
+        <path class="province" d="M560,340 Q620,310 660,350 Q680,400 660,450 Q630,490 580,480 Q530,460 520,410 Q530,360 560,340 Z"
+              fill="#DDE8CC" stroke="#A8C080" stroke-width="1.5" opacity="0.6"/>
+        <text x="590" y="415" class="province-label" font-size="16">湖南</text>
+
+        <path class="province" d="M640,490 Q720,470 780,510 Q800,560 770,600 Q720,630 660,610 Q620,580 620,530 Z"
+              fill="#E5EDD5" stroke="#A8C080" stroke-width="1.5" opacity="0.4"/>
+        <text x="700" y="555" class="province-label" font-size="14" opacity="0.6">广东</text>
+
+        <path class="province" d="M430,470 Q510,440 570,480 Q600,530 570,580 Q530,620 460,610 Q400,580 390,530 Q400,490 430,470 Z"
+              fill="#D8E4C8" stroke="#A8C080" stroke-width="1.5" opacity="0.6"/>
+        <text x="480" y="545" class="province-label" font-size="16">广西</text>
+
+        <path class="province" d="M220,380 Q310,350 390,390 Q430,440 410,500 Q370,550 300,560 Q230,540 200,490 Q190,430 220,380 Z"
+              fill="#D0DCC0" stroke="#A8C080" stroke-width="1.5" opacity="0.6"/>
+        <text x="300" y="470" class="province-label" font-size="16">贵州</text>
+
+        <!-- 山脉装饰 -->
+        <g class="mountains" opacity="0.4">
+          <path d="M180,420 L200,385 L220,420" fill="#8BA870" stroke="#6B8850" stroke-width="1"/>
+          <path d="M210,420 L235,375 L260,420" fill="#9BB880" stroke="#6B8850" stroke-width="1"/>
+          <path d="M250,415 L270,380 L290,415" fill="#8BA870" stroke="#6B8850" stroke-width="1"/>
+          <path d="M340,400 L360,365 L380,400" fill="#9BB880" stroke="#6B8850" stroke-width="1"/>
+          <path d="M400,510 L420,480 L440,510" fill="#8BA870" stroke="#6B8850" stroke-width="1"/>
+          <path d="M450,500 L470,465 L490,500" fill="#9BB880" stroke="#6B8850" stroke-width="1"/>
+        </g>
+
+        <!-- 河流 -->
+        <g class="rivers" opacity="0.3">
+          <path d="M900,150 Q850,180 800,170 Q750,190 700,250 Q680,280 650,310" fill="none" stroke="#6BA3D6" stroke-width="2" stroke-dasharray="8,4"/>
+          <path d="M600,380 Q550,420 500,450 Q450,470 400,490" fill="none" stroke="#6BA3D6" stroke-width="1.5" stroke-dasharray="6,3"/>
+        </g>
+
+        <!-- 路线阴影 -->
+        <path id="route-shadow" d="
+          M 905,168
+          C 890,200 860,250 830,288
+          C 800,330 740,370 685,378
+          C 660,382 640,395 615,420
+          C 560,470 520,510 470,535
+          C 410,530 360,495 310,458
+        " fill="none" stroke="#00000020" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- 主路线 -->
+        <path id="route-path" d="
+          M 905,165
+          C 888,198 858,248 828,285
+          C 798,328 738,368 683,375
+          C 658,380 638,393 613,418
+          C 558,468 518,508 468,532
+          C 408,528 358,493 308,455
+        " fill="none" stroke="url(#route-gradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+          stroke-dasharray="1800" stroke-dashoffset="1800"/>
+
+        <path id="route-dots" d="
+          M 905,165
+          C 888,198 858,248 828,285
+          C 798,328 738,368 683,375
+          C 658,380 638,393 613,418
+          C 558,468 518,508 468,532
+          C 408,528 358,493 308,455
+        " fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round"
+          stroke-dasharray="6,12" opacity="0.4"/>
+
+        <!-- 方向箭头 -->
+        <g class="route-arrows" opacity="0.5">
+          <polygon points="870,230 878,235 870,240" fill="#1A3A6B"/>
+          <polygon points="780,310 788,315 780,320" fill="#3D5A8E"/>
+          <polygon points="700,365 708,370 700,375" fill="#6B4570"/>
+          <polygon points="550,485 558,490 550,495" fill="#A04050"/>
+          <polygon points="380,480 388,475 380,470" fill="#C41E3A"/>
+        </g>
+
+        <!-- ===== 地点标记 ===== -->
+        <g class="location-marker" data-location="hangzhou" style="cursor:pointer">
+          <circle cx="905" cy="165" r="22" fill="#1A3A6B" opacity="0.15" class="marker-pulse"/>
+          <circle cx="905" cy="165" r="14" fill="#1A3A6B" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
+          <text x="905" y="170" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold">起</text>
+          <text x="905" y="140" text-anchor="middle" class="marker-label" font-size="14">杭州</text>
+          <text x="905" y="125" text-anchor="middle" class="marker-date" font-size="10">1937.09</text>
+        </g>
+
+        <g class="location-marker" data-location="xtianmu" style="cursor:pointer">
+          <circle cx="858" cy="215" r="18" fill="#2D5B8E" opacity="0.15" class="marker-pulse"/>
+          <circle cx="858" cy="215" r="11" fill="#2D5B8E" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="858" y="219" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">①</text>
+          <text x="858" y="245" text-anchor="middle" class="marker-label" font-size="12">西天目山</text>
+        </g>
+
+        <g class="location-marker" data-location="jiande" style="cursor:pointer">
+          <circle cx="828" cy="285" r="18" fill="#2D5B8E" opacity="0.15" class="marker-pulse"/>
+          <circle cx="828" cy="285" r="11" fill="#2D5B8E" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="828" y="289" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">②</text>
+          <text x="855" y="300" text-anchor="start" class="marker-label" font-size="12">建德</text>
+        </g>
+
+        <g class="location-marker" data-location="yushan" style="cursor:pointer">
+          <circle cx="740" cy="345" r="18" fill="#5B7BAE" opacity="0.15" class="marker-pulse"/>
+          <circle cx="740" cy="345" r="11" fill="#5B7BAE" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="740" y="349" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">③</text>
+          <text x="740" y="330" text-anchor="middle" class="marker-label" font-size="12">玉山</text>
+        </g>
+
+        <g class="location-marker" data-location="jian" style="cursor:pointer">
+          <circle cx="683" cy="375" r="18" fill="#8B4570" opacity="0.15" class="marker-pulse"/>
+          <circle cx="683" cy="375" r="11" fill="#8B4570" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="683" y="379" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">④</text>
+          <text x="683" y="400" text-anchor="middle" class="marker-label" font-size="12">吉安</text>
+        </g>
+
+        <g class="location-marker" data-location="taihe" style="cursor:pointer">
+          <circle cx="660" cy="400" r="18" fill="#8B4570" opacity="0.15" class="marker-pulse"/>
+          <circle cx="660" cy="400" r="11" fill="#8B4570" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="660" y="404" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">⑤</text>
+          <text x="635" y="418" text-anchor="end" class="marker-label" font-size="12">泰和</text>
+        </g>
+
+        <g class="location-marker" data-location="yishan" style="cursor:pointer">
+          <circle cx="468" cy="532" r="18" fill="#A04050" opacity="0.15" class="marker-pulse"/>
+          <circle cx="468" cy="532" r="11" fill="#A04050" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="468" y="536" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">⑥</text>
+          <text x="468" y="558" text-anchor="middle" class="marker-label" font-size="12">宜山</text>
+        </g>
+
+        <g class="location-marker" data-location="zunyi" style="cursor:pointer">
+          <circle cx="330" cy="440" r="22" fill="#C41E3A" opacity="0.15" class="marker-pulse"/>
+          <circle cx="330" cy="440" r="14" fill="#C41E3A" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
+          <text x="330" y="445" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold">终</text>
+          <text x="305" y="425" text-anchor="end" class="marker-label" font-size="14">遵义</text>
+          <text x="305" y="412" text-anchor="end" class="marker-date" font-size="10">1940.02</text>
+        </g>
+
+        <g class="location-marker" data-location="meitan" style="cursor:pointer">
+          <circle cx="285" cy="470" r="22" fill="#C41E3A" opacity="0.15" class="marker-pulse"/>
+          <circle cx="285" cy="470" r="14" fill="#C41E3A" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
+          <text x="285" y="475" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold">终</text>
+          <text x="260" y="490" text-anchor="end" class="marker-label" font-size="14">湄潭</text>
+        </g>
+
+        <!-- 图例 -->
+        <g transform="translate(50, 620)">
+          <rect x="0" y="0" width="200" height="100" fill="#FFF8EE" stroke="#C4A265" stroke-width="1" rx="6" opacity="0.9"/>
+          <text x="15" y="22" font-size="13" font-weight="bold" fill="#333" font-family="'Noto Serif SC', serif">图 例</text>
+          <line x1="15" y1="30" x2="185" y2="30" stroke="#C4A265" stroke-width="0.5"/>
+          <circle cx="30" cy="48" r="6" fill="#1A3A6B" stroke="#FFF" stroke-width="1.5"/>
+          <text x="45" y="52" font-size="11" fill="#555">起点（杭州）</text>
+          <circle cx="30" cy="68" r="5" fill="#5B7BAE" stroke="#FFF" stroke-width="1.5"/>
+          <text x="45" y="72" font-size="11" fill="#555">途经站点</text>
+          <circle cx="30" cy="88" r="6" fill="#C41E3A" stroke="#FFF" stroke-width="1.5"/>
+          <text x="45" y="92" font-size="11" fill="#555">终点（遵义·湄潭）</text>
+          <line x1="120" y1="45" x2="170" y2="45" stroke="url(#route-gradient)" stroke-width="3"/>
+          <text x="125" y="62" font-size="10" fill="#555">西迁路线</text>
+        </g>
+
+        <!-- 比例尺 -->
+        <g transform="translate(880, 680)" opacity="0.6">
+          <line x1="0" y1="0" x2="120" y2="0" stroke="#666" stroke-width="1.5"/>
+          <line x1="0" y1="-4" x2="0" y2="4" stroke="#666" stroke-width="1.5"/>
+          <line x1="120" y1="-4" x2="120" y2="4" stroke="#666" stroke-width="1.5"/>
+          <text x="60" y="15" text-anchor="middle" font-size="10" fill="#666">≈ 200 km</text>
+        </g>
+
+        <!-- 标题 -->
+        <text x="550" y="60" text-anchor="middle" font-family="'Ma Shan Zheng', cursive" font-size="28" fill="#1A3A6B" opacity="0.6">
+          文军长征 · 浙大西迁路线示意图
+        </text>
+
+        <!-- 指南针 -->
+        <g transform="translate(1020, 100)" opacity="0.5">
+          <circle cx="0" cy="0" r="25" fill="none" stroke="#C4A265" stroke-width="1"/>
+          <text x="0" y="-12" text-anchor="middle" font-size="12" fill="#C41E3A" font-weight="bold">N</text>
+          <text x="0" y="18" text-anchor="middle" font-size="9" fill="#666">S</text>
+          <text x="16" y="4" text-anchor="middle" font-size="9" fill="#666">E</text>
+          <text x="-16" y="4" text-anchor="middle" font-size="9" fill="#666">W</text>
+          <line x1="0" y1="-8" x2="0" y2="8" stroke="#C4A265" stroke-width="1"/>
+          <line x1="-8" y1="0" x2="8" y2="0" stroke="#C4A265" stroke-width="1"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- 路线统计 -->
+    <div class="route-stats">
+      <div class="stat-card">
+        <div class="stat-icon">📅</div>
+        <div class="stat-value">1937—1946</div>
+        <div class="stat-label">历时九年</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🗺️</div>
+        <div class="stat-value">2,600+ km</div>
+        <div class="stat-label">总行程</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🏔️</div>
+        <div class="stat-value">6 省区</div>
+        <div class="stat-label">途经省份</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🎓</div>
+        <div class="stat-value">26 位</div>
+        <div class="stat-label">后来成为院士</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 竺可桢人物介绍 ========== -->
+  <section id="figure-section">
+    <div class="figure-card">
+      <div class="figure-portrait">
+        <div class="portrait-frame">
+          <svg viewBox="0 0 200 250" class="portrait-svg">
+            <rect width="200" height="250" fill="#FDF6E3" rx="8"/>
+            <circle cx="100" cy="90" r="45" fill="#E8D5B8" stroke="#8B7355" stroke-width="2"/>
+            <circle cx="85" cy="82" r="3" fill="#333"/>
+            <circle cx="115" cy="82" r="3" fill="#333"/>
+            <path d="M90,100 Q100,108 110,100" fill="none" stroke="#333" stroke-width="1.5"/>
+            <rect x="65" y="55" width="70" height="25" rx="3" fill="#333" opacity="0.8"/>
+            <path d="M60,135 Q100,120 140,135 L145,250 L55,250 Z" fill="#1A3A6B"/>
+            <rect x="85" y="135" width="30" height="40" fill="#FFF" opacity="0.3"/>
+            <text x="100" y="230" text-anchor="middle" fill="#FFF" font-size="12" font-weight="bold">竺可桢</text>
+          </svg>
+        </div>
+      </div>
+      <div class="figure-info">
+        <h3>竺可桢 <span class="figure-years">(1890—1974)</span></h3>
+        <p class="figure-title-text">浙江大学校长 · "文军长征"总司令</p>
+        <p class="figure-desc">
+          竺可桢，中国近代气象学、地理学奠基人。1936年出任浙江大学校长，以"求是"为校训。
+          抗战爆发后，他率领全校师生踏上漫漫西迁之路，在极其艰苦的条件下坚持办学，
+          使浙大从一所地方大学崛起为蜚声中外的"东方剑桥"。他在日记中写道：
+        </p>
+        <blockquote class="figure-quote">
+          "自至杭长浙大以来，余两鬓几全白，颓然老翁矣。"
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 页脚 ========== -->
+  <footer id="site-footer">
+    <div class="footer-content">
+      <div class="footer-seal">求是创新</div>
+      <p>文军长征 · 浙江大学西迁文旅路线</p>
+      <p class="footer-note">铭记历史 · 传承精神 · 砥砺前行</p>
+    </div>
+  </footer>
+
+  <!-- ========== 开场弹窗 ========== -->
+  <div id="intro-modal" class="modal-overlay">
+    <div class="modal-content intro-modal-content">
+      <button class="modal-close" onclick="closeIntroModal()" aria-label="关闭">&times;</button>
+      <div class="intro-header">
+        <div class="intro-seal">文军长征</div>
+        <h2>文军的长征</h2>
+        <p class="intro-subtitle">浙江大学抗战西迁史话</p>
+      </div>
+      <div class="intro-body">
+        <div class="intro-section">
+          <h4>🔥 烽火中的抉择</h4>
+          <p>1937年7月，抗日战争全面爆发。8月，淞沪会战打响，杭州危在旦夕。11月，日军在金山卫登陆，浙江大学校园面临战火威胁。在这民族存亡的紧要关头，时任校长<strong>竺可桢</strong>毅然决定：举校西迁，在战火中保存中华民族的教育火种。</p>
+        </div>
+        <div class="intro-section">
+          <h4>🚶 漫漫西迁路</h4>
+          <p>从1937年到1940年，浙大师生历经<strong>四次大规模迁移</strong>，辗转<strong>浙江、江西、湖南、广东、广西、贵州</strong>六省区，行程超过<strong>2600公里</strong>。他们翻山越岭、风餐露宿，在极其艰苦的条件下始终坚持教学与科研不辍。</p>
+        </div>
+        <div class="intro-section">
+          <h4>🌟 "东方剑桥"的诞生</h4>
+          <p>西迁不仅没有让浙大衰亡，反而使之浴火重生。在贵州遵义、湄潭办学的七年间，浙大汇聚了一批顶尖学者，培养了大批杰出人才，被英国学者李约瑟誉为<strong>"东方剑桥"</strong>。此后浙大学生中有<strong>26人</strong>当选为中国科学院或中国工程院院士。</p>
+        </div>
+        <div class="intro-section">
+          <h4>✊ 文化救亡的信念</h4>
+          <p>这段西迁办学的壮举，因其路线与红军长征有惊人的相似之处，被彭真同志高度赞誉为<strong>"文军长征"</strong>。它是中国知识分子以文化救亡、以学术报国的坚定信念的生动写照，也是中国高等教育史上一座不朽的丰碑。</p>
+        </div>
+      </div>
+      <div class="intro-footer">
+        <button class="intro-cta" onclick="closeIntroModal()">
+          开始探索路线 →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 地点详情弹窗 ========== -->
+  <div id="location-modal" class="modal-overlay">
+    <div class="modal-content location-modal-content">
+      <button class="modal-close" onclick="closeLocationModal()" aria-label="关闭">&times;</button>
+      <div class="location-modal-header" id="loc-header">
+        <div class="loc-header-bg" id="loc-header-bg"></div>
+        <div class="loc-header-content">
+          <span class="loc-number" id="loc-number"></span>
+          <h2 id="loc-name"></h2>
+          <p class="loc-period" id="loc-period"></p>
+        </div>
+      </div>
+      <div class="location-modal-body">
+        <div class="loc-section">
+          <h4>📖 在此经历</h4>
+          <p id="loc-story"></p>
+        </div>
+        <div class="loc-section">
+          <h4>🏛️ 红色景区与遗址</h4>
+          <div id="loc-sites"></div>
+        </div>
+        <div class="loc-section">
+          <h4>📍 文旅看点</h4>
+          <div id="loc-highlights"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 时间轴弹窗 ========== -->
+  <div id="timeline-modal" class="modal-overlay">
+    <div class="modal-content timeline-modal-content">
+      <button class="modal-close" onclick="closeTimeline()" aria-label="关闭">&times;</button>
+      <h2 class="timeline-title">文军长征时间轴</h2>
+      <div class="timeline-container" id="timeline-container"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
