@@ -344,6 +344,36 @@ body {
   font-size: 0.95rem;
 }
 
+/* 互动提示 */
+.map-interaction-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, rgba(26,58,107,0.08) 0%, rgba(196,30,58,0.06) 100%);
+  border: 1.5px solid rgba(26,58,107,0.15);
+  border-radius: 25px;
+  font-size: 0.88rem;
+  color: var(--zju-blue);
+  animation: hint-pulse 3s ease-in-out infinite;
+}
+
+.map-interaction-hint .hint-icon {
+  font-size: 1.3rem;
+  animation: hint-bounce 2s ease-in-out infinite;
+}
+
+@keyframes hint-pulse {
+  0%, 100% { border-color: rgba(26,58,107,0.15); box-shadow: none; }
+  50% { border-color: rgba(196,30,58,0.3); box-shadow: 0 2px 12px rgba(196,30,58,0.1); }
+}
+
+@keyframes hint-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
 .map-container {
   background: #FFF;
   border-radius: var(--radius-lg);

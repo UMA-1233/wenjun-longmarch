@@ -92,6 +92,10 @@
         <span class="title-decoration">✦</span>
       </h2>
       <p class="section-desc">点击地图上的标记，探索浙大师生在每一站的峥嵘岁月</p>
+      <p class="map-interaction-hint" id="map-hint">
+        <span class="hint-icon">👆</span>
+        <span>点击下方地图中的彩色圆点标记，查看浙大师生在该地的详细经历、红色景区与文旅看点</span>
+      </p>
     </div>
 
     <div class="map-container" id="map-container">
@@ -123,42 +127,24 @@
         <rect x="8" y="8" width="1084" height="734" fill="none" stroke="#C4A265" stroke-width="2" rx="10" opacity="0.5"/>
         <rect x="14" y="14" width="1072" height="722" fill="none" stroke="#C4A265" stroke-width="0.5" rx="8" opacity="0.3"/>
 
-        <!-- ===== 海洋区域（东南海岸线外侧） ===== -->
-        <path d="M960,0 L1100,0 L1100,750 L850,750 Q870,700 880,660 Q900,610 920,570 Q935,530 950,490 Q960,440 970,400 Q975,350 980,300 Q985,250 978,210 Q970,170 960,140 Q955,100 960,60 Z"
-              fill="url(#sea-gradient)" opacity="0.4"/>
-        <!-- 海岸线 -->
-        <path d="M960,60 Q955,100 960,140 Q970,170 978,210 Q985,250 980,300 Q975,350 970,400 Q960,440 950,490 Q935,530 920,570 Q900,610 880,660 Q870,700 850,750"
-              fill="none" stroke="#6BA3D6" stroke-width="2.5" opacity="0.6" stroke-linecap="round"/>
-        <!-- 海岸波纹 -->
-        <g opacity="0.2">
-          <path d="M975,100 Q985,95 995,100" fill="none" stroke="#6BA3D6" stroke-width="1"/>
-          <path d="M990,160 Q1000,155 1010,160" fill="none" stroke="#6BA3D6" stroke-width="1"/>
-          <path d="M985,230 Q995,225 1005,230" fill="none" stroke="#6BA3D6" stroke-width="1"/>
-          <path d="M980,300 Q990,295 1000,300" fill="none" stroke="#6BA3D6" stroke-width="1"/>
-          <path d="M970,370 Q980,365 990,370" fill="none" stroke="#6BA3D6" stroke-width="1"/>
-          <path d="M960,440 Q970,435 980,440" fill="none" stroke="#6BA3D6" stroke-width="1"/>
-          <path d="M940,520 Q950,515 960,520" fill="none" stroke="#6BA3D6" stroke-width="1"/>
-          <path d="M910,600 Q920,595 930,600" fill="none" stroke="#6BA3D6" stroke-width="1"/>
-        </g>
-        <text x="1020" y="300" font-size="16" fill="#6BA3D6" opacity="0.5" font-family="'Ma Shan Zheng', cursive" transform="rotate(80,1020,300)">东 海</text>
-
         <!-- ===== 省级行政区轮廓（真实GeoJSON数据） ===== -->
 
-        <!-- 海洋背景 -->
-        <path d="M908,195 Q920,190 950,185 L1100,0 L1100,750 L860,750 Q870,700 880,660 Q900,600 920,560 Q940,510 950,470 Q960,420 960,380 Q958,330 955,300 Q960,260 950,230 Q930,210 908,195 Z"
-              fill="#C8DDF0" opacity="0.3"/>
-        <!-- 海岸线（基于浙江/福建东界） -->
-        <path d="M908,195 Q930,210 950,230 Q960,260 955,300 Q958,330 960,380 Q950,420 940,450 Q925,480 915,500 Q900,540 885,580 Q875,620 865,660 Q860,700 855,740"
-              fill="none" stroke="#6BA3D6" stroke-width="2.5" opacity="0.5" stroke-linecap="round" stroke-dasharray="8,4"/>
+        <!-- 海洋区域（沿浙江/福建东界外侧） -->
+        <path d="M1060,0 L1100,0 L1100,750 L960,750 Q968,700 975,660 Q985,610 998,560 Q1008,510 1015,470 Q1020,420 1025,380 Q1028,330 1028,290 Q1025,250 1022,220 Q1025,190 1035,165 Q1045,130 1060,100 Z"
+              fill="url(#sea-gradient)" opacity="0.35"/>
+        <!-- 海岸线（紧贴浙江/福建东界） -->
+        <path d="M1060,100 Q1045,130 1035,165 Q1025,190 1022,220 Q1025,250 1028,290 Q1028,330 1025,380 Q1020,420 1015,470 Q1008,510 998,560 Q985,610 975,660 Q968,700 960,750"
+              fill="none" stroke="#6BA3D6" stroke-width="2" opacity="0.5" stroke-linecap="round" stroke-dasharray="8,4"/>
         <g opacity="0.15">
-          <path d="M965,240 Q975,235 985,240" fill="none" stroke="#6BA3D6" stroke-width="1"/>
-          <path d="M968,300 Q978,295 988,300" fill="none" stroke="#6BA3D6" stroke-width="1"/>
-          <path d="M955,380 Q965,375 975,380" fill="none" stroke="#6BA3D6" stroke-width="1"/>
-          <path d="M930,470 Q940,465 950,470" fill="none" stroke="#6BA3D6" stroke-width="1"/>
-          <path d="M900,550 Q910,545 920,550" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M1045,150 Q1055,145 1065,150" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M1038,230 Q1048,225 1058,230" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M1035,310 Q1045,305 1055,310" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M1030,400 Q1040,395 1050,400" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M1020,480 Q1030,475 1040,480" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M1005,560 Q1015,555 1025,560" fill="none" stroke="#6BA3D6" stroke-width="1"/>
         </g>
-        <text x="1000" y="350" font-size="16" fill="#6BA3D6" opacity="0.4" font-family="'Ma Shan Zheng', cursive" transform="rotate(75,1000,350)">东 海</text>
-        <text x="930" y="620" font-size="14" fill="#6BA3D6" opacity="0.3" font-family="'Ma Shan Zheng', cursive" transform="rotate(70,930,620)">南 海</text>
+        <text x="1065" y="340" font-size="16" fill="#6BA3D6" opacity="0.5" font-family="'Ma Shan Zheng', cursive" transform="rotate(80,1065,340)">东 海</text>
+        <text x="978" y="680" font-size="13" fill="#6BA3D6" opacity="0.3" font-family="'Ma Shan Zheng', cursive" transform="rotate(70,978,680)">南海</text>
 
         <!-- 浙江 -->
         <path class="province" d="M 853.6,269.2 L 844.3,277.0 L 844.2,289.0 L 854.6,295.9 L 857.5,307.7 L 864.8,317.5 L 870.5,328.3 L 876.9,338.8 L 884.3,348.9 L 897.5,348.9 L 907.0,341.4 L 913.8,351.4 L 926.4,353.2 L 938.6,350.8 L 945.8,360.6 L 956.1,353.9 L 958.0,341.4 L 967.4,333.7 L 979.5,335.7 L 973.9,324.5 L 985.9,323.0 L 996.3,316.8 L 996.5,303.3 L 1005.0,294.1 L 998.6,282.6 L 1011.1,284.2 L 1013.9,272.0 L 1011.5,259.4 L 1022.0,253.0 L 1009.4,250.3 L 998.8,244.5 L 988.8,234.3 L 976.6,228.2 L 982.7,217.8 L 971.1,214.7 L 961.1,207.5 L 949.9,216.7 L 938.1,210.4 L 926.4,204.9 L 914.2,200.5 L 907.6,210.7 L 901.8,221.9 L 899.3,233.7 L 886.6,234.9 L 876.1,241.3 L 874.1,253.4 L 865.8,262.1 L 855.2,267.9 L 853.6,269.2 Z"
@@ -360,8 +346,16 @@
           文军长征 · 浙大西迁路线示意图
         </text>
 
-        <!-- 指南针 -->
-        <g transform="translate(1020, 110)" opacity="0.5">
+        <!-- 互动提示 -->
+        <g class="map-hint" transform="translate(100, 100)">
+          <rect x="-85" y="-25" width="170" height="50" rx="10" fill="#FFF8EE" stroke="#C4A265" stroke-width="1" opacity="0.9"/>
+          <text x="0" y="-5" text-anchor="middle" font-size="11" fill="#1A3A6B" font-weight="bold">👆 点击标记点</text>
+          <text x="0" y="12" text-anchor="middle" font-size="10" fill="#555">获取详细信息</text>
+        </g>
+
+        <!-- 指南针（左侧留白区） -->
+        <g transform="translate(100, 190)" opacity="0.5">
+          <circle cx="0" cy="0" r="28" fill="#FFF8EE" stroke="#C4A265" stroke-width="1" opacity="0.7"/>
           <circle cx="0" cy="0" r="25" fill="none" stroke="#C4A265" stroke-width="1"/>
           <text x="0" y="-12" text-anchor="middle" font-size="12" fill="#C41E3A" font-weight="bold">N</text>
           <text x="0" y="18" text-anchor="middle" font-size="9" fill="#666">S</text>
@@ -369,6 +363,7 @@
           <text x="-16" y="4" text-anchor="middle" font-size="9" fill="#666">W</text>
           <line x1="0" y1="-8" x2="0" y2="8" stroke="#C4A265" stroke-width="1"/>
           <line x1="-8" y1="0" x2="8" y2="0" stroke="#C4A265" stroke-width="1"/>
+          <polygon points="0,-20 -4,-12 4,-12" fill="#C41E3A" opacity="0.7"/>
         </g>
       </svg>
     </div>
