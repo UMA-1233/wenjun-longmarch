@@ -401,25 +401,29 @@ body {
 }
 
 .location-marker {
-  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-.location-marker:hover {
-  transform: scale(1.15);
+.location-marker .marker-label,
+.location-marker .marker-date {
+  transition: transform 0.2s ease;
 }
 
-.location-marker:hover circle:not(.marker-pulse) {
-  filter: url(#shadow) brightness(1.2);
+.location-marker:hover .marker-label {
+  transform: translateY(-2px);
 }
 
-.marker-pulse {
-  animation: pulse-ring 2s ease-out infinite;
+.marker-pulse-ring {
+  opacity: 0;
+  transform-box: fill-box;
   transform-origin: center;
+  animation: pulse-ring 2.5s ease-out infinite;
+  pointer-events: none;
 }
 
 @keyframes pulse-ring {
-  0% { r: 14; opacity: 0.3; }
-  100% { r: 28; opacity: 0; }
+  0% { opacity: 0.4; transform: scale(1); }
+  100% { opacity: 0; transform: scale(2.2); }
 }
 
 #route-path.animate {
@@ -441,32 +445,45 @@ body {
 .stat-card {
   background: #FFF;
   border-radius: var(--radius-md);
-  padding: 24px 16px;
+  padding: 28px 20px;
   text-align: center;
   box-shadow: var(--shadow-soft);
   border: 1px solid var(--gold-light);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stat-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
 }
 
 .stat-icon {
-  font-size: 28px;
-  margin-bottom: 8px;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 .stat-value {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 900;
   color: var(--zju-blue);
   margin-bottom: 4px;
 }
 
 .stat-label {
-  font-size: 0.85rem;
-  color: var(--text-light);
+  font-size: 0.9rem;
+  color: var(--revolution-red);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.stat-desc {
+  font-size: 0.78rem;
+  color: var(--text-medium);
+  line-height: 1.7;
+  text-align: left;
+  border-top: 1px solid var(--gold-light);
+  padding-top: 10px;
+  margin-top: 4px;
 }
 
 /* ===== 人物介绍 ===== */
@@ -489,17 +506,35 @@ body {
 
 .portrait-frame {
   flex-shrink: 0;
-  width: 180px;
-  height: 220px;
+  width: 200px;
+  height: 260px;
   border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
   border: 3px solid var(--gold-light);
+  position: relative;
+  background: #FDF6E3;
 }
 
-.portrait-svg {
+.portrait-img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: sepia(0.15) contrast(1.05);
+}
+
+.portrait-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  color: #FFF;
+  font-size: 0.75rem;
+  padding: 16px 8px 6px;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .figure-info h3 {
@@ -962,6 +997,10 @@ body {
     gap: 12px;
   }
 
+  .stat-desc {
+    font-size: 0.72rem;
+  }
+
   .figure-card {
     flex-direction: column;
     text-align: center;
@@ -972,6 +1011,12 @@ body {
     border-left: none;
     border-top: 4px solid var(--revolution-red);
     border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  }
+
+  .portrait-frame {
+    width: 180px;
+    height: 240px;
+    margin: 0 auto;
   }
 
   .map-container {
@@ -1016,6 +1061,162 @@ body {
   }
 }
 
+/* ===== 浙大元素背景装饰 ===== */
+.bg-decorations {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* 求是印章 */
+.bg-seal {
+  position: absolute;
+  font-family: 'Ma Shan Zheng', cursive;
+  font-weight: 900;
+  color: var(--revolution-red);
+  opacity: 0.04;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.bg-seal-1 {
+  width: 60px; height: 60px;
+  font-size: 20px;
+  top: 15%;
+  left: 5%;
+  transform: rotate(-12deg);
+}
+
+.bg-seal-2 {
+  width: 50px; height: 50px;
+  font-size: 16px;
+  top: 55%;
+  right: 3%;
+  transform: rotate(8deg);
+}
+
+.bg-seal-3 {
+  width: 45px; height: 45px;
+  font-size: 15px;
+  bottom: 18%;
+  left: 8%;
+  transform: rotate(-5deg);
+}
+
+/* 校徽剪影 */
+.bg-emblem {
+  position: absolute;
+  color: var(--zju-blue);
+  opacity: 0.03;
+}
+
+.bg-emblem-1 {
+  width: 180px; height: 180px;
+  top: 25%;
+  right: 2%;
+  transform: rotate(15deg);
+}
+
+.bg-emblem-2 {
+  width: 140px; height: 140px;
+  bottom: 10%;
+  right: 12%;
+  transform: rotate(-20deg);
+}
+
+/* 灿若星辰灯 */
+.bg-lantern {
+  position: absolute;
+  color: var(--gold);
+  opacity: 0.05;
+}
+
+.bg-lantern-1 {
+  width: 60px; height: 96px;
+  top: 35%;
+  left: 2%;
+  animation: lantern-sway 8s ease-in-out infinite;
+}
+
+.bg-lantern-2 {
+  width: 50px; height: 80px;
+  bottom: 30%;
+  right: 5%;
+  animation: lantern-sway 10s ease-in-out infinite 2s;
+}
+
+@keyframes lantern-sway {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+/* 求是鹰剪影 */
+.bg-eagle {
+  position: absolute;
+  color: var(--zju-blue);
+  opacity: 0.025;
+}
+
+.bg-eagle-1 {
+  width: 100px; height: 67px;
+  top: 45%;
+  left: 15%;
+  transform: rotate(5deg);
+}
+
+.bg-eagle-2 {
+  width: 80px; height: 53px;
+  bottom: 25%;
+  left: 45%;
+  transform: rotate(-8deg) scaleX(-1);
+}
+
+/* 星星点缀 */
+.bg-star {
+  position: absolute;
+  color: var(--gold);
+  opacity: 0.08;
+  animation: star-twinkle 4s ease-in-out infinite;
+}
+
+.bg-star-1 { font-size: 24px; top: 20%; right: 15%; animation-delay: 0s; }
+.bg-star-2 { font-size: 18px; top: 60%; left: 10%; animation-delay: 1s; }
+.bg-star-3 { font-size: 20px; bottom: 35%; right: 20%; animation-delay: 2s; }
+.bg-star-4 { font-size: 16px; top: 40%; left: 60%; animation-delay: 0.5s; }
+.bg-star-5 { font-size: 22px; bottom: 15%; left: 30%; animation-delay: 1.5s; }
+
+@keyframes star-twinkle {
+  0%, 100% { opacity: 0.06; transform: scale(1); }
+  50% { opacity: 0.12; transform: scale(1.2); }
+}
+
+/* 英雄区校徽背景 */
+.hero-bg-emblems {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-emblem {
+  position: absolute;
+  width: 350px; height: 350px;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+
+/* ===== 滚动显示动画 ===== */
 .fade-in-up {
   opacity: 0;
   transform: translateY(30px);

@@ -11,6 +11,29 @@
 </head>
 <body>
 
+  <!-- ========== 全局背景装饰（浙大元素） ========== -->
+  <div class="bg-decorations" aria-hidden="true">
+    <!-- 求是印章散落 -->
+    <div class="bg-seal bg-seal-1">求是</div>
+    <div class="bg-seal bg-seal-2">求是</div>
+    <div class="bg-seal bg-seal-3">求是</div>
+    <!-- 校徽剪影 -->
+    <svg class="bg-emblem bg-emblem-1" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="2"/><text x="100" y="85" text-anchor="middle" font-size="22" font-weight="bold" fill="currentColor">浙江大学</text><text x="100" y="115" text-anchor="middle" font-size="14" fill="currentColor">1897</text><path d="M70,130 L100,110 L130,130 M85,140 L100,125 L115,140" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+    <svg class="bg-emblem bg-emblem-2" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="2"/><text x="100" y="85" text-anchor="middle" font-size="22" font-weight="bold" fill="currentColor">浙江大学</text><text x="100" y="115" text-anchor="middle" font-size="14" fill="currentColor">1897</text><path d="M70,130 L100,110 L130,130 M85,140 L100,125 L115,140" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+    <!-- 灿若星辰灯 -->
+    <svg class="bg-lantern bg-lantern-1" viewBox="0 0 100 160"><ellipse cx="50" cy="80" rx="30" ry="45" fill="none" stroke="currentColor" stroke-width="2"/><line x1="50" y1="35" x2="50" y2="10" stroke="currentColor" stroke-width="2"/><circle cx="50" cy="8" r="5" fill="currentColor" opacity="0.5"/><path d="M35,125 L50,140 L65,125" fill="none" stroke="currentColor" stroke-width="2"/><line x1="50" y1="140" x2="50" y2="155" stroke="currentColor" stroke-width="1.5"/><ellipse cx="50" cy="80" rx="18" ry="28" fill="currentColor" opacity="0.08"/><text x="50" y="78" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.6">灿若</text><text x="50" y="92" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.6">星辰</text></svg>
+    <svg class="bg-lantern bg-lantern-2" viewBox="0 0 100 160"><ellipse cx="50" cy="80" rx="30" ry="45" fill="none" stroke="currentColor" stroke-width="2"/><line x1="50" y1="35" x2="50" y2="10" stroke="currentColor" stroke-width="2"/><circle cx="50" cy="8" r="5" fill="currentColor" opacity="0.5"/><path d="M35,125 L50,140 L65,125" fill="none" stroke="currentColor" stroke-width="2"/><line x1="50" y1="140" x2="50" y2="155" stroke="currentColor" stroke-width="1.5"/><ellipse cx="50" cy="80" rx="18" ry="28" fill="currentColor" opacity="0.08"/><text x="50" y="78" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.6">灿若</text><text x="50" y="92" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.6">星辰</text></svg>
+    <!-- 求是鹰剪影 -->
+    <svg class="bg-eagle bg-eagle-1" viewBox="0 0 120 80"><path d="M60,10 C40,10 15,30 5,50 C15,45 25,42 35,44 C25,55 20,65 18,75 C30,65 42,58 55,56 C50,62 48,70 48,78 C55,70 62,64 70,60 C68,68 67,74 68,80 C72,72 78,65 86,60 C95,55 105,52 115,50 C105,30 80,10 60,10 Z" fill="currentColor"/></svg>
+    <svg class="bg-eagle bg-eagle-2" viewBox="0 0 120 80"><path d="M60,10 C40,10 15,30 5,50 C15,45 25,42 35,44 C25,55 20,65 18,75 C30,65 42,58 55,56 C50,62 48,70 48,78 C55,70 62,64 70,60 C68,68 67,74 68,80 C72,72 78,65 86,60 C95,55 105,52 115,50 C105,30 80,10 60,10 Z" fill="currentColor"/></svg>
+    <!-- 星星点缀（灿若星辰） -->
+    <div class="bg-star bg-star-1">✦</div>
+    <div class="bg-star bg-star-2">✦</div>
+    <div class="bg-star bg-star-3">✦</div>
+    <div class="bg-star bg-star-4">✧</div>
+    <div class="bg-star bg-star-5">✦</div>
+  </div>
+
   <!-- ========== 页面加载动画 ========== -->
   <div id="loading-screen">
     <div class="loading-content">
@@ -41,6 +64,9 @@
   <!-- ========== 主横幅 ========== -->
   <section id="hero-banner">
     <div class="hero-particles" id="particles"></div>
+    <div class="hero-bg-emblems" aria-hidden="true">
+      <svg class="hero-emblem" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/><circle cx="100" cy="100" r="70" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/><text x="100" y="88" text-anchor="middle" font-size="24" font-weight="bold" fill="rgba(255,255,255,0.05)">浙江大学</text><text x="100" y="118" text-anchor="middle" font-size="16" fill="rgba(255,255,255,0.04)">1897</text></svg>
+    </div>
     <div class="hero-content">
       <h2 class="hero-title">文军的长征</h2>
       <p class="hero-subtitle">1937 — 1946 · 跨越六省 · 行程两千六百公里</p>
@@ -69,7 +95,6 @@
     </div>
 
     <div class="map-container" id="map-container">
-      <!-- SVG 路线地图 -->
       <svg id="route-map" viewBox="0 0 1100 750" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient id="map-bg" cx="50%" cy="50%" r="70%">
@@ -80,17 +105,17 @@
             <stop offset="0%" style="stop-color:#1A3A6B"/>
             <stop offset="100%" style="stop-color:#C41E3A"/>
           </linearGradient>
-          <filter id="glow">
-            <feGaussianBlur stdDeviation="3" result="blur"/>
+          <linearGradient id="sea-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#C8DDF0"/>
+            <stop offset="100%" style="stop-color:#A8C8E8"/>
+          </linearGradient>
+          <filter id="shadow">
+            <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.25"/>
+          </filter>
+          <filter id="marker-glow">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
             <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
           </filter>
-          <filter id="shadow">
-            <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.3"/>
-          </filter>
-          <pattern id="mountain-pattern" width="60" height="40" patternUnits="userSpaceOnUse">
-            <path d="M0,40 L15,10 L30,40" fill="none" stroke="#C8D6A0" stroke-width="1" opacity="0.3"/>
-            <path d="M20,40 L35,15 L50,40" fill="none" stroke="#C8D6A0" stroke-width="1" opacity="0.2"/>
-          </pattern>
         </defs>
 
         <!-- 背景 -->
@@ -98,166 +123,265 @@
         <rect x="8" y="8" width="1084" height="734" fill="none" stroke="#C4A265" stroke-width="2" rx="10" opacity="0.5"/>
         <rect x="14" y="14" width="1072" height="722" fill="none" stroke="#C4A265" stroke-width="0.5" rx="8" opacity="0.3"/>
 
-        <!-- 省份区域 -->
-        <path class="province" d="M850,80 Q920,100 940,160 Q950,230 910,280 Q870,310 830,290 Q790,260 780,200 Q790,130 820,90 Z"
-              fill="#E8F0D8" stroke="#A8C080" stroke-width="1.5" opacity="0.6"/>
-        <text x="870" y="195" class="province-label" font-size="16">浙江</text>
+        <!-- ===== 海洋区域（东南海岸线外侧） ===== -->
+        <path d="M960,0 L1100,0 L1100,750 L850,750 Q870,700 880,660 Q900,610 920,570 Q935,530 950,490 Q960,440 970,400 Q975,350 980,300 Q985,250 978,210 Q970,170 960,140 Q955,100 960,60 Z"
+              fill="url(#sea-gradient)" opacity="0.4"/>
+        <!-- 海岸线 -->
+        <path d="M960,60 Q955,100 960,140 Q970,170 978,210 Q985,250 980,300 Q975,350 970,400 Q960,440 950,490 Q935,530 920,570 Q900,610 880,660 Q870,700 850,750"
+              fill="none" stroke="#6BA3D6" stroke-width="2.5" opacity="0.6" stroke-linecap="round"/>
+        <!-- 海岸波纹 -->
+        <g opacity="0.2">
+          <path d="M975,100 Q985,95 995,100" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M990,160 Q1000,155 1010,160" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M985,230 Q995,225 1005,230" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M980,300 Q990,295 1000,300" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M970,370 Q980,365 990,370" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M960,440 Q970,435 980,440" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M940,520 Q950,515 960,520" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+          <path d="M910,600 Q920,595 930,600" fill="none" stroke="#6BA3D6" stroke-width="1"/>
+        </g>
+        <text x="1020" y="300" font-size="16" fill="#6BA3D6" opacity="0.5" font-family="'Ma Shan Zheng', cursive" transform="rotate(80,1020,300)">东 海</text>
 
-        <path class="province" d="M660,200 Q720,180 760,220 Q790,280 770,350 Q740,400 690,410 Q640,390 620,340 Q610,280 630,230 Z"
-              fill="#E0ECD0" stroke="#A8C080" stroke-width="1.5" opacity="0.6"/>
-        <text x="685" y="310" class="province-label" font-size="16">江西</text>
+        <!-- ===== 省级行政区轮廓（更精确） ===== -->
 
-        <path class="province" d="M560,340 Q620,310 660,350 Q680,400 660,450 Q630,490 580,480 Q530,460 520,410 Q530,360 560,340 Z"
-              fill="#DDE8CC" stroke="#A8C080" stroke-width="1.5" opacity="0.6"/>
-        <text x="590" y="415" class="province-label" font-size="16">湖南</text>
+        <!-- 安徽（部分，北部邻居） -->
+        <path class="province" d="M790,50 L830,55 L860,70 L880,60 L920,70 L940,90 L950,120
+              L940,155 L920,170 L900,175 L885,195 L870,185 L850,190 L830,175
+              L810,180 L790,170 L775,150 L770,120 L780,85 Z"
+              fill="#EEF3E5" stroke="#B8CCA0" stroke-width="1.5" opacity="0.4"/>
+        <text x="855" y="120" class="province-label" font-size="13" opacity="0.5">安徽</text>
 
-        <path class="province" d="M640,490 Q720,470 780,510 Q800,560 770,600 Q720,630 660,610 Q620,580 620,530 Z"
-              fill="#E5EDD5" stroke="#A8C080" stroke-width="1.5" opacity="0.4"/>
-        <text x="700" y="555" class="province-label" font-size="14" opacity="0.6">广东</text>
+        <!-- 浙江（含海岸线） -->
+        <path class="province" d="M850,190 L870,185 L885,195 L900,175 L920,170 L940,155
+              L950,120 L960,140 L965,175 L970,210 L960,250 L950,280
+              L935,305 L915,320 L895,310 L875,315 L855,305
+              L840,290 L825,270 L820,250 L825,225 L835,205 Z"
+              fill="#E8F0D8" stroke="#8EB870" stroke-width="2" opacity="0.7"/>
+        <text x="895" y="245" class="province-label" font-size="17" font-weight="bold">浙江</text>
 
-        <path class="province" d="M430,470 Q510,440 570,480 Q600,530 570,580 Q530,620 460,610 Q400,580 390,530 Q400,490 430,470 Z"
-              fill="#D8E4C8" stroke="#A8C080" stroke-width="1.5" opacity="0.6"/>
-        <text x="480" y="545" class="province-label" font-size="16">广西</text>
+        <!-- 福建（南部邻居） -->
+        <path class="province" d="M855,305 L875,315 L895,310 L915,320 L935,305
+              L950,280 L960,300 L970,340 L968,380 L960,420 L945,455
+              L925,475 L900,480 L875,470 L855,450 L840,420
+              L830,390 L825,360 L830,335 L840,315 Z"
+              fill="#EDF3E2" stroke="#B8CCA0" stroke-width="1.5" opacity="0.4"/>
+        <text x="895" y="390" class="province-label" font-size="13" opacity="0.5">福建</text>
 
-        <path class="province" d="M220,380 Q310,350 390,390 Q430,440 410,500 Q370,550 300,560 Q230,540 200,490 Q190,430 220,380 Z"
-              fill="#D0DCC0" stroke="#A8C080" stroke-width="1.5" opacity="0.6"/>
-        <text x="300" y="470" class="province-label" font-size="16">贵州</text>
+        <!-- 江西 -->
+        <path class="province" d="M710,175 L740,165 L770,150 L775,150 L790,170 L810,180
+              L830,175 L850,190 L835,205 L825,225 L820,250 L825,270
+              L840,290 L855,305 L840,315 L830,335 L825,360 L830,390
+              L820,410 L800,420 L775,425 L755,420 L735,405
+              L720,385 L710,360 L700,330 L695,295 L700,260
+              L705,225 L710,195 Z"
+              fill="#E0ECD0" stroke="#8EB870" stroke-width="2" opacity="0.7"/>
+        <text x="760" y="300" class="province-label" font-size="17" font-weight="bold">江西</text>
 
-        <!-- 山脉装饰 -->
-        <g class="mountains" opacity="0.4">
-          <path d="M180,420 L200,385 L220,420" fill="#8BA870" stroke="#6B8850" stroke-width="1"/>
-          <path d="M210,420 L235,375 L260,420" fill="#9BB880" stroke="#6B8850" stroke-width="1"/>
-          <path d="M250,415 L270,380 L290,415" fill="#8BA870" stroke="#6B8850" stroke-width="1"/>
-          <path d="M340,400 L360,365 L380,400" fill="#9BB880" stroke="#6B8850" stroke-width="1"/>
-          <path d="M400,510 L420,480 L440,510" fill="#8BA870" stroke="#6B8850" stroke-width="1"/>
-          <path d="M450,500 L470,465 L490,500" fill="#9BB880" stroke="#6B8850" stroke-width="1"/>
+        <!-- 湖北（部分，西北邻居） -->
+        <path class="province" d="M560,180 L610,170 L650,175 L690,170 L710,175 L710,195
+              L705,225 L700,245 L680,260 L650,270 L620,265
+              L590,255 L565,240 L550,215 L555,195 Z"
+              fill="#EEF3E5" stroke="#B8CCA0" stroke-width="1.5" opacity="0.4"/>
+        <text x="630" y="220" class="province-label" font-size="13" opacity="0.5">湖北</text>
+
+        <!-- 湖南 -->
+        <path class="province" d="M550,280 L590,255 L620,265 L650,270 L680,260 L700,260
+              L700,295 L710,330 L710,360 L720,385 L715,410
+              L700,435 L680,455 L655,465 L630,465 L605,455
+              L580,440 L560,420 L545,395 L535,365 L535,330
+              L540,305 Z"
+              fill="#DDE8CC" stroke="#8EB870" stroke-width="2" opacity="0.7"/>
+        <text x="625" y="370" class="province-label" font-size="17" font-weight="bold">湖南</text>
+
+        <!-- 广东 -->
+        <path class="province" d="M700,490 L730,475 L760,465 L790,470 L820,480
+              L850,495 L870,520 L875,550 L860,580 L835,600
+              L800,615 L765,620 L730,610 L700,590 L680,565
+              L670,535 L675,510 Z"
+              fill="#E5EDD5" stroke="#B8CCA0" stroke-width="1.5" opacity="0.4"/>
+        <text x="770" y="550" class="province-label" font-size="14" opacity="0.5">广东</text>
+
+        <!-- 广西 -->
+        <path class="province" d="M455,475 L490,460 L525,455 L555,458 L580,465
+              L605,480 L630,495 L655,500 L670,510 L670,535
+              L665,560 L650,585 L625,605 L595,618 L560,622
+              L525,615 L495,600 L470,580 L450,555 L440,525
+              L442,500 Z"
+              fill="#D8E4C8" stroke="#8EB870" stroke-width="2" opacity="0.7"/>
+        <text x="555" y="545" class="province-label" font-size="17" font-weight="bold">广西</text>
+
+        <!-- 贵州 -->
+        <path class="province" d="M230,350 L270,335 L310,325 L350,320 L390,325
+              L430,340 L460,360 L485,385 L500,410 L510,440
+              L505,465 L490,460 L455,475 L442,500 L420,510
+              L390,510 L360,505 L330,495 L300,480 L275,460
+              L255,435 L240,405 L232,375 Z"
+              fill="#D0DCC0" stroke="#8EB870" stroke-width="2" opacity="0.7"/>
+        <text x="370" y="420" class="province-label" font-size="17" font-weight="bold">贵州</text>
+
+        <!-- 四川/云南（西部邻居，部分） -->
+        <path class="province" d="M30,300 L80,280 L140,275 L200,290 L240,310 L270,335 L230,350
+              L232,375 L240,405 L255,435 L250,460 L230,480
+              L200,495 L165,500 L130,490 L95,470 L65,440
+              L45,405 L35,365 L30,330 Z"
+              fill="#EEF3E5" stroke="#B8CCA0" stroke-width="1.5" opacity="0.3"/>
+        <text x="140" y="390" class="province-label" font-size="13" opacity="0.4">川 / 滇</text>
+
+        <!-- 省界虚线 -->
+        <g class="province-borders" opacity="0.35">
+          <!-- 浙江-江西 -->
+          <path d="M850,190 L835,205 L825,225 L820,250 L825,270 L840,290 L855,305" fill="none" stroke="#7A9A60" stroke-width="1" stroke-dasharray="4,3"/>
+          <!-- 江西-湖南 -->
+          <path d="M700,260 L700,295 L710,330 L710,360 L720,385" fill="none" stroke="#7A9A60" stroke-width="1" stroke-dasharray="4,3"/>
+          <!-- 湖南-广西 -->
+          <path d="M580,440 L605,455 L630,465 L655,465 L680,455" fill="none" stroke="#7A9A60" stroke-width="1" stroke-dasharray="4,3"/>
+          <!-- 广西-贵州 -->
+          <path d="M455,475 L442,500 L420,510 L390,510 L360,505 L330,495" fill="none" stroke="#7A9A60" stroke-width="1" stroke-dasharray="4,3"/>
+          <!-- 贵州-湖南 -->
+          <path d="M500,410 L510,440 L505,465 L490,460" fill="none" stroke="#7A9A60" stroke-width="1" stroke-dasharray="4,3"/>
+          <!-- 江西-浙江 -->
+          <path d="M850,190 L870,185 L885,195" fill="none" stroke="#7A9A60" stroke-width="1" stroke-dasharray="4,3"/>
         </g>
 
         <!-- 河流 -->
-        <g class="rivers" opacity="0.3">
-          <path d="M900,150 Q850,180 800,170 Q750,190 700,250 Q680,280 650,310" fill="none" stroke="#6BA3D6" stroke-width="2" stroke-dasharray="8,4"/>
-          <path d="M600,380 Q550,420 500,450 Q450,470 400,490" fill="none" stroke="#6BA3D6" stroke-width="1.5" stroke-dasharray="6,3"/>
+        <g class="rivers" opacity="0.25">
+          <path d="M950,170 Q920,185 890,195 Q860,210 840,225 Q810,240 790,260" fill="none" stroke="#6BA3D6" stroke-width="1.5" stroke-dasharray="6,3"/>
+          <text x="860" y="205" font-size="9" fill="#6BA3D6" opacity="0.6">钱塘江</text>
+          <path d="M720,350 Q700,370 680,395 Q660,420 640,440 Q615,460 590,475" fill="none" stroke="#6BA3D6" stroke-width="1.5" stroke-dasharray="6,3"/>
+          <text x="660" y="415" font-size="9" fill="#6BA3D6" opacity="0.6">赣江</text>
+          <path d="M400,380 Q380,410 360,440 Q340,465 315,480" fill="none" stroke="#6BA3D6" stroke-width="1.5" stroke-dasharray="6,3"/>
+          <text x="345" y="440" font-size="9" fill="#6BA3D6" opacity="0.6">乌江</text>
+        </g>
+
+        <!-- 山脉装饰 -->
+        <g class="mountains" opacity="0.35">
+          <path d="M200,400 L215,370 L230,400" fill="#8BA870" stroke="#6B8850" stroke-width="1"/>
+          <path d="M225,400 L245,365 L265,400" fill="#9BB880" stroke="#6B8850" stroke-width="1"/>
+          <path d="M260,395 L275,368 L290,395" fill="#8BA870" stroke="#6B8850" stroke-width="1"/>
+          <path d="M340,380 L355,352 L370,380" fill="#9BB880" stroke="#6B8850" stroke-width="1"/>
+          <path d="M390,395 L405,370 L420,395" fill="#8BA870" stroke="#6B8850" stroke-width="1"/>
+          <path d="M460,500 L475,478 L490,500" fill="#9BB880" stroke="#6B8850" stroke-width="1"/>
+          <path d="M870,260 L882,242 L894,260" fill="#8BA870" stroke="#6B8850" stroke-width="1"/>
+          <path d="M720,220 L732,200 L744,220" fill="#9BB880" stroke="#6B8850" stroke-width="1"/>
         </g>
 
         <!-- 路线阴影 -->
-        <path id="route-shadow" d="
-          M 905,168
-          C 890,200 860,250 830,288
-          C 800,330 740,370 685,378
-          C 660,382 640,395 615,420
-          C 560,470 520,510 470,535
-          C 410,530 360,495 310,458
-        " fill="none" stroke="#00000020" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M905,198 C890,220 855,258 828,288
+                 C800,325 745,365 690,378
+                 C660,385 638,398 613,420
+                 C558,468 518,508 468,532
+                 C410,528 360,495 310,458"
+              fill="none" stroke="#00000015" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 
         <!-- 主路线 -->
         <path id="route-path" d="
-          M 905,165
-          C 888,198 858,248 828,285
-          C 798,328 738,368 683,375
-          C 658,380 638,393 613,418
-          C 558,468 518,508 468,532
-          C 408,528 358,493 308,455
+          M 905,195
+          C 888,218 855,255 828,285
+          C 800,322 745,362 690,375
+          C 660,382 638,395 613,418
+          C 558,465 518,505 468,530
+          C 410,525 360,493 308,455
         " fill="none" stroke="url(#route-gradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
           stroke-dasharray="1800" stroke-dashoffset="1800"/>
 
-        <path id="route-dots" d="
-          M 905,165
-          C 888,198 858,248 828,285
-          C 798,328 738,368 683,375
-          C 658,380 638,393 613,418
-          C 558,468 518,508 468,532
-          C 408,528 358,493 308,455
-        " fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round"
-          stroke-dasharray="6,12" opacity="0.4"/>
+        <path d="M 905,195 C 888,218 855,255 828,285
+                 C 800,322 745,362 690,375
+                 C 660,382 638,395 613,418
+                 C 558,465 518,505 468,530
+                 C 410,525 360,493 308,455"
+              fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round"
+              stroke-dasharray="6,12" opacity="0.3"/>
 
         <!-- 方向箭头 -->
         <g class="route-arrows" opacity="0.5">
-          <polygon points="870,230 878,235 870,240" fill="#1A3A6B"/>
-          <polygon points="780,310 788,315 780,320" fill="#3D5A8E"/>
-          <polygon points="700,365 708,370 700,375" fill="#6B4570"/>
-          <polygon points="550,485 558,490 550,495" fill="#A04050"/>
+          <polygon points="870,242 878,247 870,252" fill="#1A3A6B"/>
+          <polygon points="780,335 788,340 780,345" fill="#3D5A8E"/>
+          <polygon points="700,375 708,380 700,385" fill="#6B4570"/>
+          <polygon points="550,488 558,493 550,498" fill="#A04050"/>
           <polygon points="380,480 388,475 380,470" fill="#C41E3A"/>
         </g>
 
         <!-- ===== 地点标记 ===== -->
         <g class="location-marker" data-location="hangzhou" style="cursor:pointer">
-          <circle cx="905" cy="165" r="22" fill="#1A3A6B" opacity="0.15" class="marker-pulse"/>
-          <circle cx="905" cy="165" r="14" fill="#1A3A6B" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
-          <text x="905" y="170" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold">起</text>
-          <text x="905" y="140" text-anchor="middle" class="marker-label" font-size="14">杭州</text>
-          <text x="905" y="125" text-anchor="middle" class="marker-date" font-size="10">1937.09</text>
+          <circle cx="905" cy="195" r="16" class="marker-pulse-ring" fill="#1A3A6B"/>
+          <circle cx="905" cy="195" r="14" fill="#1A3A6B" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
+          <text x="905" y="200" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold" class="marker-text">起</text>
+          <text x="905" y="170" text-anchor="middle" class="marker-label" font-size="15">杭州</text>
+          <text x="905" y="157" text-anchor="middle" class="marker-date" font-size="10">1937.09</text>
         </g>
 
         <g class="location-marker" data-location="xtianmu" style="cursor:pointer">
-          <circle cx="858" cy="215" r="18" fill="#2D5B8E" opacity="0.15" class="marker-pulse"/>
-          <circle cx="858" cy="215" r="11" fill="#2D5B8E" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
-          <text x="858" y="219" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">①</text>
-          <text x="858" y="245" text-anchor="middle" class="marker-label" font-size="12">西天目山</text>
+          <circle cx="870" cy="228" r="12" class="marker-pulse-ring" fill="#2D5B8E"/>
+          <circle cx="870" cy="228" r="11" fill="#2D5B8E" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="870" y="232" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">①</text>
+          <text x="870" y="255" text-anchor="middle" class="marker-label" font-size="12">西天目山</text>
         </g>
 
         <g class="location-marker" data-location="jiande" style="cursor:pointer">
-          <circle cx="828" cy="285" r="18" fill="#2D5B8E" opacity="0.15" class="marker-pulse"/>
-          <circle cx="828" cy="285" r="11" fill="#2D5B8E" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
-          <text x="828" y="289" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">②</text>
-          <text x="855" y="300" text-anchor="start" class="marker-label" font-size="12">建德</text>
+          <circle cx="845" cy="268" r="12" class="marker-pulse-ring" fill="#2D5B8E"/>
+          <circle cx="845" cy="268" r="11" fill="#2D5B8E" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="845" y="272" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">②</text>
+          <text x="872" y="275" text-anchor="start" class="marker-label" font-size="12">建德</text>
         </g>
 
         <g class="location-marker" data-location="yushan" style="cursor:pointer">
-          <circle cx="740" cy="345" r="18" fill="#5B7BAE" opacity="0.15" class="marker-pulse"/>
-          <circle cx="740" cy="345" r="11" fill="#5B7BAE" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
-          <text x="740" y="349" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">③</text>
-          <text x="740" y="330" text-anchor="middle" class="marker-label" font-size="12">玉山</text>
+          <circle cx="755" cy="335" r="12" class="marker-pulse-ring" fill="#5B7BAE"/>
+          <circle cx="755" cy="335" r="11" fill="#5B7BAE" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="755" y="339" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">③</text>
+          <text x="755" y="318" text-anchor="middle" class="marker-label" font-size="12">玉山</text>
         </g>
 
         <g class="location-marker" data-location="jian" style="cursor:pointer">
-          <circle cx="683" cy="375" r="18" fill="#8B4570" opacity="0.15" class="marker-pulse"/>
-          <circle cx="683" cy="375" r="11" fill="#8B4570" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
-          <text x="683" y="379" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">④</text>
-          <text x="683" y="400" text-anchor="middle" class="marker-label" font-size="12">吉安</text>
+          <circle cx="690" cy="375" r="12" class="marker-pulse-ring" fill="#8B4570"/>
+          <circle cx="690" cy="375" r="11" fill="#8B4570" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="690" y="379" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">④</text>
+          <text x="690" y="400" text-anchor="middle" class="marker-label" font-size="12">吉安</text>
         </g>
 
         <g class="location-marker" data-location="taihe" style="cursor:pointer">
-          <circle cx="660" cy="400" r="18" fill="#8B4570" opacity="0.15" class="marker-pulse"/>
-          <circle cx="660" cy="400" r="11" fill="#8B4570" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
-          <text x="660" y="404" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">⑤</text>
-          <text x="635" y="418" text-anchor="end" class="marker-label" font-size="12">泰和</text>
+          <circle cx="670" cy="400" r="12" class="marker-pulse-ring" fill="#8B4570"/>
+          <circle cx="670" cy="400" r="11" fill="#8B4570" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="670" y="404" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">⑤</text>
+          <text x="645" y="415" text-anchor="end" class="marker-label" font-size="12">泰和</text>
         </g>
 
         <g class="location-marker" data-location="yishan" style="cursor:pointer">
-          <circle cx="468" cy="532" r="18" fill="#A04050" opacity="0.15" class="marker-pulse"/>
-          <circle cx="468" cy="532" r="11" fill="#A04050" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
-          <text x="468" y="536" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold">⑥</text>
-          <text x="468" y="558" text-anchor="middle" class="marker-label" font-size="12">宜山</text>
+          <circle cx="468" cy="530" r="12" class="marker-pulse-ring" fill="#A04050"/>
+          <circle cx="468" cy="530" r="11" fill="#A04050" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="468" y="534" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">⑥</text>
+          <text x="468" y="556" text-anchor="middle" class="marker-label" font-size="12">宜山</text>
         </g>
 
         <g class="location-marker" data-location="zunyi" style="cursor:pointer">
-          <circle cx="330" cy="440" r="22" fill="#C41E3A" opacity="0.15" class="marker-pulse"/>
-          <circle cx="330" cy="440" r="14" fill="#C41E3A" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
-          <text x="330" y="445" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold">终</text>
-          <text x="305" y="425" text-anchor="end" class="marker-label" font-size="14">遵义</text>
-          <text x="305" y="412" text-anchor="end" class="marker-date" font-size="10">1940.02</text>
+          <circle cx="340" cy="430" r="16" class="marker-pulse-ring" fill="#C41E3A"/>
+          <circle cx="340" cy="430" r="14" fill="#C41E3A" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
+          <text x="340" y="435" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold" class="marker-text">终</text>
+          <text x="315" y="415" text-anchor="end" class="marker-label" font-size="15">遵义</text>
+          <text x="315" y="402" text-anchor="end" class="marker-date" font-size="10">1940.02</text>
         </g>
 
         <g class="location-marker" data-location="meitan" style="cursor:pointer">
-          <circle cx="285" cy="470" r="22" fill="#C41E3A" opacity="0.15" class="marker-pulse"/>
-          <circle cx="285" cy="470" r="14" fill="#C41E3A" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
-          <text x="285" y="475" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold">终</text>
-          <text x="260" y="490" text-anchor="end" class="marker-label" font-size="14">湄潭</text>
+          <circle cx="295" cy="462" r="16" class="marker-pulse-ring" fill="#C41E3A"/>
+          <circle cx="295" cy="462" r="14" fill="#C41E3A" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
+          <text x="295" y="467" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold" class="marker-text">终</text>
+          <text x="270" y="482" text-anchor="end" class="marker-label" font-size="15">湄潭</text>
         </g>
 
         <!-- 图例 -->
         <g transform="translate(50, 620)">
-          <rect x="0" y="0" width="200" height="100" fill="#FFF8EE" stroke="#C4A265" stroke-width="1" rx="6" opacity="0.9"/>
+          <rect x="0" y="0" width="210" height="105" fill="#FFF8EE" stroke="#C4A265" stroke-width="1" rx="6" opacity="0.92"/>
           <text x="15" y="22" font-size="13" font-weight="bold" fill="#333" font-family="'Noto Serif SC', serif">图 例</text>
-          <line x1="15" y1="30" x2="185" y2="30" stroke="#C4A265" stroke-width="0.5"/>
+          <line x1="15" y1="30" x2="195" y2="30" stroke="#C4A265" stroke-width="0.5"/>
           <circle cx="30" cy="48" r="6" fill="#1A3A6B" stroke="#FFF" stroke-width="1.5"/>
           <text x="45" y="52" font-size="11" fill="#555">起点（杭州）</text>
           <circle cx="30" cy="68" r="5" fill="#5B7BAE" stroke="#FFF" stroke-width="1.5"/>
           <text x="45" y="72" font-size="11" fill="#555">途经站点</text>
           <circle cx="30" cy="88" r="6" fill="#C41E3A" stroke="#FFF" stroke-width="1.5"/>
           <text x="45" y="92" font-size="11" fill="#555">终点（遵义·湄潭）</text>
-          <line x1="120" y1="45" x2="170" y2="45" stroke="url(#route-gradient)" stroke-width="3"/>
-          <text x="125" y="62" font-size="10" fill="#555">西迁路线</text>
+          <line x1="130" y1="48" x2="180" y2="48" stroke="url(#route-gradient)" stroke-width="3"/>
+          <text x="135" y="64" font-size="10" fill="#555">西迁路线</text>
+          <path d="M130,78 Q140,73 150,78" fill="none" stroke="#6BA3D6" stroke-width="1.5"/>
+          <text x="158" y="82" font-size="10" fill="#555">海岸线</text>
         </g>
 
         <!-- 比例尺 -->
@@ -269,12 +393,12 @@
         </g>
 
         <!-- 标题 -->
-        <text x="550" y="60" text-anchor="middle" font-family="'Ma Shan Zheng', cursive" font-size="28" fill="#1A3A6B" opacity="0.6">
+        <text x="550" y="55" text-anchor="middle" font-family="'Ma Shan Zheng', cursive" font-size="28" fill="#1A3A6B" opacity="0.6">
           文军长征 · 浙大西迁路线示意图
         </text>
 
         <!-- 指南针 -->
-        <g transform="translate(1020, 100)" opacity="0.5">
+        <g transform="translate(1020, 110)" opacity="0.5">
           <circle cx="0" cy="0" r="25" fill="none" stroke="#C4A265" stroke-width="1"/>
           <text x="0" y="-12" text-anchor="middle" font-size="12" fill="#C41E3A" font-weight="bold">N</text>
           <text x="0" y="18" text-anchor="middle" font-size="9" fill="#666">S</text>
@@ -286,27 +410,31 @@
       </svg>
     </div>
 
-    <!-- 路线统计 -->
+    <!-- 路线统计（扩展版） -->
     <div class="route-stats">
       <div class="stat-card">
         <div class="stat-icon">📅</div>
-        <div class="stat-value">1937—1946</div>
+        <div class="stat-value">1937 — 1946</div>
         <div class="stat-label">历时九年</div>
+        <div class="stat-desc">自1937年11月首次西迁至1946年秋回迁杭州，浙大师生在战火中度过了整整九年流亡办学生涯，是中国高校抗战西迁中历程最漫长、最艰苦的典范之一。</div>
       </div>
       <div class="stat-card">
         <div class="stat-icon">🗺️</div>
         <div class="stat-value">2,600+ km</div>
         <div class="stat-label">总行程</div>
+        <div class="stat-desc">浙大师生辗转迁移四次，途经铁路、水路、公路及步行，累计行程超过2600公里——堪比红军长征的距离，穿越崇山峻岭、大江大河，风餐露宿，艰难前行。</div>
       </div>
       <div class="stat-card">
         <div class="stat-icon">🏔️</div>
         <div class="stat-value">6 省区</div>
         <div class="stat-label">途经省份</div>
+        <div class="stat-desc">先后途经浙江、江西、湖南、广东、广西、贵州六个省区，沿途借用寺庙、书院、祠堂坚持办学，将教育的火种播撒在中国广袤的西南大地。</div>
       </div>
       <div class="stat-card">
         <div class="stat-icon">🎓</div>
-        <div class="stat-value">26 位</div>
-        <div class="stat-label">后来成为院士</div>
+        <div class="stat-value">26 位院士</div>
+        <div class="stat-label">西迁学子</div>
+        <div class="stat-desc">在西迁期间培养的学生中，有26人后来当选为中国科学院或中国工程院院士，包括李政道、程开甲等科学巨匠，堪称"烽火中的学术殿堂"。</div>
       </div>
     </div>
   </section>
@@ -316,17 +444,9 @@
     <div class="figure-card">
       <div class="figure-portrait">
         <div class="portrait-frame">
-          <svg viewBox="0 0 200 250" class="portrait-svg">
-            <rect width="200" height="250" fill="#FDF6E3" rx="8"/>
-            <circle cx="100" cy="90" r="45" fill="#E8D5B8" stroke="#8B7355" stroke-width="2"/>
-            <circle cx="85" cy="82" r="3" fill="#333"/>
-            <circle cx="115" cy="82" r="3" fill="#333"/>
-            <path d="M90,100 Q100,108 110,100" fill="none" stroke="#333" stroke-width="1.5"/>
-            <rect x="65" y="55" width="70" height="25" rx="3" fill="#333" opacity="0.8"/>
-            <path d="M60,135 Q100,120 140,135 L145,250 L55,250 Z" fill="#1A3A6B"/>
-            <rect x="85" y="135" width="30" height="40" fill="#FFF" opacity="0.3"/>
-            <text x="100" y="230" text-anchor="middle" fill="#FFF" font-size="12" font-weight="bold">竺可桢</text>
-          </svg>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/1963-05_1963%E5%B9%B4_%E7%AB%BA%E5%8F%AF%E6%A1%A2.jpg/440px-1963-05_1963%E5%B9%B4_%E7%AB%BA%E5%8F%AF%E6%A1%A2.jpg"
+               alt="竺可桢（1963年）" class="portrait-img" loading="lazy">
+          <div class="portrait-caption">竺可桢 · 1963年</div>
         </div>
       </div>
       <div class="figure-info">
