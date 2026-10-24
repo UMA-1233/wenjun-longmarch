@@ -1117,8 +1117,8 @@ body {
 /* 校徽剪影 */
 .bg-emblem {
   position: absolute;
-  color: var(--zju-blue);
-  opacity: 0.08;
+  opacity: 0.12;
+  pointer-events: none;
 }
 
 .bg-emblem-1 {
