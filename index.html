@@ -17,9 +17,26 @@
     <div class="bg-seal bg-seal-1">求是</div>
     <div class="bg-seal bg-seal-2">求是</div>
     <div class="bg-seal bg-seal-3">求是</div>
-    <!-- 校徽剪影（基于真实浙大校徽：双圈+求是鹰+浙江大学+1897） -->
-    <svg class="bg-emblem bg-emblem-1" viewBox="0 0 200 200"><circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="100" cy="100" r="78" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M35,105 A65,65 0 0,1 165,105" fill="none" stroke="none" id="topArc1"/><text font-size="15" font-weight="bold" fill="currentColor" letter-spacing="8"><textPath href="#topArc1" startOffset="18%">浙江大学</textPath></text><text x="100" y="170" text-anchor="middle" font-size="13" fill="currentColor" font-weight="bold">1897</text><path d="M100,50 C85,50 62,65 55,82 C62,78 70,76 78,78 C68,90 62,102 60,115 C70,105 80,98 92,95 C88,102 86,112 87,122 C92,112 98,104 106,98 C104,108 104,118 106,128 C110,118 116,110 124,104 C122,114 122,124 124,132 C128,122 134,114 142,108 C150,102 158,100 168,98 C158,78 135,50 100,50Z" fill="currentColor"/></svg>
-    <svg class="bg-emblem bg-emblem-2" viewBox="0 0 200 200"><circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="5"/><circle cx="100" cy="100" r="78" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M35,105 A65,65 0 0,1 165,105" fill="none" stroke="none" id="topArc2"/><text font-size="15" font-weight="bold" fill="currentColor" letter-spacing="8"><textPath href="#topArc2" startOffset="18%">浙江大学</textPath></text><text x="100" y="170" text-anchor="middle" font-size="13" fill="currentColor" font-weight="bold">1897</text><path d="M100,50 C85,50 62,65 55,82 C62,78 70,76 78,78 C68,90 62,102 60,115 C70,105 80,98 92,95 C88,102 86,112 87,122 C92,112 98,104 106,98 C104,108 104,118 106,128 C110,118 116,110 124,104 C122,114 122,124 124,132 C128,122 134,114 142,108 C150,102 158,100 168,98 C158,78 135,50 100,50Z" fill="currentColor"/></svg>
+    <!-- 校徽剪影（忠实还原浙大校徽：双圈+求是鹰+中英文校名+1897） -->
+    <svg class="bg-emblem bg-emblem-1" viewBox="0 0 200 200">
+      <defs><path id="emblemTopArc1" d="M30,100 A70,70 0 0,1 170,100"/><path id="emblemBotArc1" d="M40,108 A60,60 0 0,0 160,108"/></defs>
+      <circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="4"/>
+      <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="2"/>
+      <text font-size="18" font-weight="bold" fill="currentColor" letter-spacing="12"><textPath href="#emblemTopArc1" startOffset="50%" text-anchor="middle">浙江大学</textPath></text>
+      <text font-size="8" fill="currentColor" letter-spacing="2"><textPath href="#emblemBotArc1" startOffset="50%" text-anchor="middle">ZHEJIANG UNIVERSITY</textPath></text>
+      <text x="100" y="180" text-anchor="middle" font-size="12" fill="currentColor" font-weight="bold">1897</text>
+      <!-- 求是鹰：展翅鹰剪影 -->
+      <path d="M100,48 L96,52 L88,50 L82,53 L75,58 L68,65 L62,73 L58,82 L56,90 L58,86 L62,80 L68,76 L74,74 L80,74 L86,76 L84,82 L80,90 L78,98 L78,106 L80,100 L84,92 L90,86 L96,82 L100,80 L104,82 L110,86 L116,92 L120,100 L122,106 L122,98 L120,90 L116,82 L114,76 L120,74 L126,74 L132,76 L138,80 L142,86 L144,90 L142,82 L138,73 L132,65 L125,58 L118,53 L112,50 L104,52 Z" fill="currentColor"/>
+    </svg>
+    <svg class="bg-emblem bg-emblem-2" viewBox="0 0 200 200">
+      <defs><path id="emblemTopArc2" d="M30,100 A70,70 0 0,1 170,100"/><path id="emblemBotArc2" d="M40,108 A60,60 0 0,0 160,108"/></defs>
+      <circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="4"/>
+      <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="2"/>
+      <text font-size="18" font-weight="bold" fill="currentColor" letter-spacing="12"><textPath href="#emblemTopArc2" startOffset="50%" text-anchor="middle">浙江大学</textPath></text>
+      <text font-size="8" fill="currentColor" letter-spacing="2"><textPath href="#emblemBotArc2" startOffset="50%" text-anchor="middle">ZHEJIANG UNIVERSITY</textPath></text>
+      <text x="100" y="180" text-anchor="middle" font-size="12" fill="currentColor" font-weight="bold">1897</text>
+      <path d="M100,48 L96,52 L88,50 L82,53 L75,58 L68,65 L62,73 L58,82 L56,90 L58,86 L62,80 L68,76 L74,74 L80,74 L86,76 L84,82 L80,90 L78,98 L78,106 L80,100 L84,92 L90,86 L96,82 L100,80 L104,82 L110,86 L116,92 L120,100 L122,106 L122,98 L120,90 L116,82 L114,76 L120,74 L126,74 L132,76 L138,80 L142,86 L144,90 L142,82 L138,73 L132,65 L125,58 L118,53 L112,50 L104,52 Z" fill="currentColor"/>
+    </svg>
     <!-- 灿若星辰灯 -->
     <svg class="bg-lantern bg-lantern-1" viewBox="0 0 100 160"><ellipse cx="50" cy="80" rx="30" ry="45" fill="none" stroke="currentColor" stroke-width="2"/><line x1="50" y1="35" x2="50" y2="10" stroke="currentColor" stroke-width="2"/><circle cx="50" cy="8" r="5" fill="currentColor" opacity="0.5"/><path d="M35,125 L50,140 L65,125" fill="none" stroke="currentColor" stroke-width="2"/><line x1="50" y1="140" x2="50" y2="155" stroke="currentColor" stroke-width="1.5"/><ellipse cx="50" cy="80" rx="18" ry="28" fill="currentColor" opacity="0.08"/><text x="50" y="78" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.6">灿若</text><text x="50" y="92" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.6">星辰</text></svg>
     <svg class="bg-lantern bg-lantern-2" viewBox="0 0 100 160"><ellipse cx="50" cy="80" rx="30" ry="45" fill="none" stroke="currentColor" stroke-width="2"/><line x1="50" y1="35" x2="50" y2="10" stroke="currentColor" stroke-width="2"/><circle cx="50" cy="8" r="5" fill="currentColor" opacity="0.5"/><path d="M35,125 L50,140 L65,125" fill="none" stroke="currentColor" stroke-width="2"/><line x1="50" y1="140" x2="50" y2="155" stroke="currentColor" stroke-width="1.5"/><ellipse cx="50" cy="80" rx="18" ry="28" fill="currentColor" opacity="0.08"/><text x="50" y="78" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.6">灿若</text><text x="50" y="92" text-anchor="middle" font-size="10" fill="currentColor" opacity="0.6">星辰</text></svg>
@@ -228,108 +245,106 @@
         </g>
 
         <!-- 路线阴影 -->
-        <path d="M898,263 Q888,266 878,270 Q872,274 867,282
-                 Q850,296 830,312 Q818,318 804,327 Q799,332 794,340
-                 Q760,365 720,388 Q700,398 682,408
-                 Q650,396 619,383 Q610,386 601,393"
+        <path d="M934,237 Q918,236 902,235 Q898,250 895,266
+                 Q872,283 849,301 Q826,332 704,364
+                 Q702,369 701,375 Q563,420 424,465
+                 Q386,402 348,339 Q360,338 372,337"
               fill="none" stroke="#00000015" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 
         <!-- 主路线 -->
         <path id="route-path" d="
-          M 898,260
-          Q 888,264 878,268
-          Q 872,272 867,280
-          Q 848,295 830,310
-          Q 818,316 804,325
-          Q 799,330 794,338
-          Q 758,362 720,385
-          Q 700,396 682,406
-          Q 650,394 619,380
-          Q 610,384 601,390
+          M 934,237
+          Q 918,236 902,235
+          Q 898,250 895,266
+          Q 872,283 849,301
+          Q 826,332 704,364
+          Q 702,369 701,375
+          Q 563,420 424,465
+          Q 386,402 348,339
+          Q 360,338 372,337
         " fill="none" stroke="url(#route-gradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
           stroke-dasharray="1800" stroke-dashoffset="1800"/>
 
-        <path d="M 898,260 Q 888,264 878,268 Q 872,272 867,280
-                 Q 848,295 830,310 Q 818,316 804,325
-                 Q 799,330 794,338 Q 758,362 720,385
-                 Q 700,396 682,406 Q 650,394 619,380
-                 Q 610,384 601,390"
+        <path d="M 934,237 Q 918,236 902,235 Q 898,250 895,266
+                 Q 872,283 849,301 Q 826,332 704,364
+                 Q 702,369 701,375 Q 563,420 424,465
+                 Q 386,402 348,339 Q 360,338 372,337"
               fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round"
               stroke-dasharray="6,12" opacity="0.3"/>
 
         <!-- 方向箭头 -->
         <g class="route-arrows" opacity="0.5">
-          <polygon points="885,266 890,270 885,274" fill="#1A3A6B"/>
-          <polygon points="838,302 843,306 838,310" fill="#3D5A8E"/>
-          <polygon points="798,332 803,336 798,340" fill="#6B4570"/>
-          <polygon points="710,390 715,394 710,398" fill="#A04050"/>
-          <polygon points="645,394 640,390 635,394" fill="#C41E3A"/>
+          <polygon points="910,236 915,239 910,242" fill="#1A3A6B"/>
+          <polygon points="860,290 865,293 860,296" fill="#3D5A8E"/>
+          <polygon points="760,348 765,351 760,354" fill="#6B4570"/>
+          <polygon points="550,425 545,422 540,425" fill="#A04050"/>
+          <polygon points="380,370 375,367 370,370" fill="#C41E3A"/>
         </g>
 
         <!-- ===== 地点标记 ===== -->
         <g class="location-marker" data-location="hangzhou" style="cursor:pointer">
-          <circle cx="898" cy="260" r="16" class="marker-pulse-ring" fill="#1A3A6B"/>
-          <circle cx="898" cy="260" r="14" fill="#1A3A6B" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
-          <text x="898" y="265" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold" class="marker-text">起</text>
-          <text x="898" y="240" text-anchor="middle" class="marker-label" font-size="15">杭州</text>
-          <text x="898" y="227" text-anchor="middle" class="marker-date" font-size="10">1937.09</text>
+          <circle cx="934" cy="237" r="16" class="marker-pulse-ring" fill="#1A3A6B"/>
+          <circle cx="934" cy="237" r="14" fill="#1A3A6B" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
+          <text x="934" y="242" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold" class="marker-text">起</text>
+          <text x="934" y="217" text-anchor="middle" class="marker-label" font-size="15">杭州</text>
+          <text x="934" y="204" text-anchor="middle" class="marker-date" font-size="10">1937.09</text>
         </g>
 
         <g class="location-marker" data-location="xtianmu" style="cursor:pointer">
-          <circle cx="878" cy="268" r="12" class="marker-pulse-ring" fill="#2D5B8E"/>
-          <circle cx="878" cy="268" r="11" fill="#2D5B8E" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
-          <text x="878" y="272" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">①</text>
-          <text x="878" y="292" text-anchor="middle" class="marker-label" font-size="12">西天目山</text>
+          <circle cx="902" cy="235" r="12" class="marker-pulse-ring" fill="#2D5B8E"/>
+          <circle cx="902" cy="235" r="11" fill="#2D5B8E" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="902" y="239" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">①</text>
+          <text x="902" y="260" text-anchor="middle" class="marker-label" font-size="12">西天目山</text>
         </g>
 
         <g class="location-marker" data-location="jiande" style="cursor:pointer">
-          <circle cx="867" cy="280" r="12" class="marker-pulse-ring" fill="#2D5B8E"/>
-          <circle cx="867" cy="280" r="11" fill="#2D5B8E" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
-          <text x="867" y="284" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">②</text>
-          <text x="890" y="290" text-anchor="start" class="marker-label" font-size="12">建德</text>
+          <circle cx="895" cy="266" r="12" class="marker-pulse-ring" fill="#2D5B8E"/>
+          <circle cx="895" cy="266" r="11" fill="#2D5B8E" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="895" y="270" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">②</text>
+          <text x="918" y="276" text-anchor="start" class="marker-label" font-size="12">建德</text>
         </g>
 
         <g class="location-marker" data-location="yushan" style="cursor:pointer">
-          <circle cx="830" cy="310" r="12" class="marker-pulse-ring" fill="#5B7BAE"/>
-          <circle cx="830" cy="310" r="11" fill="#5B7BAE" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
-          <text x="830" y="314" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">③</text>
-          <text x="830" y="335" text-anchor="middle" class="marker-label" font-size="12">玉山</text>
+          <circle cx="849" cy="301" r="12" class="marker-pulse-ring" fill="#5B7BAE"/>
+          <circle cx="849" cy="301" r="11" fill="#5B7BAE" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="849" y="305" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">③</text>
+          <text x="849" y="326" text-anchor="middle" class="marker-label" font-size="12">玉山</text>
         </g>
 
         <g class="location-marker" data-location="jian" style="cursor:pointer">
-          <circle cx="804" cy="325" r="12" class="marker-pulse-ring" fill="#8B4570"/>
-          <circle cx="804" cy="325" r="11" fill="#8B4570" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
-          <text x="804" y="329" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">④</text>
-          <text x="804" y="350" text-anchor="middle" class="marker-label" font-size="12">吉安</text>
+          <circle cx="704" cy="364" r="12" class="marker-pulse-ring" fill="#8B4570"/>
+          <circle cx="704" cy="364" r="11" fill="#8B4570" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="704" y="368" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">④</text>
+          <text x="704" y="389" text-anchor="middle" class="marker-label" font-size="12">吉安</text>
         </g>
 
         <g class="location-marker" data-location="taihe" style="cursor:pointer">
-          <circle cx="794" cy="338" r="12" class="marker-pulse-ring" fill="#8B4570"/>
-          <circle cx="794" cy="338" r="11" fill="#8B4570" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
-          <text x="794" y="342" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">⑤</text>
-          <text x="772" y="350" text-anchor="end" class="marker-label" font-size="12">泰和</text>
+          <circle cx="701" cy="375" r="12" class="marker-pulse-ring" fill="#8B4570"/>
+          <circle cx="701" cy="375" r="11" fill="#8B4570" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="701" y="379" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">⑤</text>
+          <text x="679" y="387" text-anchor="end" class="marker-label" font-size="12">泰和</text>
         </g>
 
         <g class="location-marker" data-location="yishan" style="cursor:pointer">
-          <circle cx="682" cy="406" r="12" class="marker-pulse-ring" fill="#A04050"/>
-          <circle cx="682" cy="406" r="11" fill="#A04050" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
-          <text x="682" y="410" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">⑥</text>
-          <text x="682" y="430" text-anchor="middle" class="marker-label" font-size="12">宜山</text>
+          <circle cx="424" cy="465" r="12" class="marker-pulse-ring" fill="#A04050"/>
+          <circle cx="424" cy="465" r="11" fill="#A04050" stroke="#FFF" stroke-width="2.5" filter="url(#shadow)"/>
+          <text x="424" y="469" text-anchor="middle" fill="#FFF" font-size="8" font-weight="bold" class="marker-text">⑥</text>
+          <text x="424" y="490" text-anchor="middle" class="marker-label" font-size="12">宜山</text>
         </g>
 
         <g class="location-marker" data-location="zunyi" style="cursor:pointer">
-          <circle cx="619" cy="380" r="16" class="marker-pulse-ring" fill="#C41E3A"/>
-          <circle cx="619" cy="380" r="14" fill="#C41E3A" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
-          <text x="619" y="385" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold" class="marker-text">终</text>
-          <text x="597" y="368" text-anchor="end" class="marker-label" font-size="15">遵义</text>
-          <text x="597" y="355" text-anchor="end" class="marker-date" font-size="10">1940.02</text>
+          <circle cx="348" cy="339" r="16" class="marker-pulse-ring" fill="#C41E3A"/>
+          <circle cx="348" cy="339" r="14" fill="#C41E3A" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
+          <text x="348" y="344" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold" class="marker-text">终</text>
+          <text x="326" y="327" text-anchor="end" class="marker-label" font-size="15">遵义</text>
+          <text x="326" y="314" text-anchor="end" class="marker-date" font-size="10">1940.02</text>
         </g>
 
         <g class="location-marker" data-location="meitan" style="cursor:pointer">
-          <circle cx="601" cy="390" r="16" class="marker-pulse-ring" fill="#C41E3A"/>
-          <circle cx="601" cy="390" r="14" fill="#C41E3A" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
-          <text x="601" y="395" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold" class="marker-text">终</text>
-          <text x="579" y="408" text-anchor="end" class="marker-label" font-size="15">湄潭</text>
+          <circle cx="372" cy="337" r="16" class="marker-pulse-ring" fill="#C41E3A"/>
+          <circle cx="372" cy="337" r="14" fill="#C41E3A" stroke="#FFF" stroke-width="3" filter="url(#shadow)"/>
+          <text x="372" y="342" text-anchor="middle" fill="#FFF" font-size="10" font-weight="bold" class="marker-text">终</text>
+          <text x="394" y="325" text-anchor="start" class="marker-label" font-size="15">湄潭</text>
         </g>
 
         <!-- 图例 -->
