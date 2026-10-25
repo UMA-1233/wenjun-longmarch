@@ -42,7 +42,7 @@
 
 
 
-  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="stylesheet" href="css/style.css?v=7">
 
 
 
@@ -1248,35 +1248,73 @@
 
 
 
-  <!-- ========== 沉浸模式浮层 ========== -->
+  <!-- ========== 沉浸模式浮层（增强版） ========== -->
 
   <div id="immersive-overlay" class="immersive-overlay">
 
-    <div class="immersive-controls">
+    <div class="immersive-story-card">
 
-      <button class="immersive-btn" onclick="immersivePrev()">←</button>
-
-      <div class="immersive-info">
+      <div class="immersive-header">
 
         <div class="immersive-counter" id="immersive-counter"></div>
 
-        <h3 class="immersive-title" id="immersive-title"></h3>
-
-        <p class="immersive-text" id="immersive-text"></p>
+        <button class="immersive-exit" onclick="toggleImmersive()">✕ 退出</button>
 
       </div>
 
-      <button class="immersive-btn" onclick="immersiveNext()">→</button>
+      <h3 class="immersive-title" id="immersive-title"></h3>
+
+      <p class="immersive-text" id="immersive-text"></p>
+
+      <div class="immersive-controls">
+
+        <button class="immersive-btn" onclick="immersivePrev()">← 上一站</button>
+
+        <button class="immersive-btn-small" id="immersive-autoplay" onclick="toggleAutoplay()">▶ 自动播放</button>
+
+        <button class="immersive-btn" onclick="immersiveNext()">下一站 →</button>
+
+      </div>
+
+      <div class="immersive-progress">
+
+        <div class="immersive-progress-bar">
+
+          <div class="immersive-progress-fill" id="immersive-progress-fill"></div>
+
+        </div>
+
+        <div class="immersive-stop-dots">
+
+          <span class="immersive-stop-dot current" onclick="jumpToImmersive(0)"></span>
+
+          <span class="immersive-stop-dot" onclick="jumpToImmersive(1)"></span>
+
+          <span class="immersive-stop-dot" onclick="jumpToImmersive(2)"></span>
+
+          <span class="immersive-stop-dot" onclick="jumpToImmersive(3)"></span>
+
+          <span class="immersive-stop-dot" onclick="jumpToImmersive(4)"></span>
+
+          <span class="immersive-stop-dot" onclick="jumpToImmersive(5)"></span>
+
+          <span class="immersive-stop-dot" onclick="jumpToImmersive(6)"></span>
+
+          <span class="immersive-stop-dot" onclick="jumpToImmersive(7)"></span>
+
+          <span class="immersive-stop-dot" onclick="jumpToImmersive(8)"></span>
+
+        </div>
+
+      </div>
 
     </div>
-
-    <button class="immersive-exit" onclick="toggleImmersive()">退出沉浸模式 ✕</button>
 
   </div>
 
 
 
-  <script src="js/main.js?v=6"></script>
+  <script src="js/main.js?v=7"></script>
 
 </body>
 
