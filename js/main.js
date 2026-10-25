@@ -20381,150 +20381,27 @@ function renderScholars() {
 
 function openScholarModal(idx) {
 
-
-
-
-
-
-
   const s = scholarData[idx];
 
-
-
-
-
-
-
-  const content = '<div class="scholar-modal-content">' +
-
-
-
-
-
-
-
-    (s.photo ? '<img src="' + s.photo + '" alt="' + s.name + '" class="scholar-modal-photo">' : '<div class="scholar-modal-portrait"><div class="portrait-seal-large">' + s.name + '</div></div>') +
-
-
-
-
-
-
-
-    '<h2>' + s.name + ' <span style="font-size:0.6em;color:#888;">' + s.years + '</span></h2>' +
-
-
-
-
-
-
-
-    '<div class="scholar-modal-title">' + s.title + '</div>' +
-
-
-
-
-
-
-
-    '<p class="scholar-modal-achievement">' + s.achievement + '</p>' +
-
-
-
-
-
-
-
-    '<blockquote class="scholar-modal-quote">"' + s.quote + '"</blockquote>' +
-
-
-
-
-
-
-
-  '</div>';
-
-
-
-
-
-
-
+  // 先修改弹窗结构，隐藏不相关的部分
   const modal = document.getElementById('location-modal');
-
-
-
-
-
-
-
-  const body = modal.querySelector('.location-modal-body');
-
-
-
-
-
-
-
-  const header = document.getElementById('loc-header-bg');
-
-
-
-
-
-
-
-  header.style.background = 'linear-gradient(135deg, #1A3A6B 0%, #2D5B8E 100%)';
-
-
-
-
-
-
-
-  document.getElementById('loc-number').textContent = '学者';
-
-
-
-
-
-
-
-  document.getElementById('loc-name').textContent = s.name;
-
-
-
-
-
-
-
-  document.getElementById('loc-period').textContent = s.title;
-
-
-
-
-
-
-
-  document.getElementById('loc-story').textContent = s.achievement;
-
-
-  // 修改"红色景区与遗址"标题为"学术名言"
   const sitesSection = document.getElementById('loc-sites').parentElement;
+  const highlightsSection = document.getElementById('loc-highlights').parentElement;
+
+  // 修改"红色景区与遗址"标题为"名言"
   if (sitesSection) {
     const sitesTitle = sitesSection.querySelector('h4');
     if (sitesTitle) {
-      sitesTitle.textContent = '💬 学术名言';
+      sitesTitle.innerHTML = '💬 名言';
     }
   }
 
-
   // 隐藏"文旅看点"部分
-  const highlightsSection = document.getElementById('loc-highlights').parentElement;
   if (highlightsSection) {
     highlightsSection.style.display = 'none';
   }
+
+  
 
 
 
