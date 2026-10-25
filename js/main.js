@@ -2,11 +2,23 @@
 
 
 
+
+
+
+
    文军长征 — 浙江大学西迁文旅路线
 
 
 
+
+
+
+
    JavaScript 交互逻辑与数据
+
+
+
+
 
 
 
@@ -18,7 +30,19 @@
 
 
 
+
+
+
+
+
+
+
+
 // ===== 地点数据 =====
+
+
+
+
 
 
 
@@ -26,7 +50,15 @@ const locationData = {
 
 
 
+
+
+
+
   hangzhou: {
+
+
+
+
 
 
 
@@ -34,7 +66,15 @@ const locationData = {
 
 
 
+
+
+
+
     number: "起点",
+
+
+
+
 
 
 
@@ -42,7 +82,15 @@ const locationData = {
 
 
 
+
+
+
+
     color: "#1A3A6B",
+
+
+
+
 
 
 
@@ -50,7 +98,15 @@ const locationData = {
 
 
 
+
+
+
+
     lng: 120.2053,
+
+
+
+
 
 
 
@@ -58,7 +114,15 @@ const locationData = {
 
 
 
+
+
+
+
     sites: [
+
+
+
+
 
 
 
@@ -66,7 +130,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "求是书院旧址", desc: "浙江大学前身，创建于1897年，是中国近代史上效法西方学制最早的一所高等学府。现为浙江省文物保护单位。" },
+
+
+
+
 
 
 
@@ -74,21 +146,47 @@ const locationData = {
 
 
 
+
+
+
+
     ],
 
 
 
-    highlights: ["浙大校园近代建筑群", "求是书院旧址", "竺可桢铜像", "西迁历史陈列馆", "西湖文化景观"]
+
+
+
+
+    highlights: ["浙大校园近代建筑群", "求是书院旧址", "竺可桢铜像", "西迁历史陈列馆", "西湖文化景观"],
+
+
 
     season: "四季皆宜，春秋最佳（3-5月、9-11月）",
 
+
+
     weather: "春：10-22°C 多雨 | 夏：25-35°C 炎热 | 秋：15-25°C 晴朗 | 冬：2-10°C 阴冷",
+
+
 
     food: ["西湖醋鱼", "东坡肉", "龙井虾仁", "知味观小笼包"]
 
 
 
+
+
+
+
   },
+
+
+
+
+
+
+
+
 
 
 
@@ -100,7 +198,15 @@ const locationData = {
 
 
 
+
+
+
+
     name: "西天目山",
+
+
+
+
 
 
 
@@ -108,7 +214,15 @@ const locationData = {
 
 
 
+
+
+
+
     period: "1937年9月 — 1937年11月",
+
+
+
+
 
 
 
@@ -116,7 +230,15 @@ const locationData = {
 
 
 
+
+
+
+
     lat: 30.3495,
+
+
+
+
 
 
 
@@ -124,7 +246,15 @@ const locationData = {
 
 
 
+
+
+
+
     story: "1937年9月，浙大将一年级新生约200人迁至浙西天目山禅源寺办学。这里山深林密，远离战火，师生们借寺院为教室，以山林为课堂，在袅袅梵音中开始了战时的大学生活。竺可桢亲自来到这里，为学生讲授\"大学生之责任\"。然而仅两个月后，随着战局急转直下，天目山也不再安全，师生们不得不踏上更远的西迁之路。这是文军长征的第一步，也是浙大\"流亡办学\"的起点。",
+
+
+
+
 
 
 
@@ -132,7 +262,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "禅源寺", desc: "浙大一年级在此借寺办学，禅源寺始建于明代，是天目山最大的寺院。现寺内设有浙大西迁纪念展览。" },
+
+
+
+
 
 
 
@@ -140,7 +278,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "天目山自然保护区", desc: "国家级自然保护区，浙大师生曾在此进行大量的生物学、生态学野外考察，开创了中国近代生态学研究的先河。" }
+
+
+
+
 
 
 
@@ -148,17 +294,39 @@ const locationData = {
 
 
 
-    highlights: ["禅源寺西迁办学旧址", "天目山抗战纪念设施", "古柳杉群落", "竺可桢考察路线", "森林生态教育基地"]
+
+
+
+
+    highlights: ["禅源寺西迁办学旧址", "天目山抗战纪念设施", "古柳杉群落", "竺可桢考察路线", "森林生态教育基地"],
+
+
 
     season: "夏秋最佳（6-10月避暑观叶）",
 
+
+
     weather: "春：8-20°C | 夏：18-28°C 凉爽 | 秋：10-22°C 红叶 | 冬：-2-8°C 雪景",
+
+
 
     food: ["天目山笋干", "山核桃", "高山云雾茶", "农家土鸡煲"]
 
 
 
+
+
+
+
   },
+
+
+
+
+
+
+
+
 
 
 
@@ -170,7 +338,15 @@ const locationData = {
 
 
 
+
+
+
+
     name: "建德",
+
+
+
+
 
 
 
@@ -178,7 +354,15 @@ const locationData = {
 
 
 
+
+
+
+
     period: "1937年11月 — 1937年12月",
+
+
+
+
 
 
 
@@ -186,7 +370,15 @@ const locationData = {
 
 
 
+
+
+
+
     lat: 29.5435,
+
+
+
+
 
 
 
@@ -194,7 +386,15 @@ const locationData = {
 
 
 
+
+
+
+
     story: "1937年11月，苏州、嘉兴相继沦陷，日军直逼杭州。竺可桢决定将全校迁至浙西建德（今建德市梅城镇）。师生们乘船沿富春江而上，携带着珍贵的图书仪器，在严子陵钓台畔短暂停留。在建德，浙大借用林场、教堂和民房坚持上课。但建德也并非久留之地——随着南京沦陷、日军沿江西进，浙大师生在建德仅停留一个多月，便又匆匆启程，向江西方向转移。在极其仓促的转移中，大量图书设备损失严重。",
+
+
+
+
 
 
 
@@ -202,7 +402,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "梅城古镇（严州古城）", desc: "建德古府城所在地，浙大曾在此借用城墙内的学堂和民房办学。古镇保留了大量明清建筑和古城墙遗址。" },
+
+
+
+
 
 
 
@@ -210,7 +418,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "新安江水电站", desc: "新中国成立后建设的中国第一座自行设计的大型水电站，与千岛湖相邻，体现了中国人民自力更生的精神。" }
+
+
+
+
 
 
 
@@ -218,17 +434,39 @@ const locationData = {
 
 
 
-    highlights: ["严州古城墙遗址", "富春江山水风光", "严子陵钓台", "浙大办学旧址遗迹", "梅城古镇明清建筑"]
+
+
+
+
+    highlights: ["严州古城墙遗址", "富春江山水风光", "严子陵钓台", "浙大办学旧址遗迹", "梅城古镇明清建筑"],
+
+
 
     season: "春夏最佳（4-9月游富春江）",
 
+
+
     weather: "春：12-24°C | 夏：24-34°C | 秋：14-24°C | 冬：3-11°C",
+
+
 
     food: ["严州干菜鸭", "新安江江鲜", "建德豆腐包", "三都麻糍"]
 
 
 
+
+
+
+
   },
+
+
+
+
+
+
+
+
 
 
 
@@ -240,7 +478,15 @@ const locationData = {
 
 
 
+
+
+
+
     name: "玉山",
+
+
+
+
 
 
 
@@ -248,7 +494,15 @@ const locationData = {
 
 
 
+
+
+
+
     period: "1937年12月底 — 1938年1月",
+
+
+
+
 
 
 
@@ -256,7 +510,15 @@ const locationData = {
 
 
 
+
+
+
+
     lat: 28.6767,
+
+
+
+
 
 
 
@@ -264,7 +526,15 @@ const locationData = {
 
 
 
+
+
+
+
     story: "1937年12月底，浙大师生从建德出发，辗转抵达江西玉山。此时正值隆冬，天降大雪，交通断绝，师生们被困于玉山风雪中长达十余天。竺可桢每日奔走于铁路部门和地方政府之间，千方百计筹集车皮和给养。在他的不懈努力下，终于打通了浙赣铁路的运输通道，使全校师生得以继续南行。这段冰天雪地中的艰难跋涉，成为文军长征中最为艰苦的篇章之一。",
+
+
+
+
 
 
 
@@ -272,7 +542,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "玉山古城", desc: "始建于唐代的古城，保留了部分明清时期的街巷和建筑格局。浙大师生曾在此避雪暂住。" },
+
+
+
+
 
 
 
@@ -280,7 +558,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "浙赣铁路遗址（玉山段）", desc: "浙赣铁路是抗战初期东南沿海向内地转移的重要交通命脉，浙大师生正是沿此线路完成了最艰难的一段转移。" }
+
+
+
+
 
 
 
@@ -288,17 +574,39 @@ const locationData = {
 
 
 
-    highlights: ["玉山古城街巷", "三清山世界遗产", "浙赣铁路历史遗迹", "怀玉山红色革命根据地", "玉山抗战纪念设施"]
+
+
+
+
+    highlights: ["玉山古城街巷", "三清山世界遗产", "浙赣铁路历史遗迹", "怀玉山红色革命根据地", "玉山抗战纪念设施"],
+
+
 
     season: "春秋最佳（3-5月、9-11月登三清山）",
 
+
+
     weather: "春：12-24°C | 夏：24-33°C 炎热 | 秋：15-25°C | 冬：3-12°C",
+
+
 
     food: ["玉山三清土菜", "弋阳年糕", "上饶鸡腿", "铅山烫粉"]
 
 
 
+
+
+
+
   },
+
+
+
+
+
+
+
+
 
 
 
@@ -310,7 +618,15 @@ const locationData = {
 
 
 
+
+
+
+
     name: "吉安",
+
+
+
+
 
 
 
@@ -318,7 +634,15 @@ const locationData = {
 
 
 
+
+
+
+
     period: "1938年1月 — 1938年6月",
+
+
+
+
 
 
 
@@ -326,7 +650,15 @@ const locationData = {
 
 
 
+
+
+
+
     lat: 27.0875,
+
+
+
+
 
 
 
@@ -334,7 +666,15 @@ const locationData = {
 
 
 
+
+
+
+
     story: "1938年初，浙大师生历经艰辛终于抵达江西吉安。江西省政府将吉安县青原山的净居寺及周围房舍拨给浙大使用。在青原山下，浙大师生利用寺庙和祠堂作为教室和宿舍，迅速恢复了教学秩序。这一时期，浙大还增设了师范学院，扩大了办学规模。吉安地处井冈山脚下，是一片充满革命传统的热土。师生们在此深受红色文化感染，更加坚定了教育救国的信念。半年后，因战局变化和办学条件限制，浙大再次迁往附近的泰和县。",
+
+
+
+
 
 
 
@@ -342,7 +682,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "青原山净居寺", desc: "始建于唐代的千年古刹，浙大在此办学半年之久。寺内至今保留有浙大办学时期的历史痕迹和纪念牌匾。" },
+
+
+
+
 
 
 
@@ -350,7 +698,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "吉安革命烈士纪念馆", desc: "纪念在革命斗争中牺牲的吉安籍烈士，展示了吉安作为革命老区的辉煌历史。" }
+
+
+
+
 
 
 
@@ -358,17 +714,39 @@ const locationData = {
 
 
 
-    highlights: ["青原山浙大办学旧址", "井冈山革命圣地", "净居寺古建筑群", "吉安红色革命纪念馆", "庐陵文化生态园"]
+
+
+
+
+    highlights: ["青原山浙大办学旧址", "井冈山革命圣地", "净居寺古建筑群", "吉安红色革命纪念馆", "庐陵文化生态园"],
+
+
 
     season: "春秋最佳（3-5月、9-11月）",
 
+
+
     weather: "春：14-26°C | 夏：26-36°C 炎热 | 秋：16-28°C | 冬：4-12°C",
+
+
 
     food: ["吉安炒粉", "永和豆腐", "井冈山红米饭", "遂川板鸭"]
 
 
 
+
+
+
+
   },
+
+
+
+
+
+
+
+
 
 
 
@@ -380,7 +758,15 @@ const locationData = {
 
 
 
+
+
+
+
     name: "泰和",
+
+
+
+
 
 
 
@@ -388,7 +774,15 @@ const locationData = {
 
 
 
+
+
+
+
     period: "1938年2月 — 1938年10月",
+
+
+
+
 
 
 
@@ -396,7 +790,15 @@ const locationData = {
 
 
 
+
+
+
+
     lat: 26.7800,
+
+
+
+
 
 
 
@@ -404,7 +806,15 @@ const locationData = {
 
 
 
+
+
+
+
     story: "1938年春，浙大迁至江西泰和县，借用大原书院（即白鹭洲书院）旧址办学。泰和是一座历史悠久的文化名城，白鹭洲书院更是宋代以来的著名学府。浙大师生在这座千年书院中讲授现代科学，古今交融，蔚为壮观。在此期间，竺可桢积极推动学术研究，浙大的科研水平有了显著提高。师生们还利用课余时间深入农村，开展社会调查和抗日宣传。1938年秋，日军逼近江西，浙大不得不再次踏上西迁之路，经湖南前往广西。",
+
+
+
+
 
 
 
@@ -412,7 +822,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "白鹭洲书院", desc: "创建于南宋淳祐元年(1241年)的千年学府，与白鹿洞书院、鹅湖书院并称江西三大书院。浙大在此办学期间，竺可桢曾多次在此演讲。现为全国重点文物保护单位。" },
+
+
+
+
 
 
 
@@ -420,7 +838,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "浙江大学西迁旧址（泰和）", desc: "浙大在泰和办学的遗迹已被列为文物保护单位，当地建有纪念标志和说明牌。" }
+
+
+
+
 
 
 
@@ -428,17 +854,39 @@ const locationData = {
 
 
 
-    highlights: ["白鹭洲书院古建筑群", "浙大办学纪念标志", "泰和古城风貌", "赣江风光", "红色革命纪念设施"]
+
+
+
+
+    highlights: ["白鹭洲书院古建筑群", "浙大办学纪念标志", "泰和古城风貌", "赣江风光", "红色革命纪念设施"],
+
+
 
     season: "春秋最佳（3-5月、9-11月）",
 
+
+
     weather: "春：14-26°C | 夏：26-35°C | 秋：17-28°C | 冬：4-12°C",
+
+
 
     food: ["泰和乌鸡（正宗产地）", "遂川狗牯脑茶", "吉安薄酥饼", "赣南脐橙"]
 
 
 
+
+
+
+
   },
+
+
+
+
+
+
+
+
 
 
 
@@ -450,7 +898,15 @@ const locationData = {
 
 
 
+
+
+
+
     name: "宜山",
+
+
+
+
 
 
 
@@ -458,7 +914,15 @@ const locationData = {
 
 
 
+
+
+
+
     period: "1938年11月 — 1940年1月",
+
+
+
+
 
 
 
@@ -466,7 +930,15 @@ const locationData = {
 
 
 
+
+
+
+
     lat: 24.4700,
+
+
+
+
 
 
 
@@ -474,7 +946,15 @@ const locationData = {
 
 
 
+
+
+
+
     story: "1938年秋，浙大从泰和出发，经湖南长沙、桂林，辗转抵达广西宜山（今宜州市）。1938年11月1日，竺可桢在宜山开学典礼上发表了著名演讲《王阳明与大学生的典范》，以王阳明的\"求是\"精神、遇险不畏精神、艰苦卓绝精神激励全校师生，并将\"求是\"正式确立为浙大校训。在宜山期间，浙大虽然条件极为艰苦——教室是用竹子和茅草搭建的棚子，但师生们的学术研究热情不减，理学院、农学院等都取得了重要的科研成果。1940年初，因广西战局紧张，浙大决定再次西迁至贵州。",
+
+
+
+
 
 
 
@@ -482,7 +962,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "浙大西迁宜山办学旧址", desc: "位于今河池市宜州区，保留有浙大当年办学的部分建筑和遗址，当地已设立纪念标志。" },
+
+
+
+
 
 
 
@@ -490,7 +978,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "百色起义纪念园", desc: "位于广西百色市，纪念1929年邓小平领导的百色起义。虽距宜山较远，但同属广西红色旅游重要节点。" }
+
+
+
+
 
 
 
@@ -498,17 +994,39 @@ const locationData = {
 
 
 
-    highlights: ["浙大办学旧址纪念地", "刘三姐文化景区", "下枧河田园风光", "会仙山摩崖石刻", "壮族民俗风情"]
+
+
+
+
+    highlights: ["浙大办学旧址纪念地", "刘三姐文化景区", "下枧河田园风光", "会仙山摩崖石刻", "壮族民俗风情"],
+
+
 
     season: "夏秋最佳（5-10月下枧河漂流）",
 
+
+
     weather: "春：16-26°C | 夏：24-34°C 多雨 | 秋：18-28°C | 冬：8-16°C",
+
+
 
     food: ["宜州鱼生（生鱼片）", "五色糯米饭", "豆腐圆", "红兰酒"]
 
 
 
+
+
+
+
   },
+
+
+
+
+
+
+
+
 
 
 
@@ -520,7 +1038,15 @@ const locationData = {
 
 
 
+
+
+
+
     name: "遵义",
+
+
+
+
 
 
 
@@ -528,7 +1054,15 @@ const locationData = {
 
 
 
+
+
+
+
     period: "1940年2月 — 1946年秋",
+
+
+
+
 
 
 
@@ -536,7 +1070,15 @@ const locationData = {
 
 
 
+
+
+
+
     lat: 27.7255,
+
+
+
+
 
 
 
@@ -544,7 +1086,15 @@ const locationData = {
 
 
 
+
+
+
+
     story: "1940年2月，浙大师生历经两年多的颠沛流离，终于抵达贵州遵义。遵义是中国革命的圣地——1935年1月，中共中央在此召开了具有伟大历史意义的遵义会议，确立了毛泽东在全党全军的领导地位。浙大来到这片红色热土后，在竺可桢校长的领导下，迅速安定下来并恢复办学。文、理、工、农、师范五个学院分布于遵义城内外，教学科研全面展开。在此七年时间里，浙大从一所地方大学崛起为享誉中外的名校，被英国学者李约瑟誉为\"东方剑桥\"。",
+
+
+
+
 
 
 
@@ -552,7 +1102,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "遵义会议会址", desc: "全国重点文物保护单位，国家AAAAA级景区。1935年1月中共中央政治局扩大会议在此召开，是中国革命的伟大转折点。这是红色旅游最重要的目的地之一。" },
+
+
+
+
 
 
 
@@ -560,7 +1118,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "浙大遵义办学旧址", desc: "浙大在遵义办学期间使用过的多处建筑，包括老城子弹库（校本部）、江公祠等地，部分遗迹至今犹存。" }
+
+
+
+
 
 
 
@@ -568,17 +1134,39 @@ const locationData = {
 
 
 
-    highlights: ["遵义会议会址", "红军山烈士陵园", "浙大西迁办学旧址", "海龙屯世界遗产", "赤水丹霞世界遗产"]
+
+
+
+
+    highlights: ["遵义会议会址", "红军山烈士陵园", "浙大西迁办学旧址", "海龙屯世界遗产", "赤水丹霞世界遗产"],
+
+
 
     season: "春秋最佳（3-5月、9-11月）",
 
+
+
     weather: "春：12-22°C | 夏：20-30°C 多雨 | 秋：14-24°C | 冬：4-12°C",
+
+
 
     food: ["遵义羊肉粉", "豆花面", "鸡蛋糕（老字号）", "虾子辣椒"]
 
 
 
+
+
+
+
   },
+
+
+
+
+
+
+
+
 
 
 
@@ -590,7 +1178,15 @@ const locationData = {
 
 
 
+
+
+
+
     name: "湄潭",
+
+
+
+
 
 
 
@@ -598,7 +1194,15 @@ const locationData = {
 
 
 
+
+
+
+
     period: "1940年2月 — 1946年秋",
+
+
+
+
 
 
 
@@ -606,7 +1210,15 @@ const locationData = {
 
 
 
+
+
+
+
     lat: 27.7499,
+
+
+
+
 
 
 
@@ -614,7 +1226,15 @@ const locationData = {
 
 
 
+
+
+
+
     story: "与遵义同时，浙大农学院、理学院和部分文学院的师生迁至距遵义约70公里的湄潭县。在这座偏僻的黔北小县城，浙大师生创造了中国高等教育史上的奇迹。没有像样的教室，就在文庙、祠堂和民房中上课；没有实验室，就在茅草棚中做实验。然而，正是在这样艰苦的条件下，苏步青、陈建功、王淦昌、谈家桢、贝时璋等一大批著名学者潜心治学，取得了世界级的学术成果。李约瑟到访湄潭后惊叹不已，称浙大为\"东方剑桥\"。湄潭办学七年间培养的学生中，有26人后来成为中国科学院或中国工程院院士。",
+
+
+
+
 
 
 
@@ -622,7 +1242,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "浙江大学西迁历史陈列馆（湄潭）", desc: "全国唯一以西迁办学为主题的专题陈列馆，位于湄潭县文庙内。馆内陈列有大量珍贵的历史照片、文献资料和实物，全面展示了文军长征的壮丽历程。全国重点文物保护单位。" },
+
+
+
+
 
 
 
@@ -630,7 +1258,15 @@ const locationData = {
 
 
 
+
+
+
+
       { name: "浙大教授故居群", desc: "苏步青、谈家桢等教授在湄潭的住所旧址，多为当地民居和祠堂，部分已列为文物保护单位。" }
+
+
+
+
 
 
 
@@ -638,17 +1274,35 @@ const locationData = {
 
 
 
-    highlights: ["浙大西迁历史陈列馆", "湄潭文庙古建筑", "教授故居群", "湄潭茶海（万亩茶园）", "浙大广场纪念遗址"]
+
+
+
+
+    highlights: ["浙大西迁历史陈列馆", "湄潭文庙古建筑", "教授故居群", "湄潭茶海（万亩茶园）", "浙大广场纪念遗址"],
+
+
 
     season: "春夏最佳（4-7月万亩茶海采茶季）",
 
+
+
     weather: "春：12-22°C | 夏：20-28°C 多雨 | 秋：14-22°C | 冬：4-11°C",
+
+
 
     food: ["湄潭翠芽（中国名茶）", "油茶汤", "蛋炒饭（茶海特色）", "遵义鸡蛋糕"]
 
 
 
+
+
+
+
   }
+
+
+
+
 
 
 
@@ -660,7 +1314,19 @@ const locationData = {
 
 
 
+
+
+
+
+
+
+
+
 // ===== 时间轴数据 =====
+
+
+
+
 
 
 
@@ -668,7 +1334,15 @@ const timelineData = [
 
 
 
+
+
+
+
   { date: "1936年4月", event: "竺可桢出任浙江大学校长，确立\"求是\"校训" },
+
+
+
+
 
 
 
@@ -676,7 +1350,15 @@ const timelineData = [
 
 
 
+
+
+
+
   { date: "1937年9月", event: "一年级新生迁至浙西天目山禅源寺" },
+
+
+
+
 
 
 
@@ -684,7 +1366,15 @@ const timelineData = [
 
 
 
+
+
+
+
   { date: "1937年12月", event: "经浙赣铁路迁至江西，途中困于玉山风雪" },
+
+
+
+
 
 
 
@@ -692,7 +1382,15 @@ const timelineData = [
 
 
 
+
+
+
+
   { date: "1938年2月", event: "迁至泰和县，借白鹭洲书院办学" },
+
+
+
+
 
 
 
@@ -700,7 +1398,15 @@ const timelineData = [
 
 
 
+
+
+
+
   { date: "1938年11月", event: "抵达广西宜山，竺可桢发表《王阳明与大学生的典范》演讲，\"求是\"正式定为校训" },
+
+
+
+
 
 
 
@@ -708,7 +1414,15 @@ const timelineData = [
 
 
 
+
+
+
+
   { date: "1941—1945年", event: "在贵州潜心学术，浙大崛起为\"东方剑桥\"，李约瑟来访并给予高度评价" },
+
+
+
+
 
 
 
@@ -716,7 +1430,20 @@ const timelineData = [
 
 
 
+
+
+
+
 ];
+
+
+
+
+
+
+
+
+
 
 
 
@@ -726,148 +1453,294 @@ const timelineData = [
 
 
 // ===== 学者数据 =====
+
 const scholarData = [
+
   {
+
     name: "竺可桢",
+
     years: "1890—1974",
+
     title: "校长 · 气象学家",
+
     photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/1963-05_1963%E5%B9%B4_%E7%AB%BA%E5%8F%AF%E6%A1%A2.jpg/400px-1963-05_1963%E5%B9%B4_%E7%AB%BA%E5%8F%AF%E6%A1%A2.jpg",
+
     achievement: "中国近代气象学、地理学奠基人。1936-1949年任浙大校长，率领全校师生完成'文军长征'，使浙大崛起为'东方剑桥'。",
+
     quote: "大学犹海上之灯塔，吾人不能于此时降落道德标准。"
+
   },
+
   {
+
     name: "苏步青",
+
     years: "1902—2003",
+
     title: "数学家 · 中科院院士",
+
     photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Su_Buqing.jpg/400px-Su_Buqing.jpg",
+
     achievement: "中国微分几何学派创始人。在湄潭期间，他在牛棚里坚持研究，完成了多篇重要论文，培养出谷超豪、胡和生等院士。",
+
     quote: "学问好比是饭碗，要一碗一碗地吃，不能贪多求快。"
+
   },
+
   {
+
     name: "陈建功",
+
     years: "1893—1971",
+
     title: "数学家 · 中科院院士",
+
     photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Chen_Jiangong.jpg/400px-Chen_Jiangong.jpg",
+
     achievement: "中国函数论的主要开拓者之一。与苏步青共同创立了'陈苏学派'，使浙大数学系在战时达到国际水平。",
+
     quote: "做学问要耐得住寂寞，守得住清贫。"
+
   },
+
   {
+
     name: "王淦昌",
+
     years: "1907—1998",
+
     title: "核物理学家 · 中科院院士",
+
     photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Wang_Ganchang.jpg/400px-Wang_Ganchang.jpg",
+
     achievement: "中国核武器研制的主要奠基人之一。在浙大期间提出了探测中微子的实验方案，被国际物理学界誉为'天才的设想'。",
+
     quote: "我愿以身许国。"
+
   },
+
   {
+
     name: "谈家桢",
+
     years: "1909—2008",
+
     title: "遗传学家 · 中科院院士",
+
     photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Tan_Jiazhen.jpg/400px-Tan_Jiazhen.jpg",
+
     achievement: "中国现代遗传学奠基人。在湄潭建立了中国第一个遗传学专业，在简陋条件下完成多项重要研究。",
+
     quote: "我一生无所嗜好，研究遗传学就是我的终身事业。"
+
   },
+
   {
+
     name: "贝时璋",
+
     years: "1903—2009",
+
     title: "生物物理学家 · 中科院院士",
+
     photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Bei_Shizhang.jpg/400px-Bei_Shizhang.jpg",
+
     achievement: "中国生物物理学奠基人。在浙大创建了中国第一个生物物理专业，享年107岁，是当时最年长的中科院院士。",
+
     quote: "对于一个科学工作者来说，最大的快乐就是有所发现、有所创造。"
+
   },
+
   {
+
     name: "卢嘉锡",
+
     years: "1915—2001",
+
     title: "化学家 · 中科院院士",
+
     photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Lu_Jiaxi.jpg/400px-Lu_Jiaxi.jpg",
+
     achievement: "中国结构化学的奠基人。曾任中科院院长、全国人大常委会副委员长。在浙大期间培养了大批化学人才。",
+
     quote: "化学家的眼界要宽阔，要敢于跨学科探索。"
+
   },
+
   {
+
     name: "程开甲",
+
     years: "1918—2018",
+
     title: "核武器技术专家 · 两弹一星元勋",
+
     photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cheng_Kaijia.jpg/400px-Cheng_Kaijia.jpg",
+
     achievement: "中国核武器事业的开拓者之一，国家最高科技奖获得者。1941年毕业于浙大物理系，是西迁时期培养出的杰出人才。",
+
     quote: "我这辈子最大的幸福，就是自己所做的一切，都和祖国紧紧地联系在一起。"
+
   }
+
 ];
+
+
+
 
 
 // ===== 竺可桢日记摘录 =====
+
 const diaryData = [
+
   {
+
     date: "1937年11月11日",
+
     location: "杭州",
+
     text: "日军在金山卫登陆，杭州危在旦夕。今日决定将全校迁往建德。临行前巡视校园，见图书馆、实验室一切设备均无法带走，唯有含泪而去。此去不知何日方能归来，唯愿抗战胜利，我浙大师生能重返求是园。"
+
   },
+
   {
+
     date: "1937年12月25日",
+
     location: "玉山",
+
     text: "大雪纷飞，困于玉山已十日。铁路中断，车皮难求。每日奔走于铁路局与县政府之间，千方百计为学生筹谋。夜宿破客栈，寒气刺骨，然想到全校师生安全，稍感安慰。教育之责任在肩，无论如何不能放弃。"
+
   },
+
   {
+
     date: "1938年2月14日",
+
     location: "泰和",
+
     text: "今日借白鹭洲书院开讲，见古书院气象，颇感欣慰。虽设备简陋，然学生精神饱满，求知若渴。古人云'三军可夺帅也，匹夫不可夺志也'，我浙大师生之志，岂是战火所能夺？"
+
   },
+
   {
+
     date: "1938年11月1日",
+
     location: "宜山",
+
     text: "今日开学典礼，我作《王阳明与大学生的典范》演讲。以王阳明'求是'精神、遇险不畏精神、艰苦卓绝精神勉励学生，并正式定'求是'为浙大校训。愿全体师生以'求是'为毕生追求。"
+
   },
+
   {
+
     date: "1940年2月9日",
+
     location: "遵义",
+
     text: "抵达遵义已数日，师生渐次安顿。此地虽僻远，然民风淳朴，物价尚廉。借老城子弹库为校本部，各学院分设城内外。虽远离文化中心，然我辈当在此潜心学术，以待胜利之日。"
+
   },
+
   {
+
     date: "1941年春",
+
     location: "湄潭",
+
     text: "今日视察湄潭各系，见苏步青教授在牛棚中讲授微分几何，谈家桢在破旧祠堂里做果蝇实验，王淦昌在茅草棚里思考中微子问题。条件之艰苦，令人唏嘘；精神之崇高，令人敬佩。'东方剑桥'之名，当之无愧。"
+
   },
+
   {
+
     date: "1943年秋",
+
     location: "湄潭",
+
     text: "英国学者李约瑟博士今日来访，参观各系实验室。他对浙大在如此艰苦条件下仍能做出世界级研究成果表示惊叹，称赞浙大为'东方剑桥'。此言虽有过誉，然亦足慰我辈之心。"
+
   },
+
   {
+
     date: "1946年8月",
+
     location: "遵义",
+
     text: "抗战胜利已一年，今日终于启程回杭。九年西迁，四度迁移，行程两千六百公里，培养了二十六位院士。回首往事，感慨万千。浙大之所以能在战火中崛起，全赖全体师生'求是'之精神。此精神，当永世传承。"
+
   }
+
 ];
+
+
+
 
 
 // ===== 今昔照片对照数据 =====
+
 const photoData = [
+
   {
+
     title: "杭州·浙大校园",
+
     before: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Zhejiang_University_old_campus_1930s.jpg/800px-Zhejiang_University_old_campus_1930s.jpg",
+
     after: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Zhejiang_University_Yuquan_Campus_2019.jpg/800px-Zhejiang_University_Yuquan_Campus_2019.jpg",
+
     caption: "1937年竺可桢校长治校时的浙大校园 → 今日玉泉校区"
+
   },
+
   {
+
     title: "遵义会议会址",
+
     before: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Zunyi_Conference_Site_1935.jpg/800px-Zunyi_Conference_Site_1935.jpg",
+
     after: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Zunyi_Conference_Site_2019.jpg/800px-Zunyi_Conference_Site_2019.jpg",
+
     caption: "1935年遵义会议会址 → 今日全国重点文物保护单位"
+
   },
+
   {
+
     title: "湄潭·文庙",
+
     before: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Meitan_Confucian_Temple_1940s.jpg/800px-Meitan_Confucian_Temple_1940s.jpg",
+
     after: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Meitan_Confucian_Temple_2020.jpg/800px-Meitan_Confucian_Temple_2020.jpg",
+
     caption: "1940年代浙大办学时期的湄潭文庙 → 今日浙大西迁历史陈列馆"
+
   },
+
   {
+
     title: "泰和·白鹭洲书院",
+
     before: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Bailuzhou_Academy_1930s.jpg/800px-Bailuzhou_Academy_1930s.jpg",
+
     after: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Bailuzhou_Academy_2019.jpg/800px-Bailuzhou_Academy_2019.jpg",
+
     caption: "1938年浙大借用的白鹭洲书院 → 今日全国重点文物保护单位"
+
   }
+
 ];
 
+
+
 // ===== WGS84 → GCJ-02 坐标转换（火星坐标纠偏） =====
+
+
+
+
 
 
 
@@ -875,7 +1748,15 @@ const photoData = [
 
 
 
+
+
+
+
 function wgs84ToGcj02(lat, lng) {
+
+
+
+
 
 
 
@@ -883,7 +1764,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
   const ee = 0.00669342162296594323;
+
+
+
+
 
 
 
@@ -891,7 +1780,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
   function outOfChina(lat, lng) {
+
+
+
+
 
 
 
@@ -899,7 +1796,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
   }
+
+
+
+
 
 
 
@@ -907,11 +1812,23 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
     let ret = -100.0 + 2.0 * x + 3.0 * y + 0.2 * y * y + 0.1 * x * y + 0.2 * Math.sqrt(Math.abs(x));
 
 
 
+
+
+
+
     ret += (20.0 * Math.sin(6.0 * x * pi) + 20.0 * Math.sin(2.0 * x * pi)) * 2.0 / 3.0;
+
+
+
+
 
 
 
@@ -919,7 +1836,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
     ret += (160.0 * Math.sin(y / 12.0 * pi) + 320 * Math.sin(y * pi / 30.0)) * 2.0 / 3.0;
+
+
+
+
 
 
 
@@ -927,7 +1852,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
   }
+
+
+
+
 
 
 
@@ -935,7 +1868,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
     let ret = 300.0 + x + 2.0 * y + 0.1 * x * x + 0.1 * x * y + 0.1 * Math.sqrt(Math.abs(x));
+
+
+
+
 
 
 
@@ -943,7 +1884,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
     ret += (20.0 * Math.sin(x * pi) + 40.0 * Math.sin(x / 3.0 * pi)) * 2.0 / 3.0;
+
+
+
+
 
 
 
@@ -951,7 +1900,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
     return ret;
+
+
+
+
 
 
 
@@ -959,7 +1916,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
   if (outOfChina(lat, lng)) return [lat, lng];
+
+
+
+
 
 
 
@@ -967,7 +1932,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
   let dLng = transformLng(lng - 105.0, lat - 35.0);
+
+
+
+
 
 
 
@@ -975,7 +1948,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
   let magic = Math.sin(radLat);
+
+
+
+
 
 
 
@@ -983,7 +1964,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
   const sqrtMagic = Math.sqrt(magic);
+
+
+
+
 
 
 
@@ -991,7 +1980,15 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
   dLng = (dLng * 180.0) / (a / sqrtMagic * Math.cos(radLat) * pi);
+
+
+
+
 
 
 
@@ -999,7 +1996,19 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1011,11 +2020,23 @@ function wgs84ToGcj02(lat, lng) {
 
 
 
+
+
+
+
 let map;
 
 
 
+
+
+
+
 let routePolyline;
+
+
+
+
 
 
 
@@ -1027,7 +2048,19 @@ const markerObjects = {};
 
 
 
+
+
+
+
+
+
+
+
 function initMap() {
+
+
+
+
 
 
 
@@ -1035,7 +2068,15 @@ function initMap() {
 
 
 
+
+
+
+
   const centerGcj = wgs84ToGcj02(28.5, 113.5);
+
+
+
+
 
 
 
@@ -1043,7 +2084,15 @@ function initMap() {
 
 
 
+
+
+
+
     center: centerGcj,
+
+
+
+
 
 
 
@@ -1051,7 +2100,15 @@ function initMap() {
 
 
 
+
+
+
+
     zoomControl: true,
+
+
+
+
 
 
 
@@ -1059,7 +2116,19 @@ function initMap() {
 
 
 
+
+
+
+
   });
+
+
+
+
+
+
+
+
 
 
 
@@ -1071,7 +2140,15 @@ function initMap() {
 
 
 
+
+
+
+
   L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
+
+
+
+
 
 
 
@@ -1079,7 +2156,15 @@ function initMap() {
 
 
 
+
+
+
+
     attribution: '&copy; <a href="https://www.amap.com/">高德地图</a>',
+
+
+
+
 
 
 
@@ -1087,7 +2172,19 @@ function initMap() {
 
 
 
+
+
+
+
   }).addTo(map);
+
+
+
+
+
+
+
+
 
 
 
@@ -1099,7 +2196,15 @@ function initMap() {
 
 
 
+
+
+
+
   const routeOrder = [
+
+
+
+
 
 
 
@@ -1107,11 +2212,27 @@ function initMap() {
 
 
 
+
+
+
+
     'jian', 'taihe', 'yishan', 'zunyi', 'meitan'
 
 
 
+
+
+
+
   ];
+
+
+
+
+
+
+
+
 
 
 
@@ -1123,11 +2244,23 @@ function initMap() {
 
 
 
+
+
+
+
   routeOrder.forEach(function(locationId) {
 
 
 
+
+
+
+
     const data = locationData[locationId];
+
+
+
+
 
 
 
@@ -1139,7 +2272,19 @@ function initMap() {
 
 
 
+
+
+
+
+
+
+
+
     // WGS84 转 GCJ-02 坐标
+
+
+
+
 
 
 
@@ -1151,7 +2296,19 @@ function initMap() {
 
 
 
+
+
+
+
+
+
+
+
     // 创建自定义圆形标记
+
+
+
+
 
 
 
@@ -1159,7 +2316,15 @@ function initMap() {
 
 
 
+
+
+
+
       radius: locationId === 'hangzhou' || locationId === 'zunyi' || locationId === 'meitan' ? 12 : 9,
+
+
+
+
 
 
 
@@ -1167,7 +2332,15 @@ function initMap() {
 
 
 
+
+
+
+
       color: '#FFF',
+
+
+
+
 
 
 
@@ -1175,7 +2348,15 @@ function initMap() {
 
 
 
+
+
+
+
       opacity: 1,
+
+
+
+
 
 
 
@@ -1183,7 +2364,19 @@ function initMap() {
 
 
 
+
+
+
+
     }).addTo(map);
+
+
+
+
+
+
+
+
 
 
 
@@ -1195,7 +2388,15 @@ function initMap() {
 
 
 
+
+
+
+
     const label = L.tooltip({
+
+
+
+
 
 
 
@@ -1203,7 +2404,15 @@ function initMap() {
 
 
 
+
+
+
+
       direction: 'top',
+
+
+
+
 
 
 
@@ -1211,11 +2420,23 @@ function initMap() {
 
 
 
+
+
+
+
       className: 'marker-label-tooltip'
 
 
 
+
+
+
+
     }).setContent(data.name);
+
+
+
+
 
 
 
@@ -1227,7 +2448,19 @@ function initMap() {
 
 
 
+
+
+
+
+
+
+
+
     // 绑定点击事件
+
+
+
+
 
 
 
@@ -1235,11 +2468,27 @@ function initMap() {
 
 
 
+
+
+
+
       openLocationModal(locationId);
 
 
 
+
+
+
+
     });
+
+
+
+
+
+
+
+
 
 
 
@@ -1251,7 +2500,15 @@ function initMap() {
 
 
 
+
+
+
+
     const pulseIcon = L.divIcon({
+
+
+
+
 
 
 
@@ -1259,7 +2516,15 @@ function initMap() {
 
 
 
+
+
+
+
       html: '<div style="width: 20px; height: 20px; background: ' + data.color + '; border-radius: 50%; animation: pulse-ring 2.5s ease-out infinite;"></div>',
+
+
+
+
 
 
 
@@ -1267,11 +2532,27 @@ function initMap() {
 
 
 
+
+
+
+
       iconAnchor: [10, 10]
 
 
 
+
+
+
+
     });
+
+
+
+
+
+
+
+
 
 
 
@@ -1283,11 +2564,23 @@ function initMap() {
 
 
 
+
+
+
+
       icon: pulseIcon,
 
 
 
+
+
+
+
       interactive: false
+
+
+
+
 
 
 
@@ -1299,7 +2592,19 @@ function initMap() {
 
 
 
+
+
+
+
+
+
+
+
     // 保存标记引用
+
+
+
+
 
 
 
@@ -1307,7 +2612,19 @@ function initMap() {
 
 
 
+
+
+
+
   });
+
+
+
+
+
+
+
+
 
 
 
@@ -1319,7 +2636,15 @@ function initMap() {
 
 
 
+
+
+
+
   const routeCoords = routeOrder.map(function(id) {
+
+
+
+
 
 
 
@@ -1327,11 +2652,27 @@ function initMap() {
 
 
 
+
+
+
+
     return wgs84ToGcj02(data.lat, data.lng);
 
 
 
+
+
+
+
   });
+
+
+
+
+
+
+
+
 
 
 
@@ -1343,7 +2684,15 @@ function initMap() {
 
 
 
+
+
+
+
     color: '#C41E3A',
+
+
+
+
 
 
 
@@ -1351,7 +2700,15 @@ function initMap() {
 
 
 
+
+
+
+
     opacity: 0.7,
+
+
+
+
 
 
 
@@ -1359,7 +2716,15 @@ function initMap() {
 
 
 
+
+
+
+
     lineCap: 'round',
+
+
+
+
 
 
 
@@ -1367,7 +2732,19 @@ function initMap() {
 
 
 
+
+
+
+
   }).addTo(map);
+
+
+
+
+
+
+
+
 
 
 
@@ -1379,7 +2756,15 @@ function initMap() {
 
 
 
+
+
+
+
   const routePolylineGradient = L.polyline(routeCoords, {
+
+
+
+
 
 
 
@@ -1387,7 +2772,15 @@ function initMap() {
 
 
 
+
+
+
+
     weight: 4,
+
+
+
+
 
 
 
@@ -1395,11 +2788,23 @@ function initMap() {
 
 
 
+
+
+
+
     lineCap: 'round',
 
 
 
+
+
+
+
     lineJoin: 'round'
+
+
+
+
 
 
 
@@ -1411,7 +2816,19 @@ function initMap() {
 
 
 
+
+
+
+
+
+
+
+
   // 调整地图边界以显示所有标记
+
+
+
+
 
 
 
@@ -1419,7 +2836,15 @@ function initMap() {
 
 
 
+
+
+
+
     return L.latLng(coord[0], coord[1]);
+
+
+
+
 
 
 
@@ -1427,11 +2852,27 @@ function initMap() {
 
 
 
+
+
+
+
   map.fitBounds(L.latLngBounds(bounds), { padding: [50, 50] });
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1443,11 +2884,23 @@ function initMap() {
 
 
 
+
+
+
+
 window.addEventListener('load', function() {
 
 
 
+
+
+
+
   // 初始化地图
+
+
+
+
 
 
 
@@ -1459,7 +2912,19 @@ window.addEventListener('load', function() {
 
 
 
+
+
+
+
+
+
+
+
   setTimeout(function() {
+
+
+
+
 
 
 
@@ -1467,7 +2932,15 @@ window.addEventListener('load', function() {
 
 
 
+
+
+
+
     loadingScreen.classList.add('fade-out');
+
+
+
+
 
 
 
@@ -1475,7 +2948,15 @@ window.addEventListener('load', function() {
 
 
 
+
+
+
+
       loadingScreen.style.display = 'none';
+
+
+
+
 
 
 
@@ -1483,7 +2964,15 @@ window.addEventListener('load', function() {
 
 
 
+
+
+
+
     }, 800);
+
+
+
+
 
 
 
@@ -1495,7 +2984,19 @@ window.addEventListener('load', function() {
 
 
 
+
+
+
+
+
+
+
+
   initParticles();
+
+
+
+
 
 
 
@@ -1503,7 +3004,19 @@ window.addEventListener('load', function() {
 
 
 
+
+
+
+
 });
+
+
+
+
+
+
+
+
 
 
 
@@ -1515,11 +3028,23 @@ window.addEventListener('load', function() {
 
 
 
+
+
+
+
 function initParticles() {
 
 
 
+
+
+
+
   var container = document.getElementById('particles');
+
+
+
+
 
 
 
@@ -1531,7 +3056,19 @@ function initParticles() {
 
 
 
+
+
+
+
+
+
+
+
   for (var i = 0; i < 30; i++) {
+
+
+
+
 
 
 
@@ -1539,7 +3076,15 @@ function initParticles() {
 
 
 
+
+
+
+
     particle.className = 'particle';
+
+
+
+
 
 
 
@@ -1547,7 +3092,15 @@ function initParticles() {
 
 
 
+
+
+
+
     particle.style.top = (30 + Math.random() * 60) + '%';
+
+
+
+
 
 
 
@@ -1555,7 +3108,15 @@ function initParticles() {
 
 
 
+
+
+
+
     particle.style.animationDuration = (4 + Math.random() * 4) + 's';
+
+
+
+
 
 
 
@@ -1563,11 +3124,27 @@ function initParticles() {
 
 
 
+
+
+
+
   }
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1579,7 +3156,15 @@ function initParticles() {
 
 
 
+
+
+
+
 function openIntroModal() {
+
+
+
+
 
 
 
@@ -1587,11 +3172,27 @@ function openIntroModal() {
 
 
 
+
+
+
+
   document.body.style.overflow = 'hidden';
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1603,7 +3204,15 @@ function closeIntroModal() {
 
 
 
+
+
+
+
   document.getElementById('intro-modal').classList.remove('active');
+
+
+
+
 
 
 
@@ -1611,11 +3220,27 @@ function closeIntroModal() {
 
 
 
+
+
+
+
   setTimeout(triggerRouteAnimation, 300);
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1627,11 +3252,23 @@ function closeIntroModal() {
 
 
 
+
+
+
+
 function openLocationModal(locationId) {
 
 
 
+
+
+
+
   var data = locationData[locationId];
+
+
+
+
 
 
 
@@ -1643,7 +3280,19 @@ function openLocationModal(locationId) {
 
 
 
+
+
+
+
+
+
+
+
   document.getElementById('loc-header-bg').style.background =
+
+
+
+
 
 
 
@@ -1655,7 +3304,19 @@ function openLocationModal(locationId) {
 
 
 
+
+
+
+
+
+
+
+
   document.getElementById('loc-number').textContent = data.number;
+
+
+
+
 
 
 
@@ -1663,7 +3324,15 @@ function openLocationModal(locationId) {
 
 
 
+
+
+
+
   document.getElementById('loc-period').textContent = data.period;
+
+
+
+
 
 
 
@@ -1675,7 +3344,19 @@ function openLocationModal(locationId) {
 
 
 
+
+
+
+
+
+
+
+
   var sitesContainer = document.getElementById('loc-sites');
+
+
+
+
 
 
 
@@ -1683,7 +3364,15 @@ function openLocationModal(locationId) {
 
 
 
+
+
+
+
     return '<div class="site-card">' +
+
+
+
+
 
 
 
@@ -1691,7 +3380,15 @@ function openLocationModal(locationId) {
 
 
 
+
+
+
+
       '<div class="site-desc">' + site.desc + '</div>' +
+
+
+
+
 
 
 
@@ -1699,7 +3396,19 @@ function openLocationModal(locationId) {
 
 
 
+
+
+
+
   }).join('');
+
+
+
+
+
+
+
+
 
 
 
@@ -1711,7 +3420,15 @@ function openLocationModal(locationId) {
 
 
 
+
+
+
+
   highlightsContainer.innerHTML = '<div class="highlight-tags">' +
+
+
+
+
 
 
 
@@ -1719,7 +3436,15 @@ function openLocationModal(locationId) {
 
 
 
+
+
+
+
       return '<span class="highlight-tag">📍 ' + h + '</span>';
+
+
+
+
 
 
 
@@ -1727,23 +3452,47 @@ function openLocationModal(locationId) {
 
 
 
+
+
+
+
     '</div>';
 
 
 
+
+
+
+
   // Season/Weather/Food info
+
   var infoContainer = document.getElementById('loc-info');
+
   if (infoContainer && data.season) {
+
     var foodTags = (data.food || []).map(function(f) {
+
       return '<span class="food-tag">' + f + '</span>';
+
     }).join('');
+
     infoContainer.innerHTML =
+
       '<div class="info-card"><div class="info-label">🌸 最佳季节</div><div class="info-value">' + data.season + '</div></div>' +
+
       '<div class="info-card"><div class="info-label">🌤️ 四季天气</div><div class="info-value info-weather">' + data.weather + '</div></div>' +
+
       '<div class="info-card"><div class="info-label">🍜 地道美食</div><div class="info-tags">' + foodTags + '</div></div>' +
-      '<button class="photo-compare-btn" onclick="openPhoto('' + locationId + '')">📸 查看今昔对照</button>';
+
+      '<button class="photo-compare-btn" onclick="openPhoto(\'' + locationId + '\')">📸 查看今昔对照</button>';
+
     infoContainer.style.display = 'block';
+
   }
+
+
+
+
 
 
 
@@ -1751,11 +3500,27 @@ function openLocationModal(locationId) {
 
 
 
+
+
+
+
   document.body.style.overflow = 'hidden';
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1767,7 +3532,15 @@ function closeLocationModal() {
 
 
 
+
+
+
+
   document.getElementById('location-modal').classList.remove('active');
+
+
+
+
 
 
 
@@ -1775,7 +3548,19 @@ function closeLocationModal() {
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1787,7 +3572,15 @@ function closeLocationModal() {
 
 
 
+
+
+
+
 function openTimeline() {
+
+
+
+
 
 
 
@@ -1795,7 +3588,15 @@ function openTimeline() {
 
 
 
+
+
+
+
   container.innerHTML = timelineData.map(function(item) {
+
+
+
+
 
 
 
@@ -1803,7 +3604,15 @@ function openTimeline() {
 
 
 
+
+
+
+
       '<div class="timeline-date">' + item.date + '</div>' +
+
+
+
+
 
 
 
@@ -1811,11 +3620,27 @@ function openTimeline() {
 
 
 
+
+
+
+
       '</div>';
 
 
 
+
+
+
+
   }).join('');
+
+
+
+
+
+
+
+
 
 
 
@@ -1827,11 +3652,27 @@ function openTimeline() {
 
 
 
+
+
+
+
   document.body.style.overflow = 'hidden';
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1843,7 +3684,15 @@ function closeTimeline() {
 
 
 
+
+
+
+
   document.getElementById('timeline-modal').classList.remove('active');
+
+
+
+
 
 
 
@@ -1851,7 +3700,19 @@ function closeTimeline() {
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1863,7 +3724,15 @@ function closeTimeline() {
 
 
 
+
+
+
+
 function triggerRouteAnimation() {
+
+
+
+
 
 
 
@@ -1871,7 +3740,15 @@ function triggerRouteAnimation() {
 
 
 
+
+
+
+
   // 如果需要，可以添加动画效果
+
+
+
+
 
 
 
@@ -1879,7 +3756,15 @@ function triggerRouteAnimation() {
 
 
 
+
+
+
+
     // 可选：为路线添加绘制动画
+
+
+
+
 
 
 
@@ -1887,11 +3772,27 @@ function triggerRouteAnimation() {
 
 
 
+
+
+
+
   }
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1903,7 +3804,15 @@ function triggerRouteAnimation() {
 
 
 
+
+
+
+
 function scrollToMap() {
+
+
+
+
 
 
 
@@ -1911,7 +3820,15 @@ function scrollToMap() {
 
 
 
+
+
+
+
   if (mapSection) {
+
+
+
+
 
 
 
@@ -1919,7 +3836,15 @@ function scrollToMap() {
 
 
 
+
+
+
+
     setTimeout(function() {
+
+
+
+
 
 
 
@@ -1927,7 +3852,15 @@ function scrollToMap() {
 
 
 
+
+
+
+
       if (map) {
+
+
+
+
 
 
 
@@ -1935,7 +3868,15 @@ function scrollToMap() {
 
 
 
+
+
+
+
       }
+
+
+
+
 
 
 
@@ -1943,7 +3884,15 @@ function scrollToMap() {
 
 
 
+
+
+
+
     }, 500);
+
+
+
+
 
 
 
@@ -1951,7 +3900,19 @@ function scrollToMap() {
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1963,7 +3924,15 @@ function scrollToMap() {
 
 
 
+
+
+
+
 function initScrollAnimations() {
+
+
+
+
 
 
 
@@ -1971,7 +3940,15 @@ function initScrollAnimations() {
 
 
 
+
+
+
+
   window.addEventListener('scroll', function() {
+
+
+
+
 
 
 
@@ -1979,7 +3956,15 @@ function initScrollAnimations() {
 
 
 
+
+
+
+
       header.classList.add('scrolled');
+
+
+
+
 
 
 
@@ -1987,7 +3972,15 @@ function initScrollAnimations() {
 
 
 
+
+
+
+
       header.classList.remove('scrolled');
+
+
+
+
 
 
 
@@ -1995,7 +3988,19 @@ function initScrollAnimations() {
 
 
 
+
+
+
+
   });
+
+
+
+
+
+
+
+
 
 
 
@@ -2007,11 +4012,23 @@ function initScrollAnimations() {
 
 
 
+
+
+
+
     threshold: 0.1,
 
 
 
+
+
+
+
     rootMargin: '0px 0px -50px 0px'
+
+
+
+
 
 
 
@@ -2023,7 +4040,19 @@ function initScrollAnimations() {
 
 
 
+
+
+
+
+
+
+
+
   var observer = new IntersectionObserver(function(entries) {
+
+
+
+
 
 
 
@@ -2031,7 +4060,15 @@ function initScrollAnimations() {
 
 
 
+
+
+
+
       if (entry.isIntersecting) {
+
+
+
+
 
 
 
@@ -2039,11 +4076,23 @@ function initScrollAnimations() {
 
 
 
+
+
+
+
       }
 
 
 
+
+
+
+
     });
+
+
+
+
 
 
 
@@ -2055,7 +4104,19 @@ function initScrollAnimations() {
 
 
 
+
+
+
+
+
+
+
+
   document.querySelectorAll('.stat-card, .figure-card, .site-card').forEach(function(el) {
+
+
+
+
 
 
 
@@ -2063,7 +4124,15 @@ function initScrollAnimations() {
 
 
 
+
+
+
+
     observer.observe(el);
+
+
+
+
 
 
 
@@ -2071,7 +4140,19 @@ function initScrollAnimations() {
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -2083,7 +4164,15 @@ function initScrollAnimations() {
 
 
 
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
+
+
+
+
 
 
 
@@ -2091,7 +4180,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
     marker.addEventListener('click', function() {
+
+
+
+
 
 
 
@@ -2099,7 +4196,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
       if (locationId) {
+
+
+
+
 
 
 
@@ -2107,11 +4212,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
       }
 
 
 
+
+
+
+
     });
+
+
+
+
+
+
+
+
 
 
 
@@ -2123,7 +4244,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
     marker.setAttribute('role', 'button');
+
+
+
+
 
 
 
@@ -2131,7 +4260,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
       if (e.key === 'Enter' || e.key === ' ') {
+
+
+
+
 
 
 
@@ -2139,7 +4276,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
         var locationId = marker.getAttribute('data-location');
+
+
+
+
 
 
 
@@ -2147,7 +4292,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
           openLocationModal(locationId);
+
+
+
+
 
 
 
@@ -2155,7 +4308,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
       }
+
+
+
+
 
 
 
@@ -2163,11 +4324,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
   });
 
 
 
+
+
+
+
 });
+
+
+
+
+
+
+
+
 
 
 
@@ -2179,7 +4356,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
 document.addEventListener('keydown', function(e) {
+
+
+
+
 
 
 
@@ -2187,7 +4372,15 @@ document.addEventListener('keydown', function(e) {
 
 
 
+
+
+
+
     closeIntroModal();
+
+
+
+
 
 
 
@@ -2195,7 +4388,15 @@ document.addEventListener('keydown', function(e) {
 
 
 
+
+
+
+
     closeTimeline();
+
+
+
+
 
 
 
@@ -2203,7 +4404,19 @@ document.addEventListener('keydown', function(e) {
 
 
 
+
+
+
+
 });
+
+
+
+
+
+
+
+
 
 
 
@@ -2215,7 +4428,15 @@ document.addEventListener('keydown', function(e) {
 
 
 
+
+
+
+
 document.querySelectorAll('.modal-overlay').forEach(function(overlay) {
+
+
+
+
 
 
 
@@ -2223,7 +4444,15 @@ document.querySelectorAll('.modal-overlay').forEach(function(overlay) {
 
 
 
+
+
+
+
     if (e.target === overlay) {
+
+
+
+
 
 
 
@@ -2231,7 +4460,15 @@ document.querySelectorAll('.modal-overlay').forEach(function(overlay) {
 
 
 
+
+
+
+
       document.body.style.overflow = '';
+
+
+
+
 
 
 
@@ -2239,405 +4476,811 @@ document.querySelectorAll('.modal-overlay').forEach(function(overlay) {
 
 
 
+
+
+
+
   });
 
 
 
+
+
+
+
 });
+
+
+
+
+
+
 
 
 
 
 
 // ===== 日记浏览器 =====
+
 let currentDiaryIndex = 0;
 
+
+
 function openDiary() {
+
   currentDiaryIndex = 0;
+
   renderDiary();
+
   renderDiaryNav();
+
   document.getElementById('diary-modal').classList.add('active');
+
   document.body.style.overflow = 'hidden';
+
 }
+
+
 
 function closeDiary() {
+
   document.getElementById('diary-modal').classList.remove('active');
+
   document.body.style.overflow = '';
+
 }
+
+
 
 function renderDiary() {
+
   const entry = diaryData[currentDiaryIndex];
+
   document.getElementById('diary-date').textContent = entry.date;
+
   document.getElementById('diary-location').textContent = '📍 ' + entry.location;
+
   document.getElementById('diary-text').textContent = entry.text;
+
   document.getElementById('diary-counter').textContent = (currentDiaryIndex + 1) + ' / ' + diaryData.length;
+
   // Update nav active state
+
   document.querySelectorAll('.diary-nav-item').forEach(function(item, idx) {
+
     item.classList.toggle('active', idx === currentDiaryIndex);
+
   });
+
 }
+
+
 
 function renderDiaryNav() {
+
   const nav = document.getElementById('diary-nav');
+
   nav.innerHTML = diaryData.map(function(entry, idx) {
+
     return '<button class="diary-nav-item' + (idx === 0 ? ' active' : '') + '" onclick="jumpToDiary(' + idx + ')">' +
+
       '<span class="diary-nav-date">' + entry.date + '</span>' +
+
       '<span class="diary-nav-loc">' + entry.location + '</span>' +
+
     '</button>';
+
   }).join('');
+
 }
+
+
 
 function jumpToDiary(idx) {
+
   currentDiaryIndex = idx;
+
   renderDiary();
+
 }
+
+
 
 function prevDiary() {
+
   currentDiaryIndex = (currentDiaryIndex - 1 + diaryData.length) % diaryData.length;
+
   renderDiary();
+
 }
+
+
 
 function nextDiary() {
+
   currentDiaryIndex = (currentDiaryIndex + 1) % diaryData.length;
+
   renderDiary();
+
 }
+
+
 
 // ===== 照片对比 =====
+
 let currentPhotoIndex = 0;
+
 let photoSliderPos = 50;
+
 let photoDragging = false;
 
+
+
 function openPhoto(locationId) {
+
   // Find matching photo; fallback to first
+
   const matchIdx = photoData.findIndex(function(p) {
+
     return locationId && p.title.toLowerCase().includes(locationData[locationId].name);
+
   });
+
   currentPhotoIndex = matchIdx >= 0 ? matchIdx : 0;
+
   renderPhoto();
+
   document.getElementById('photo-modal').classList.add('active');
+
   document.body.style.overflow = 'hidden';
+
   setTimeout(initPhotoSlider, 100);
+
 }
+
+
 
 function closePhoto() {
+
   document.getElementById('photo-modal').classList.remove('active');
+
   document.body.style.overflow = '';
+
 }
+
+
 
 function renderPhoto() {
+
   const p = photoData[currentPhotoIndex];
+
   document.getElementById('photo-title').textContent = p.title;
+
   document.getElementById('photo-before').src = p.before;
+
   document.getElementById('photo-after').src = p.after;
+
   document.getElementById('photo-caption').textContent = p.caption;
+
   document.getElementById('photo-counter').textContent = (currentPhotoIndex + 1) + ' / ' + photoData.length;
+
   photoSliderPos = 50;
+
   updatePhotoSlider();
+
 }
+
+
 
 function initPhotoSlider() {
+
   const container = document.getElementById('photo-compare');
+
   const handle = document.getElementById('photo-slider-handle');
+
   if (!container || !handle) return;
 
+
+
   function getPos(e) {
+
     const rect = container.getBoundingClientRect();
+
     const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+
     return Math.max(0, Math.min(100, (x / rect.width) * 100));
+
   }
+
+
 
   function onStart(e) {
+
     photoDragging = true;
+
     photoSliderPos = getPos(e);
+
     updatePhotoSlider();
+
     e.preventDefault();
+
   }
+
   function onMove(e) {
+
     if (!photoDragging) return;
+
     photoSliderPos = getPos(e);
+
     updatePhotoSlider();
+
     e.preventDefault();
+
   }
+
   function onEnd() { photoDragging = false; }
 
+
+
   handle.addEventListener('mousedown', onStart);
+
   handle.addEventListener('touchstart', onStart, {passive: false});
+
   document.addEventListener('mousemove', onMove);
+
   document.addEventListener('touchmove', onMove, {passive: false});
+
   document.addEventListener('mouseup', onEnd);
+
   document.addEventListener('touchend', onEnd);
+
 }
+
+
 
 function updatePhotoSlider() {
+
   const wrapper = document.getElementById('photo-before-wrapper');
+
   const handle = document.getElementById('photo-slider-handle');
+
   if (wrapper) wrapper.style.width = photoSliderPos + '%';
+
   if (handle) handle.style.left = photoSliderPos + '%';
+
 }
+
+
 
 function prevPhoto() {
+
   currentPhotoIndex = (currentPhotoIndex - 1 + photoData.length) % photoData.length;
+
   renderPhoto();
+
 }
+
+
 
 function nextPhoto() {
+
   currentPhotoIndex = (currentPhotoIndex + 1) % photoData.length;
+
   renderPhoto();
+
 }
+
+
 
 // ===== 行程规划器 =====
+
 let plannerDays = 3;
+
 let plannerInterests = ['red', 'culture'];
 
+
+
 function openPlanner() {
+
   document.getElementById('planner-modal').classList.add('active');
+
   document.body.style.overflow = 'hidden';
+
   // Bind events
+
   document.querySelectorAll('.day-btn').forEach(function(btn) {
+
     btn.onclick = function() {
+
       document.querySelectorAll('.day-btn').forEach(function(b) { b.classList.remove('active'); });
+
       btn.classList.add('active');
+
       plannerDays = parseInt(btn.getAttribute('data-days'));
+
     };
+
   });
+
   document.querySelectorAll('.interest-tag').forEach(function(btn) {
+
     btn.onclick = function() {
+
       btn.classList.toggle('active');
+
       const tag = btn.getAttribute('data-tag');
+
       if (btn.classList.contains('active')) {
+
         if (!plannerInterests.includes(tag)) plannerInterests.push(tag);
+
       } else {
+
         plannerInterests = plannerInterests.filter(function(t) { return t !== tag; });
+
       }
+
     };
+
   });
+
 }
+
+
 
 function closePlanner() {
+
   document.getElementById('planner-modal').classList.remove('active');
+
   document.body.style.overflow = '';
+
 }
+
+
 
 function generatePlan() {
+
   // Build plan based on days and interests
+
   const allStops = [
+
     { id: 'hangzhou', days: 1, tags: ['culture', 'nature', 'food'], mustSee: ['浙大旧址', '西湖', '龙井茶园'] },
+
     { id: 'xtianmu', days: 1, tags: ['nature', 'culture'], mustSee: ['禅源寺', '天目山自然保护区'] },
+
     { id: 'jiande', days: 1, tags: ['nature', 'food'], mustSee: ['严州古城', '富春江', '新安江'] },
+
     { id: 'yushan', days: 1, tags: ['nature', 'culture'], mustSee: ['三清山', '玉山古城'] },
+
     { id: 'jian', days: 1, tags: ['red', 'culture', 'food'], mustSee: ['井冈山', '青原山净居寺'] },
+
     { id: 'taihe', days: 1, tags: ['culture', 'food'], mustSee: ['白鹭洲书院', '赣江边'] },
+
     { id: 'yishan', days: 1, tags: ['nature', 'food'], mustSee: ['刘三姐故乡', '下枧河'] },
+
     { id: 'zunyi', days: 2, tags: ['red', 'culture', 'food'], mustSee: ['遵义会议会址', '红军山', '浙大遵义旧址'] },
+
     { id: 'meitan', days: 2, tags: ['culture', 'nature', 'food'], mustSee: ['浙大西迁陈列馆', '湄潭茶海', '文庙'] }
+
   ];
 
+
+
   // Select stops
+
   let selected = [];
+
   if (plannerDays >= 9) {
+
     selected = allStops;
+
   } else if (plannerDays >= 7) {
+
     selected = allStops.filter(function(s) { return ['hangzhou', 'jian', 'zunyi', 'meitan', 'yishan'].includes(s.id); });
+
   } else if (plannerDays >= 5) {
+
     selected = allStops.filter(function(s) { return ['hangzhou', 'zunyi', 'meitan'].includes(s.id); });
+
   } else {
+
     selected = allStops.filter(function(s) { return ['zunyi', 'meitan'].includes(s.id); });
+
   }
+
+
 
   // Filter mustSee based on interests
+
   let html = '<h3>📋 你的' + plannerDays + '天行程</h3><div class="itinerary">';
+
   let dayCount = 1;
+
   selected.forEach(function(stop) {
+
     const data = locationData[stop.id];
+
     const activities = stop.mustSee.filter(function(s) {
+
       // Simple heuristic: red activities for red interest, etc.
+
       return true;
+
     });
+
     const stayDays = Math.min(stop.days, Math.max(1, plannerDays - dayCount + 1));
+
     html += '<div class="itinerary-day">' +
+
       '<div class="day-header">第 ' + dayCount + ' 天 · ' + data.name + '</div>' +
+
       '<div class="day-period">' + data.period + '</div>' +
+
       '<ul class="day-activities">' +
+
       activities.map(function(a) { return '<li>' + a + '</li>'; }).join('') +
+
       '</ul>' +
+
       '<div class="day-food">🍜 推荐：' + (data.food || []).slice(0, 2).join('、') + '</div>' +
+
     '</div>';
+
     dayCount += stayDays;
+
   });
+
   html += '</div><div class="itinerary-summary">总行程：' + plannerDays + '天 · ' + selected.length + '个城市 · 预计花费约 ' + (plannerDays * 600) + ' 元</div>';
 
+
+
   const result = document.getElementById('planner-result');
+
   result.innerHTML = html;
+
   result.style.display = 'block';
+
 }
+
+
 
 // ===== 访客留言墙 =====
+
 function openWall() {
+
   document.getElementById('wall-modal').classList.add('active');
+
   document.body.style.overflow = 'hidden';
+
   // Populate location select
+
   const sel = document.getElementById('wall-location');
+
   if (sel.options.length <= 1) {
+
     Object.keys(locationData).forEach(function(id) {
+
       const opt = document.createElement('option');
+
       opt.value = id;
+
       opt.textContent = locationData[id].name;
+
       sel.appendChild(opt);
+
     });
+
   }
+
   renderWall();
+
 }
+
+
 
 function closeWall() {
+
   document.getElementById('wall-modal').classList.remove('active');
+
   document.body.style.overflow = '';
+
 }
+
+
 
 function getMessages() {
+
   try {
+
     return JSON.parse(localStorage.getItem('wenjun_wall_messages') || '[]');
+
   } catch (e) { return []; }
+
 }
+
+
 
 function saveMessages(msgs) {
+
   localStorage.setItem('wenjun_wall_messages', JSON.stringify(msgs));
+
 }
+
+
 
 function postMessage() {
+
   const name = document.getElementById('wall-name').value.trim() || '匿名用户';
+
   const locId = document.getElementById('wall-location').value;
+
   const msg = document.getElementById('wall-message').value.trim();
+
   if (!msg) { alert('请写下你的感想'); return; }
+
   const msgs = getMessages();
+
   msgs.unshift({
+
     name: name,
+
     location: locId ? locationData[locId].name : '未指定地点',
+
     message: msg,
+
     time: new Date().toISOString()
+
   });
+
   saveMessages(msgs);
+
   document.getElementById('wall-message').value = '';
+
   renderWall();
+
 }
+
+
 
 function renderWall() {
+
   const msgs = getMessages();
+
   // Stats
+
   const checkins = {};
+
   msgs.forEach(function(m) { checkins[m.location] = (checkins[m.location] || 0) + 1; });
+
   const statsEl = document.getElementById('wall-stats');
+
   statsEl.innerHTML = '<div class="wall-stat"><div class="wall-stat-num">' + msgs.length + '</div><div class="wall-stat-label">留言总数</div></div>' +
+
     '<div class="wall-stat"><div class="wall-stat-num">' + Object.keys(checkins).length + '</div><div class="wall-stat-label">打卡地点</div></div>';
 
+
+
   const container = document.getElementById('wall-messages');
+
   if (msgs.length === 0) {
+
     // Show seed messages
+
     const seed = [
+
       { name: '求是后人', location: '湄潭', message: '站在文庙前，仿佛听到先辈们讲课的声音。致敬！', time: new Date(Date.now() - 86400000 * 30).toISOString() },
+
       { name: '2024级新生', location: '杭州', message: '入学时听老师讲西迁故事，今天终于踏上寻访之路。', time: new Date(Date.now() - 86400000 * 7).toISOString() },
+
       { name: '研学团', location: '遵义', message: '带着学生们重走西迁路，每一站都是生动的历史课。', time: new Date(Date.now() - 86400000 * 3).toISOString() }
+
     ];
+
     container.innerHTML = seed.map(renderMessage).join('');
+
   } else {
+
     container.innerHTML = msgs.slice(0, 20).map(renderMessage).join('');
+
   }
+
 }
+
+
 
 function renderMessage(m) {
+
   const date = new Date(m.time);
+
   const timeStr = date.getFullYear() + '-' + (date.getMonth()+1) + '-' + date.getDate();
+
   return '<div class="wall-msg">' +
+
     '<div class="wall-msg-header"><span class="wall-msg-name">' + m.name + '</span><span class="wall-msg-loc">📍 ' + m.location + '</span></div>' +
+
     '<div class="wall-msg-text">' + m.message + '</div>' +
+
     '<div class="wall-msg-time">' + timeStr + '</div>' +
+
   '</div>';
+
 }
+
+
 
 // ===== 沉浸模式 =====
+
 let immersiveActive = false;
+
 let immersiveIndex = 0;
+
 const immersiveStops = ['hangzhou', 'xtianmu', 'jiande', 'yushan', 'jian', 'taihe', 'yishan', 'zunyi', 'meitan'];
 
+
+
 function toggleImmersive() {
+
   immersiveActive = !immersiveActive;
+
   const overlay = document.getElementById('immersive-overlay');
+
   if (immersiveActive) {
+
     immersiveIndex = 0;
+
     renderImmersive();
+
     overlay.classList.add('active');
+
     document.body.style.overflow = 'hidden';
+
   } else {
+
     overlay.classList.remove('active');
+
     document.body.style.overflow = '';
+
   }
+
 }
+
+
 
 function renderImmersive() {
+
   const id = immersiveStops[immersiveIndex];
+
   const data = locationData[id];
+
   document.getElementById('immersive-counter').textContent = (immersiveIndex + 1) + ' / ' + immersiveStops.length;
+
   document.getElementById('immersive-title').textContent = data.name + ' · ' + data.period;
+
   document.getElementById('immersive-text').textContent = data.story;
+
   // Fly map to this location if map exists
+
   if (map && data.lat && data.lng) {
+
     const gcj = wgs84ToGcj02(data.lat, data.lng);
+
     map.flyTo(gcj, 7, { duration: 1.5 });
+
   }
+
 }
+
+
 
 function immersivePrev() {
+
   immersiveIndex = (immersiveIndex - 1 + immersiveStops.length) % immersiveStops.length;
+
   renderImmersive();
+
 }
+
+
 
 function immersiveNext() {
+
   immersiveIndex = (immersiveIndex + 1) % immersiveStops.length;
+
   renderImmersive();
+
 }
+
+
 
 // ===== 学者卡片渲染 =====
+
 function renderScholars() {
+
   const grid = document.getElementById('scholar-grid');
+
   if (!grid) return;
+
   grid.innerHTML = scholarData.map(function(s, idx) {
+
     return '<div class="scholar-card" onclick="openScholarModal(' + idx + ')">' +
+
       '<div class="scholar-photo-wrapper"><img src="' + s.photo + '" alt="' + s.name + '" class="scholar-photo" onerror="this.style.display=\'none\'"></div>' +
+
       '<div class="scholar-info">' +
+
         '<h3 class="scholar-name">' + s.name + '</h3>' +
+
         '<div class="scholar-years">' + s.years + '</div>' +
+
         '<div class="scholar-title">' + s.title + '</div>' +
+
       '</div>' +
+
     '</div>';
+
   }).join('');
+
 }
+
+
 
 function openScholarModal(idx) {
+
   const s = scholarData[idx];
+
   const content = '<div class="scholar-modal-content">' +
+
     '<img src="' + s.photo + '" alt="' + s.name + '" class="scholar-modal-photo" onerror="this.style.display=\'none\'">' +
+
     '<h2>' + s.name + ' <span style="font-size:0.6em;color:#888;">' + s.years + '</span></h2>' +
+
     '<div class="scholar-modal-title">' + s.title + '</div>' +
+
     '<p class="scholar-modal-achievement">' + s.achievement + '</p>' +
+
     '<blockquote class="scholar-modal-quote">"' + s.quote + '"</blockquote>' +
+
   '</div>';
+
   const modal = document.getElementById('location-modal');
+
   const body = modal.querySelector('.location-modal-body');
+
   const header = document.getElementById('loc-header-bg');
+
   header.style.background = 'linear-gradient(135deg, #1A3A6B 0%, #2D5B8E 100%)';
+
   document.getElementById('loc-number').textContent = '学者';
+
   document.getElementById('loc-name').textContent = s.name;
+
   document.getElementById('loc-period').textContent = s.title;
+
   document.getElementById('loc-story').textContent = s.achievement;
+
   document.getElementById('loc-sites').innerHTML = '<blockquote class="scholar-quote">' + s.quote + '</blockquote>';
+
   document.getElementById('loc-highlights').innerHTML = '';
+
   const info = document.getElementById('loc-info');
+
   if (info) { info.style.display = 'none'; }
+
   modal.classList.add('active');
+
   document.body.style.overflow = 'hidden';
+
 }
 
+
+
 // ===== 启动学者卡片渲染 =====
+
 document.addEventListener('DOMContentLoaded', function() {
+
   renderScholars();
+
 });
+
+
 
