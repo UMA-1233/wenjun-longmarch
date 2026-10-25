@@ -5862,7 +5862,7 @@ const scholarData = [
 
 
 
-    photo: "",
+    photo: "./images/zhukezhen.jpg",
 
 
 
@@ -5905,11 +5905,6 @@ const scholarData = [
     name: "苏步青",
 
 
-
-
-
-
-
     years: "1902—2003",
 
 
@@ -5926,7 +5921,7 @@ const scholarData = [
 
 
 
-    photo: "",
+    photo: "./images/subuqing.jpg",
 
 
 
@@ -5973,7 +5968,6 @@ const scholarData = [
 
 
 
-
     years: "1893—1971",
 
 
@@ -5990,7 +5984,7 @@ const scholarData = [
 
 
 
-    photo: "",
+    photo: "./images/chenjiangong.jpg",
 
 
 
@@ -6054,7 +6048,7 @@ const scholarData = [
 
 
 
-    photo: "",
+    photo: "./images/wangganchang.jpg",
 
 
 
@@ -6118,7 +6112,7 @@ const scholarData = [
 
 
 
-    photo: "",
+    photo: "./images/tanjiazhen.jpg",
 
 
 
@@ -6182,7 +6176,7 @@ const scholarData = [
 
 
 
-    photo: "",
+    photo: "./images/beishizhang.jpg",
 
 
 
@@ -6246,7 +6240,7 @@ const scholarData = [
 
 
 
-    photo: "",
+    photo: "./images/lujiaxi.jpg",
 
 
 
@@ -6310,7 +6304,7 @@ const scholarData = [
 
 
 
-    photo: "",
+    photo: "./images/chengkaijia.jpg",
 
 
 
