@@ -10,6 +10,8 @@ const locationData = {
     number: "起点",
     period: "1936年4月 — 1937年11月",
     color: "#1A3A6B",
+    lat: 30.2492,
+    lng: 120.2053,
     story: "1936年4月，竺可桢出任浙江大学校长，以\"求是\"为校训，广延名师，锐意改革，使浙大面貌焕然一新。然而好景不长，1937年7月抗日战争全面爆发，8月淞沪会战打响，日军飞机多次轰炸杭州。11月，日军在金山卫登陆，杭州危在旦夕。竺可桢果断决定：将一年级新生先迁至浙西天目山，随后全校西迁。临行前，师生们含泪告别美丽的求是校园，踏上了漫漫的西迁征途。",
     sites: [
       { name: "浙江大学玉泉校区（旧址）", desc: "浙大最早的校区之一，见证了竺可桢校长治校与西迁决策的历史。校园内保留有大量近代建筑群，是全国重点文物保护单位。" },
@@ -24,6 +26,8 @@ const locationData = {
     number: "第一站",
     period: "1937年9月 — 1937年11月",
     color: "#2D5B8E",
+    lat: 30.3495,
+    lng: 119.4240,
     story: "1937年9月，浙大将一年级新生约200人迁至浙西天目山禅源寺办学。这里山深林密，远离战火，师生们借寺院为教室，以山林为课堂，在袅袅梵音中开始了战时的大学生活。竺可桢亲自来到这里，为学生讲授\"大学生之责任\"。然而仅两个月后，随着战局急转直下，天目山也不再安全，师生们不得不踏上更远的西迁之路。这是文军长征的第一步，也是浙大\"流亡办学\"的起点。",
     sites: [
       { name: "禅源寺", desc: "浙大一年级在此借寺办学，禅源寺始建于明代，是天目山最大的寺院。现寺内设有浙大西迁纪念展览。" },
@@ -38,6 +42,8 @@ const locationData = {
     number: "第二站",
     period: "1937年11月 — 1937年12月",
     color: "#2D5B8E",
+    lat: 29.5435,
+    lng: 119.4998,
     story: "1937年11月，苏州、嘉兴相继沦陷，日军直逼杭州。竺可桢决定将全校迁至浙西建德（今建德市梅城镇）。师生们乘船沿富春江而上，携带着珍贵的图书仪器，在严子陵钓台畔短暂停留。在建德，浙大借用林场、教堂和民房坚持上课。但建德也并非久留之地——随着南京沦陷、日军沿江西进，浙大师生在建德仅停留一个多月，便又匆匆启程，向江西方向转移。在极其仓促的转移中，大量图书设备损失严重。",
     sites: [
       { name: "梅城古镇（严州古城）", desc: "建德古府城所在地，浙大曾在此借用城墙内的学堂和民房办学。古镇保留了大量明清建筑和古城墙遗址。" },
@@ -52,6 +58,8 @@ const locationData = {
     number: "第三站（途经）",
     period: "1937年12月底 — 1938年1月",
     color: "#5B7BAE",
+    lat: 28.6767,
+    lng: 118.2417,
     story: "1937年12月底，浙大师生从建德出发，辗转抵达江西玉山。此时正值隆冬，天降大雪，交通断绝，师生们被困于玉山风雪中长达十余天。竺可桢每日奔走于铁路部门和地方政府之间，千方百计筹集车皮和给养。在他的不懈努力下，终于打通了浙赣铁路的运输通道，使全校师生得以继续南行。这段冰天雪地中的艰难跋涉，成为文军长征中最为艰苦的篇章之一。",
     sites: [
       { name: "玉山古城", desc: "始建于唐代的古城，保留了部分明清时期的街巷和建筑格局。浙大师生曾在此避雪暂住。" },
@@ -66,6 +74,8 @@ const locationData = {
     number: "第四站",
     period: "1938年1月 — 1938年6月",
     color: "#8B4570",
+    lat: 27.0875,
+    lng: 114.9645,
     story: "1938年初，浙大师生历经艰辛终于抵达江西吉安。江西省政府将吉安县青原山的净居寺及周围房舍拨给浙大使用。在青原山下，浙大师生利用寺庙和祠堂作为教室和宿舍，迅速恢复了教学秩序。这一时期，浙大还增设了师范学院，扩大了办学规模。吉安地处井冈山脚下，是一片充满革命传统的热土。师生们在此深受红色文化感染，更加坚定了教育救国的信念。半年后，因战局变化和办学条件限制，浙大再次迁往附近的泰和县。",
     sites: [
       { name: "青原山净居寺", desc: "始建于唐代的千年古刹，浙大在此办学半年之久。寺内至今保留有浙大办学时期的历史痕迹和纪念牌匾。" },
@@ -80,6 +90,8 @@ const locationData = {
     number: "第五站",
     period: "1938年2月 — 1938年10月",
     color: "#8B4570",
+    lat: 26.7800,
+    lng: 114.9200,
     story: "1938年春，浙大迁至江西泰和县，借用大原书院（即白鹭洲书院）旧址办学。泰和是一座历史悠久的文化名城，白鹭洲书院更是宋代以来的著名学府。浙大师生在这座千年书院中讲授现代科学，古今交融，蔚为壮观。在此期间，竺可桢积极推动学术研究，浙大的科研水平有了显著提高。师生们还利用课余时间深入农村，开展社会调查和抗日宣传。1938年秋，日军逼近江西，浙大不得不再次踏上西迁之路，经湖南前往广西。",
     sites: [
       { name: "白鹭洲书院", desc: "创建于南宋淳祐元年(1241年)的千年学府，与白鹿洞书院、鹅湖书院并称江西三大书院。浙大在此办学期间，竺可桢曾多次在此演讲。现为全国重点文物保护单位。" },
@@ -94,6 +106,8 @@ const locationData = {
     number: "第六站",
     period: "1938年11月 — 1940年1月",
     color: "#A04050",
+    lat: 24.4700,
+    lng: 108.5800,
     story: "1938年秋，浙大从泰和出发，经湖南长沙、桂林，辗转抵达广西宜山（今宜州市）。1938年11月1日，竺可桢在宜山开学典礼上发表了著名演讲《王阳明与大学生的典范》，以王阳明的\"求是\"精神、遇险不畏精神、艰苦卓绝精神激励全校师生，并将\"求是\"正式确立为浙大校训。在宜山期间，浙大虽然条件极为艰苦——教室是用竹子和茅草搭建的棚子，但师生们的学术研究热情不减，理学院、农学院等都取得了重要的科研成果。1940年初，因广西战局紧张，浙大决定再次西迁至贵州。",
     sites: [
       { name: "浙大西迁宜山办学旧址", desc: "位于今河池市宜州区，保留有浙大当年办学的部分建筑和遗址，当地已设立纪念标志。" },
@@ -108,6 +122,8 @@ const locationData = {
     number: "终点（一）",
     period: "1940年2月 — 1946年秋",
     color: "#C41E3A",
+    lat: 27.7255,
+    lng: 106.9274,
     story: "1940年2月，浙大师生历经两年多的颠沛流离，终于抵达贵州遵义。遵义是中国革命的圣地——1935年1月，中共中央在此召开了具有伟大历史意义的遵义会议，确立了毛泽东在全党全军的领导地位。浙大来到这片红色热土后，在竺可桢校长的领导下，迅速安定下来并恢复办学。文、理、工、农、师范五个学院分布于遵义城内外，教学科研全面展开。在此七年时间里，浙大从一所地方大学崛起为享誉中外的名校，被英国学者李约瑟誉为\"东方剑桥\"。",
     sites: [
       { name: "遵义会议会址", desc: "全国重点文物保护单位，国家AAAAA级景区。1935年1月中共中央政治局扩大会议在此召开，是中国革命的伟大转折点。这是红色旅游最重要的目的地之一。" },
@@ -122,6 +138,8 @@ const locationData = {
     number: "终点（二）",
     period: "1940年2月 — 1946年秋",
     color: "#C41E3A",
+    lat: 27.7499,
+    lng: 107.4653,
     story: "与遵义同时，浙大农学院、理学院和部分文学院的师生迁至距遵义约70公里的湄潭县。在这座偏僻的黔北小县城，浙大师生创造了中国高等教育史上的奇迹。没有像样的教室，就在文庙、祠堂和民房中上课；没有实验室，就在茅草棚中做实验。然而，正是在这样艰苦的条件下，苏步青、陈建功、王淦昌、谈家桢、贝时璋等一大批著名学者潜心治学，取得了世界级的学术成果。李约瑟到访湄潭后惊叹不已，称浙大为\"东方剑桥\"。湄潭办学七年间培养的学生中，有26人后来成为中国科学院或中国工程院院士。",
     sites: [
       { name: "浙江大学西迁历史陈列馆（湄潭）", desc: "全国唯一以西迁办学为主题的专题陈列馆，位于湄潭县文庙内。馆内陈列有大量珍贵的历史照片、文献资料和实物，全面展示了文军长征的壮丽历程。全国重点文物保护单位。" },
@@ -148,8 +166,114 @@ const timelineData = [
   { date: "1946年秋", event: "抗战胜利后，浙大回迁杭州，结束九年西迁历程" }
 ];
 
+// ===== Leaflet 地图初始化 =====
+let map;
+let routePolyline;
+const markerObjects = {};
+
+function initMap() {
+  // 创建地图实例，中心点设为路线中间位置
+  map = L.map('route-map', {
+    center: [28.5, 113.5],  // 大约在江西/湖南交界处
+    zoom: 5,
+    zoomControl: true,
+    scrollWheelZoom: true
+  });
+
+  // 添加 OpenStreetMap 图层
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 18
+  }).addTo(map);
+
+  // 定义路线顺序
+  const routeOrder = [
+    'hangzhou', 'xtianmu', 'jiande', 'yushan',
+    'jian', 'taihe', 'yishan', 'zunyi', 'meitan'
+  ];
+
+  // 添加地点标记
+  routeOrder.forEach(function(locationId) {
+    const data = locationData[locationId];
+    if (!data || !data.lat || !data.lng) return;
+
+    // 创建自定义圆形标记
+    const marker = L.circleMarker([data.lat, data.lng], {
+      radius: locationId === 'hangzhou' || locationId === 'zunyi' || locationId === 'meitan' ? 12 : 9,
+      fillColor: data.color,
+      color: '#FFF',
+      weight: 3,
+      opacity: 1,
+      fillOpacity: 0.9
+    }).addTo(map);
+
+    // 添加标签
+    const label = L.tooltip({
+      permanent: true,
+      direction: 'top',
+      offset: [0, -15],
+      className: 'marker-label-tooltip'
+    }).setContent(data.name);
+    marker.bindTooltip(label);
+
+    // 绑定点击事件
+    marker.on('click', function() {
+      openLocationModal(locationId);
+    });
+
+    // 添加脉冲动画效果（通过CSS）
+    const pulseIcon = L.divIcon({
+      className: 'marker-pulse',
+      html: '<div style="width: 20px; height: 20px; background: ' + data.color + '; border-radius: 50%; animation: pulse-ring 2.5s ease-out infinite;"></div>',
+      iconSize: [20, 20],
+      iconAnchor: [10, 10]
+    });
+
+    const pulseMarker = L.marker([data.lat, data.lng], {
+      icon: pulseIcon,
+      interactive: false
+    }).addTo(map);
+
+    // 保存标记引用
+    markerObjects[locationId] = marker;
+  });
+
+  // 绘制路线
+  const routeCoords = routeOrder.map(function(id) {
+    const data = locationData[id];
+    return [data.lat, data.lng];
+  });
+
+  routePolyline = L.polyline(routeCoords, {
+    color: '#C41E3A',
+    weight: 3,
+    opacity: 0.7,
+    dashArray: '10, 10',
+    lineCap: 'round',
+    lineJoin: 'round'
+  }).addTo(map);
+
+  // 添加渐变路线（叠加效果）
+  const routePolylineGradient = L.polyline(routeCoords, {
+    color: '#1A3A6B',
+    weight: 4,
+    opacity: 0.3,
+    lineCap: 'round',
+    lineJoin: 'round'
+  }).addTo(map);
+
+  // 调整地图边界以显示所有标记
+  const bounds = routeCoords.map(function(coord) {
+    return L.latLng(coord[0], coord[1]);
+  });
+  map.fitBounds(L.latLngBounds(bounds), { padding: [50, 50] });
+}
+
 // ===== 页面加载 =====
 window.addEventListener('load', function() {
+  // 初始化地图
+  initMap();
+
   setTimeout(function() {
     var loadingScreen = document.getElementById('loading-screen');
     loadingScreen.classList.add('fade-out');
@@ -249,9 +373,11 @@ function closeTimeline() {
 
 // ===== 路线动画 =====
 function triggerRouteAnimation() {
-  var routePath = document.getElementById('route-path');
-  if (routePath) {
-    routePath.classList.add('animate');
+  // Leaflet 地图不需要路线动画，路线已经在初始化时绘制
+  // 如果需要，可以添加动画效果
+  if (routePolyline) {
+    // 可选：为路线添加绘制动画
+    routePolyline.setStyle({ opacity: 1 });
   }
 }
 
@@ -260,7 +386,13 @@ function scrollToMap() {
   var mapSection = document.getElementById('map-section');
   if (mapSection) {
     mapSection.scrollIntoView({ behavior: 'smooth' });
-    setTimeout(triggerRouteAnimation, 500);
+    setTimeout(function() {
+      // 确保地图正确显示
+      if (map) {
+        map.invalidateSize();
+      }
+      triggerRouteAnimation();
+    }, 500);
   }
 }
 
