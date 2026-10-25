@@ -20510,6 +20510,23 @@ function openScholarModal(idx) {
   document.getElementById('loc-story').textContent = s.achievement;
 
 
+  // 修改"红色景区与遗址"标题为"学术名言"
+  const sitesSection = document.getElementById('loc-sites').parentElement;
+  if (sitesSection) {
+    const sitesTitle = sitesSection.querySelector('h4');
+    if (sitesTitle) {
+      sitesTitle.textContent = '💬 学术名言';
+    }
+  }
+
+
+  // 隐藏"文旅看点"部分
+  const highlightsSection = document.getElementById('loc-highlights').parentElement;
+  if (highlightsSection) {
+    highlightsSection.style.display = 'none';
+  }
+
+
 
 
 
