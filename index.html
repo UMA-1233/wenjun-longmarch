@@ -248,8 +248,6 @@
 
         <button class="nav-btn" onclick="openPlanner()">行程规划</button>
 
-        <button class="nav-btn" onclick="openWall()">留言墙</button>
-
 
 
       </nav>
@@ -1206,45 +1204,7 @@
 
 
 
-  <!-- ========== 访客留言墙弹窗 ========== -->
-
-  <div id="wall-modal" class="modal-overlay">
-
-    <div class="modal-content wall-modal-content">
-
-      <button class="modal-close" onclick="closeWall()" aria-label="关闭">&times;</button>
-
-      <div class="wall-header">
-
-        <h2>💬 访客留言墙</h2>
-
-        <p class="wall-subtitle">留下你的足迹与感悟</p>
-
-      </div>
-
-      <div class="wall-stats" id="wall-stats"></div>
-
-      <div class="wall-form">
-
-        <input type="text" id="wall-name" placeholder="你的名字" maxlength="20">
-
-        <select id="wall-location">
-
-          <option value="">选择你打卡的地点</option>
-
-        </select>
-
-        <textarea id="wall-message" placeholder="写下你的感想..." maxlength="200"></textarea>
-
-        <button class="planner-submit" onclick="postMessage()">发布留言</button>
-
-      </div>
-
-      <div class="wall-messages" id="wall-messages"></div>
-
-    </div>
-
-  </div>
+  
 
 
 
@@ -1314,7 +1274,7 @@
 
 
 
-  <script src="js/main.js?v=8"></script>
+  <script src="js/main.js?v=9"></script>
 
 </body>
 
