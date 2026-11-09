@@ -5878,7 +5878,8 @@ const scholarData = [
 
 
 
-    quote: "大学犹海上之灯塔，吾人不能于此时降落道德标准。"
+    quote: "大学犹海上之灯塔，吾人不能于此时降落道德标准。",
+    journey: "1937年抗战爆发后，竺可桢校长毅然决定举校西迁。他亲自勘察路线，先后四次迁移：从杭州到西天目山，再到建德、吉安、泰和、宜山，最终抵达贵州遵义、湄潭。九年流亡办学期间，他不仅要维持教学秩序，还要四处奔走筹措经费、延揽人才。在他的领导下，浙大在战火中反而崛起，被李约瑟誉为东方剑桥。",
 
 
 
@@ -5903,6 +5904,7 @@ const scholarData = [
 
 
     name: "苏步青",
+    journey: "1937年抗战爆发后，苏步青随浙大西迁，辗转江西、湖南、广西、贵州等地。在艰苦的流亡办学中，他坚持数学研究与教学，在微分几何领域取得重要成果。他常在油灯下备课、写论文，指导学生完成高质量的数学研究。西迁期间培养的学生中，有多人后来成为中国数学界的骨干力量。",
 
 
     years: "1902—2003",
@@ -5962,6 +5964,7 @@ const scholarData = [
 
 
     name: "陈建功",
+    journey: "陈建功是浙大西迁的核心教授之一。他随学校从杭州出发，经天目山、建德、吉安、泰和、宜山，最终到达贵州。在战火纷飞中，他坚持函数论研究，与苏步青共同创办数学系，确立了浙大数学系的学术地位。他常说'做学问要耐得住寂寞'，在极其艰苦的条件下培养了大批数学人才。",
 
 
 
@@ -6025,6 +6028,7 @@ const scholarData = [
 
 
     name: "王淦昌",
+    journey: "1937年，王淦昌随浙大西迁。在贵州湄潭办学期间，他在简陋的实验室中坚持核物理研究。1941年，他在《科学记录》发表重要论文，提出通过电子俘获验证中微子存在的实验方案，被国际物理学界高度认可。抗战期间，他还参与抗日军事研究，为国防科技做出贡献。",
 
 
 
@@ -6089,6 +6093,7 @@ const scholarData = [
 
 
     name: "谈家桢",
+    journey: "谈家桢是中国遗传学之父。1937年，他从美国获得博士学位后毅然回国，加入浙大并随校西迁。在贵州湄潭，他在极其简陋的条件下建立遗传学实验室，以果蝇为实验材料进行研究。他的论文在国际遗传学界引起轰动，使浙大成为中国遗传学研究的重镇。",
 
 
 
@@ -6153,6 +6158,7 @@ const scholarData = [
 
 
     name: "贝时璋",
+    journey: "贝时璋是浙大西迁的重要参与者。他随校从杭州出发，历经四次迁移，最终到达贵州。在湄潭办学期间，他创建了生物物理学实验室，开创了中国生物物理学研究。他常在野外采集标本，进行细胞学研究，为中国生命科学的发展奠定了基础。",
 
 
 
@@ -6217,6 +6223,7 @@ const scholarData = [
 
 
     name: "卢嘉锡",
+    journey: "1939年，卢嘉锡随浙大西迁至贵州。在遵义、湄潭办学期间，他在化学系任教，在极其艰苦的条件下坚持结构化学研究。他常说'化学家的眼界要宽阔'，鼓励学生跨学科探索。西迁期间的教学和科研经历，为他后来成为中国结构化学奠基人奠定了基础。",
 
 
 
@@ -6281,6 +6288,7 @@ const scholarData = [
 
 
     name: "程开甲",
+    journey: "程开甲是浙大西迁期间培养的学生代表。1937年，他考入浙大物理系，随校西迁。在贵州求学期间，他师从王淦昌等名师，打下坚实的物理学基础。1946年赴英国留学，后回国参与'两弹一星'工程，被誉为'中国核司令'。他常说西迁精神是自己一生最重要的财富。",
 
 
 
@@ -6705,230 +6713,6 @@ const diaryData = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ===== 今昔照片对照数据 =====
-
-
-
-
-
-
-
-const photoData = [
-
-
-
-
-
-
-
-  {
-
-
-
-
-
-
-
-    title: "杭州·浙大校园",
-
-
-
-
-
-
-
-    before: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Zhejiang_University_old_campus_1930s.jpg/800px-Zhejiang_University_old_campus_1930s.jpg",
-
-
-
-
-
-
-
-    after: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Zhejiang_University_Yuquan_Campus_2019.jpg/800px-Zhejiang_University_Yuquan_Campus_2019.jpg",
-
-
-
-
-
-
-
-    caption: "1937年竺可桢校长治校时的浙大校园 → 今日玉泉校区"
-
-
-
-
-
-
-
-  },
-
-
-
-
-
-
-
-  {
-
-
-
-
-
-
-
-    title: "遵义会议会址",
-
-
-
-
-
-
-
-    before: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Zunyi_Conference_Site_1935.jpg/800px-Zunyi_Conference_Site_1935.jpg",
-
-
-
-
-
-
-
-    after: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Zunyi_Conference_Site_2019.jpg/800px-Zunyi_Conference_Site_2019.jpg",
-
-
-
-
-
-
-
-    caption: "1935年遵义会议会址 → 今日全国重点文物保护单位"
-
-
-
-
-
-
-
-  },
-
-
-
-
-
-
-
-  {
-
-
-
-
-
-
-
-    title: "湄潭·文庙",
-
-
-
-
-
-
-
-    before: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Meitan_Confucian_Temple_1940s.jpg/800px-Meitan_Confucian_Temple_1940s.jpg",
-
-
-
-
-
-
-
-    after: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Meitan_Confucian_Temple_2020.jpg/800px-Meitan_Confucian_Temple_2020.jpg",
-
-
-
-
-
-
-
-    caption: "1940年代浙大办学时期的湄潭文庙 → 今日浙大西迁历史陈列馆"
-
-
-
-
-
-
-
-  },
-
-
-
-
-
-
-
-  {
-
-
-
-
-
-
-
-    title: "泰和·白鹭洲书院",
-
-
-
-
-
-
-
-    before: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Bailuzhou_Academy_1930s.jpg/800px-Bailuzhou_Academy_1930s.jpg",
-
-
-
-
-
-
-
-    after: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Bailuzhou_Academy_2019.jpg/800px-Bailuzhou_Academy_2019.jpg",
-
-
-
-
-
-
-
-    caption: "1938年浙大借用的白鹭洲书院 → 今日全国重点文物保护单位"
-
-
-
-
-
-
-
-  }
-
-
-
-
-
-
-
-];
 
 
 
@@ -11552,7 +11336,29 @@ function initMap() {
 
 
 
+// ===== 全局错误处理：确保页面始终可以加载 =====
+window.onerror = function(msg, url, line, col, error) {
+  console.error('Global error:', msg, 'at line', line);
+  // 发生错误时尝试隐藏加载屏幕
+  var loadingScreen = document.getElementById('loading-screen');
+  if (loadingScreen) {
+    loadingScreen.classList.add('fade-out');
+  }
+  return false;
+};
+
 window.addEventListener('load', function() {
+
+  // 保底机制：3秒后强制隐藏加载屏幕
+  var safetyTimeout = setTimeout(function() {
+    var loadingScreen = document.getElementById('loading-screen');
+    if (loadingScreen && !loadingScreen.classList.contains('fade-out')) {
+      loadingScreen.classList.add('fade-out');
+      console.warn('Loading screen force-hidden by safety timeout');
+    }
+  }, 3000);
+
+  try {
 
 
 
@@ -12032,6 +11838,18 @@ window.addEventListener('load', function() {
 
 
 
+  } catch (e) {
+    console.error("Page load error:", e);
+    var loadingScreen = document.getElementById("loading-screen");
+    if (loadingScreen) {
+      loadingScreen.classList.add("fade-out");
+      setTimeout(function() { loadingScreen.style.display = "none"; }, 800);
+    }
+  } finally {
+    if (typeof safetyTimeout !== "undefined") {
+      clearTimeout(safetyTimeout);
+    }
+  }
 });
 
 
@@ -13928,7 +13746,7 @@ function openLocationModal(locationId) {
 
 
 
-      '<div class="info-card"><div class="info-label">🍜 地道美食</div><div class="info-tags">' + foodTags + '</div></div>' +
+      '<div class="info-card"><div class="info-label">🍜 地道美食</div><div class="info-tags">' + foodTags + '</div></div>';
 
 
 
@@ -13936,7 +13754,6 @@ function openLocationModal(locationId) {
 
 
 
-      '<button class="photo-compare-btn" onclick="openPhoto(\'' + locationId + '\')">📸 查看今昔对照</button>';
 
 
 
@@ -18424,670 +18241,6 @@ function nextDiary() {
 
 
 
-// ===== 照片对比 =====
-
-
-
-
-
-
-
-let currentPhotoIndex = 0;
-
-
-
-
-
-
-
-let photoSliderPos = 50;
-
-
-
-
-
-
-
-let photoDragging = false;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function openPhoto(locationId) {
-
-
-
-
-
-
-
-  // Find matching photo; fallback to first
-
-
-
-
-
-
-
-  const matchIdx = photoData.findIndex(function(p) {
-
-
-
-
-
-
-
-    return locationId && p.title.toLowerCase().includes(locationData[locationId].name);
-
-
-
-
-
-
-
-  });
-
-
-
-
-
-
-
-  currentPhotoIndex = matchIdx >= 0 ? matchIdx : 0;
-
-
-
-
-
-
-
-  renderPhoto();
-
-
-
-
-
-
-
-  document.getElementById('photo-modal').classList.add('active');
-
-
-
-
-
-
-
-  document.body.style.overflow = 'hidden';
-
-
-
-
-
-
-
-  setTimeout(initPhotoSlider, 100);
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function closePhoto() {
-
-
-
-
-
-
-
-  document.getElementById('photo-modal').classList.remove('active');
-
-
-
-
-
-
-
-  document.body.style.overflow = '';
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function renderPhoto() {
-
-
-
-
-
-
-
-  const p = photoData[currentPhotoIndex];
-
-
-
-
-
-
-
-  document.getElementById('photo-title').textContent = p.title;
-
-
-
-
-
-
-
-  document.getElementById('photo-before').src = p.before;
-
-
-
-
-
-
-
-  document.getElementById('photo-after').src = p.after;
-
-
-
-
-
-
-
-  document.getElementById('photo-caption').textContent = p.caption;
-
-
-
-
-
-
-
-  document.getElementById('photo-counter').textContent = (currentPhotoIndex + 1) + ' / ' + photoData.length;
-
-
-
-
-
-
-
-  photoSliderPos = 50;
-
-
-
-
-
-
-
-  updatePhotoSlider();
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function initPhotoSlider() {
-
-
-
-
-
-
-
-  const container = document.getElementById('photo-compare');
-
-
-
-
-
-
-
-  const handle = document.getElementById('photo-slider-handle');
-
-
-
-
-
-
-
-  if (!container || !handle) return;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  function getPos(e) {
-
-
-
-
-
-
-
-    const rect = container.getBoundingClientRect();
-
-
-
-
-
-
-
-    const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
-
-
-
-
-
-
-
-    return Math.max(0, Math.min(100, (x / rect.width) * 100));
-
-
-
-
-
-
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  function onStart(e) {
-
-
-
-
-
-
-
-    photoDragging = true;
-
-
-
-
-
-
-
-    photoSliderPos = getPos(e);
-
-
-
-
-
-
-
-    updatePhotoSlider();
-
-
-
-
-
-
-
-    e.preventDefault();
-
-
-
-
-
-
-
-  }
-
-
-
-
-
-
-
-  function onMove(e) {
-
-
-
-
-
-
-
-    if (!photoDragging) return;
-
-
-
-
-
-
-
-    photoSliderPos = getPos(e);
-
-
-
-
-
-
-
-    updatePhotoSlider();
-
-
-
-
-
-
-
-    e.preventDefault();
-
-
-
-
-
-
-
-  }
-
-
-
-
-
-
-
-  function onEnd() { photoDragging = false; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  handle.addEventListener('mousedown', onStart);
-
-
-
-
-
-
-
-  handle.addEventListener('touchstart', onStart, {passive: false});
-
-
-
-
-
-
-
-  document.addEventListener('mousemove', onMove);
-
-
-
-
-
-
-
-  document.addEventListener('touchmove', onMove, {passive: false});
-
-
-
-
-
-
-
-  document.addEventListener('mouseup', onEnd);
-
-
-
-
-
-
-
-  document.addEventListener('touchend', onEnd);
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function updatePhotoSlider() {
-
-
-
-
-
-
-
-  const wrapper = document.getElementById('photo-before-wrapper');
-
-
-
-
-
-
-
-  const handle = document.getElementById('photo-slider-handle');
-
-
-
-
-
-
-
-  if (wrapper) wrapper.style.width = photoSliderPos + '%';
-
-
-
-
-
-
-
-  if (handle) handle.style.left = photoSliderPos + '%';
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function prevPhoto() {
-
-
-
-
-
-
-
-  currentPhotoIndex = (currentPhotoIndex - 1 + photoData.length) % photoData.length;
-
-
-
-
-
-
-
-  renderPhoto();
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function nextPhoto() {
-
-
-
-
-
-
-
-  currentPhotoIndex = (currentPhotoIndex + 1) % photoData.length;
-
-
-
-
-
-
-
-  renderPhoto();
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ===== 行程规划器 =====
 
 
@@ -19838,28 +18991,28 @@ function toggleImmersive() {
 
   if (immersiveActive) {
 
-
-
     immersiveIndex = 0;
-
-
 
     overlay.classList.add('active');
 
-
+    // Debug info
+    console.log('Immersive mode activated');
+    console.log('Overlay classes:', overlay.className);
+    console.log('Overlay display:', window.getComputedStyle(overlay).display);
 
     document.body.style.overflow = 'hidden';
 
-
+    // Add map hint if not exists
+    if (!document.getElementById('immersive-map-hint')) {
+      var hint = document.createElement('div');
+      hint.id = 'immersive-map-hint';
+      hint.className = 'immersive-map-hint';
+      hint.innerHTML = '🗺️ 右侧查看地图';
+      overlay.appendChild(hint);
+    }
 
     // Scroll to map first so it's visible behind the story card
-
-
-
     var mapSection = document.getElementById('map-section');
-
-
-
     if (mapSection) mapSection.scrollIntoView({ behavior: 'smooth' });
 
 
@@ -19873,6 +19026,22 @@ function toggleImmersive() {
 
 
         map.invalidateSize();
+
+        // 调整地图视野，确保路线完整显示在右侧
+        var allCoords = [];
+        immersiveStops.forEach(function(stopId) {
+          var loc = locationData[stopId];
+          if (loc && loc.lat && loc.lng) {
+            var gcj = wgs84ToGcj02(loc.lat, loc.lng);
+            allCoords.push(gcj);
+          }
+        });
+
+        if (allCoords.length > 0) {
+          var bounds = L.latLngBounds(allCoords);
+          map.fitBounds(bounds, { padding: [80, 80], maxZoom: 7 });
+        }
+
 
 
 
@@ -20008,7 +19177,7 @@ function renderImmersive() {
 
 
 
-    map.flyTo(gcj, 7, { duration: 1.8, easeLinearity: 0.25 });
+    map.flyTo(gcj, 8, { duration: 1.8, easeLinearity: 0.25 });
 
 
 
@@ -20381,81 +19550,74 @@ function renderScholars() {
 
 function openScholarModal(idx) {
 
-  const s = scholarData[idx];
+  try {
+    const s = scholarData[idx];
+    if (!s) return;
 
-  // 先修改弹窗结构，隐藏不相关的部分
-  const modal = document.getElementById('location-modal');
-  const sitesSection = document.getElementById('loc-sites').parentElement;
-  const highlightsSection = document.getElementById('loc-highlights').parentElement;
+    // 先修改弹窗结构，隐藏不相关的部分
+    const modal = document.getElementById('location-modal');
+    if (!modal) return;
 
-  // 修改"红色景区与遗址"标题为"名言"
-  if (sitesSection) {
-    const sitesTitle = sitesSection.querySelector('h4');
-    if (sitesTitle) {
-      sitesTitle.innerHTML = '💬 名言';
+    const sitesEl = document.getElementById('loc-sites');
+    const highlightsEl = document.getElementById('loc-highlights');
+    const storyEl = document.getElementById('loc-story');
+
+    const sitesSection = sitesEl ? sitesEl.parentElement : null;
+    const highlightsSection = highlightsEl ? highlightsEl.parentElement : null;
+    const storySection = storyEl ? storyEl.parentElement : null;
+
+    // 显示所有section（重置之前的隐藏）
+    if (sitesSection) sitesSection.style.display = '';
+    if (highlightsSection) highlightsSection.style.display = '';
+    if (storySection) storySection.style.display = '';
+
+    // 修改"红色景区与遗址"标题为"名言"
+    if (sitesSection) {
+      const sitesTitle = sitesSection.querySelector('h4');
+      if (sitesTitle) {
+        sitesTitle.innerHTML = '💬 名言';
+      }
     }
+
+    // 修改"在此经历"标题为"主要成就"
+    if (storySection) {
+      const storyTitle = storySection.querySelector('h4');
+      if (storyTitle) {
+        storyTitle.innerHTML = '🎓 主要成就';
+      }
+    }
+
+    // 隐藏"文旅看点"部分
+    if (highlightsSection) {
+      highlightsSection.style.display = 'none';
+    }
+
+    // 设置主要成就内容
+    if (storyEl) {
+      if (s.achievement) {
+        storyEl.innerHTML = s.achievement;
+      } else {
+        if (storySection) storySection.style.display = 'none';
+      }
+    }
+
+    if (sitesEl) {
+      sitesEl.innerHTML = '<blockquote class="scholar-quote">' + (s.quote || '') + '</blockquote>';
+    }
+
+    if (highlightsEl) {
+      highlightsEl.innerHTML = '';
+    }
+
+    const info = document.getElementById('loc-info');
+    if (info) { info.style.display = 'none'; }
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+  } catch (e) {
+    console.error('openScholarModal error:', e);
   }
-
-  // 隐藏"文旅看点"部分
-  if (highlightsSection) {
-    highlightsSection.style.display = 'none';
-  }
-
-  
-
-
-
-
-
-
-
-  document.getElementById('loc-sites').innerHTML = '<blockquote class="scholar-quote">' + s.quote + '</blockquote>';
-
-
-
-
-
-
-
-  document.getElementById('loc-highlights').innerHTML = '';
-
-
-
-
-
-
-
-  const info = document.getElementById('loc-info');
-
-
-
-
-
-
-
-  if (info) { info.style.display = 'none'; }
-
-
-
-
-
-
-
-  modal.classList.add('active');
-
-
-
-
-
-
-
-  document.body.style.overflow = 'hidden';
-
-
-
-
-
-
 
 }
 
